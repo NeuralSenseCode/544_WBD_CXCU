@@ -1,0 +1,27 @@
+# Requirements for 544_WBD_CXCU Project
+
+# Core data analysis libraries
+numpy>=1.21.0
+pandas>=1.3.0
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Statistical analysis
+scipy>=1.7.0
+statsmodels>=0.12.0
+
+# Machine learning (if needed)
+scikit-learn>=1.0.0
+
+# Neural data analysis (common packages)
+# Add specific neural analysis packages as needed
+
+# Jupyter notebook support (optional)
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Data visualization
+plotly>=5.0.0
+
+# Utility libraries
+tqdm>=4.60.0

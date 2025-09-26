@@ -1,0 +1,9 @@
+# Data Directory
+
+Place your data files here.
+
+Supported formats:
+- CSV files (.csv)
+- Excel files (.xlsx, .xls)
+- HDF5 files (.h5, .hdf5)
+- Pickle files (.pkl, .pickle)
