@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"name": "544_WBD_CXCU",
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.defaultInterpreterPath": "python",
+		"python.analysis.autoImportCompletions": true,
+		"python.analysis.typeCheckingMode": "basic",
+		"files.associations": {
+			"*.py": "python"
+		},
+		"editor.tabSize": 4,
+		"editor.insertSpaces": true,
+		"files.exclude": {
+			"**/__pycache__": true,
+			"**/*.pyc": true
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-python.python",
+			"ms-python.pylint",
+			"ms-toolsai.jupyter",
+			"ms-python.flake8"
+		]
+	}
+}
