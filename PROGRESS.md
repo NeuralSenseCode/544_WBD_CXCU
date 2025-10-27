@@ -2,7 +2,7 @@
 
 _Last updated: 2025-10-27_
 
-This log captures the current state of analysis so future sessions can resume seamlessly. The goal is to continue Feature Extraction Stage 2 next.
+This log captures the current state of analysis so future sessions can resume seamlessly. The immediate focus is reviewing full-cohort Stage 2 results and addressing the logged issues.
 
 ---
 
@@ -60,15 +60,29 @@ The notebook is organized into sections with the active work under **Feature Ext
 - Enriched `uv_stage1` by joining the refreshed `data/grid.csv`, mapping the survey fields into `age_group`, `ethnicity`, `income_group`, `content_consumption`, and the `%` split columns (`content_consumption_movies`, `content_consumption_series`, `content_consumption_short`) with careful ID coercion and whitespace cleanup to prevent nulls.
 - Exported the demographic UV snapshot to `results/uv_stage1_demographics.csv` (now including the supplemental survey fields).
 
-### Variables in Notebook Session
-- `uv_stage1` and `uv` currently hold the demographic dataset; manual overrides are applied in place.
-- `stimulus_summary` is available for joining with external mappings in later steps.
+### Stage 2: Sensor Data (Full Sample)
+- Finalized helper stack: `read_imotions`, `prepare_stimulus_segment`, `compute_sensor_features`, and the new orchestration wrapper `run_sensor_feature_pipeline`.
+- The pipeline now validates sensor coverage per respondent, auto-detects EEG alias columns, handles long-form key-moment windowing, and computes FAC/EEG/GSR/ET metrics with unified naming.
+- Executed `run_sensor_feature_pipeline()` across all respondents (83 total); results exported to:
+  - `results/uv_stage2_full_features.csv`
+  - `results/uv_stage2_full_uv.csv`
+  - `results/uv_stage2_full_issues.csv` (38 rows documenting missing sensors, unmapped stimuli, or empty windows).
+- Implemented safe CSV writing with timestamped fallbacks to avoid permission clashes and added `gc.collect()` guards to keep memory pressure manageable during batch processing.
 
-## Next Steps (Stage 2 Preview)
-1. Join `stimulus_summary` with `stimulus_rename` to attach canonical titles and forms.
-2. Incorporate `key_moments` to align long-form stimuli with short-form segments.
-3. Begin extracting sensor-based features per `{form}_{title}` using the naming convention, populating additional columns in `uv`.
-4. Integrate survey/self-report datasets (e.g., `data/Export/.../Survey/`) and demographic tables (`results/uv_stage1_demographics.csv`).
+### Notebook Outputs
+- `full_features` dataframe currently holds 1,076 Stage 2 feature columns aligned to 83 respondents.
+- `full_issues` records outstanding data gaps per respondent/stimulus to triage before downstream modeling.
+- `full_uv` merges Stage 1 demographics with Stage 2 features, providing the latest unified view snapshot.
+
+### Variables in Notebook Session
+- `uv_stage1` and `uv` hold the demographic dataset; manual overrides are applied in place.
+- `stimulus_summary` remains available for join operations if further timing diagnostics are needed.
+- `full_features`, `full_uv`, and `full_issues` persist in memory for quick inspection during issue resolution.
+
+## Next Steps
+1. Review `results/uv_stage2_full_issues.csv` to reconcile missing sensor streams or unmapped stimuli (38 entries).
+2. Confirm downstream consumers ingest the new `uv_stage2_full_uv.csv` and coordinate with analytics leads on required feature subsets.
+3. Plan integration of survey/self-report datasets (e.g., `data/Export/.../Survey/`) alongside the Stage 2 metrics for the full UV.
 
 ---
 Use this log to quickly re-establish context before continuing the analysis or before engaging with Copilot for future feature extraction tasks.
