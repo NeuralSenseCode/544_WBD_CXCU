@@ -57,7 +57,8 @@ The notebook is organized into sections with the active work under **Feature Ext
   - `time_study`
 - Verified there are no duplicate respondents.
 - Applied manual gender overrides for respondents `8`, `56`, `16`, `6`, `46`, `69`, `44`, and `50` per client guidance.
-- Exported the demographic UV snapshot to `results/uv_stage1_demographics.csv`.
+- Enriched `uv_stage1` by joining the refreshed `data/grid.csv`, mapping the survey fields into `age_group`, `ethnicity`, `income_group`, `content_consumption`, and the `%` split columns (`content_consumption_movies`, `content_consumption_series`, `content_consumption_short`) with careful ID coercion and whitespace cleanup to prevent nulls.
+- Exported the demographic UV snapshot to `results/uv_stage1_demographics.csv` (now including the supplemental survey fields).
 
 ### Variables in Notebook Session
 - `uv_stage1` and `uv` currently hold the demographic dataset; manual overrides are applied in place.

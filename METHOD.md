@@ -53,5 +53,6 @@ Use underscores *only* to separate the major segments shown above (`form_title_s
 - Store intermediate mappings (e.g., `stimulus_rename`, `key_moments`) under `data/` and load them as reference tables when deriving new features.
 - Keep transformation logic modular by encapsulating feature extraction steps into functions that take a respondent-level input and return a dictionary of UV-ready columns.
 - Document any non-standard metrics inline with code comments or additional markdown cells in the notebook to support reproducibility.
+- End every step where UV is updated with new data with a write to a .csv in the results folder
 
 By following this methodology, teams can reliably fuse heterogeneous datasets into a single, analytics-friendly representation that scales across studies and clients.
