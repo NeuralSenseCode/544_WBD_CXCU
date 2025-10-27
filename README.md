@@ -24,6 +24,7 @@ Batch exports of text responses, with a row per respondent and a column per ques
 - `README.md` - Project documentation
 - `544_WBD_CXCU.py` - Main analysis script
 - `requirements.txt` - Python dependencies
+- `analysis/assemble_uv.ipynb` - Notebook assembling the unified view and feature extraction stages
 - `data/` - Data files directory
 - `results/` - Analysis results directory
 
