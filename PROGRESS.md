@@ -1,6 +1,6 @@
 # Project Progress Log
 
-_Last updated: 2025-10-27_
+_Last updated: 2025-10-30_
 
 This log captures the current state of analysis so future sessions can resume seamlessly. The immediate focus is reviewing full-cohort Stage 2 results and addressing the logged issues.
 
@@ -68,6 +68,18 @@ The notebook is organized into sections with the active work under **Feature Ext
   - `results/uv_stage2_full_uv.csv`
   - `results/uv_stage2_full_issues.csv` (38 rows documenting missing sensors, unmapped stimuli, or empty windows).
 - Implemented safe CSV writing with timestamped fallbacks to avoid permission clashes and added `gc.collect()` guards to keep memory pressure manageable during batch processing.
+
+### Stage 3
+- Loaded the Stage 3 rename map (`data/survey_column_rename_stage3.csv`) and question catalog (`data/survey_questions.csv`) to construct a metadata lookup covering target columns, question types, polarity flags, and enjoyment subscales.
+- Processed every `MERGED_SURVEY_RESPONSE_MATRIX-*.txt` file under `data/Export/Group */Analyses/*/Survey/`, normalizing respondent IDs, harmonizing group/study/gender fields, and applying group-specific column renaming.
+- Built parsers for Likert-style responses, including keyword fallback scoring, reverse-coding for negatively keyed items, and specialized scorers for familiarity (`F1`/`F3`) and recency (`F2`).
+- Computed enjoyment subscale aggregates and standardized familiarity composites (sum/count/mean/normalized) for each stimulus prefix while preserving raw open-ended responses in a separate frame.
+- Deduplicated to a single numeric survey record per respondent, split open-ended text columns into `survey_open_ended`, and merged the numeric features with the existing unified view (`full_uv` when available, otherwise Stage 1 demographics).
+- Hardened the F1/F2 familiarity remapping to enforce the 0–4 scale for both prompts, including raw numeric prefixes (for example "5.0"), and added defensive clipping to prevent scale drift in future reruns.
+- Recomputed enjoyment composites so `_Sum` reflects the raw (pre-polarity) totals, `_Corrected` and `_Mean` use polarity-adjusted scores, `_Normalized` scales the raw totals, and the new `_NormalizedCorrected` column scales the corrected totals.
+- Integrated screening familiarity composites from `results/individual_composite_scores.csv`, canonicalizing title strings (collapsing `Abbot`/`Abbott`) and inferring `Long`/`Short` forms per respondent group before emitting `{form}_{title}_Screening_Familiarity_{question_code}` columns.
+- Exported Stage 3 deliverables to `results/uv_stage3_full_features.csv`, `results/uv_stage3_full_open_ended.csv`, and `results/uv_stage3_full_uv.csv`; merge warnings surface any duplicate respondent entries for follow-up. The latest run saved `results/uv_stage3_full_features_20251030155141.csv` after a permission fallback and now reports 356 engineered survey columns.
+- Latest export run saved the feature matrix as `results/uv_stage3_full_features_20251030152658.csv` because the base filename was in use; contents mirror the corrected schema described above.
 
 ### Notebook Outputs
 - `full_features` dataframe currently holds 1,076 Stage 2 feature columns aligned to 83 respondents.
