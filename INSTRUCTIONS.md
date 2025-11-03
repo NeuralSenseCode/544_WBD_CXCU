@@ -1,7 +1,7 @@
-# New Stage
+# Stage 3 Integration
 #file:METHOD.md #file:PROGRESS.md
 
-Lets begin with Stage 4: Recall. Create a new subsection for this stage, where we will no focus on adding into the UV responses from a Recall questionnare administered 7 days after the study.
+Begin with Stage 3: post-viewing recall/recognition. Create or update the corresponding subsection so the UV captures responses from the questionnaire administered seven days after the study.
 
-For our work in this section, we will abide by the guidelines and practices outlined in METHOD.md.
-I will also need you to run cells automatically, and check for errrors in the output files to verify results. If changes are made to existing cell, I will need you to automatically rerun cells and then verify that the output files are free of the errors we attempted to correct.
+Follow the guidelines outlined in `METHOD.md`, referencing `PROGRESS.md` for the historical context of the Stage 1–3 pipeline restructuring.
+When modifying existing cells, rerun them (and any downstream dependencies) automatically, then verify the refreshed output files are free of the errors we intended to address.

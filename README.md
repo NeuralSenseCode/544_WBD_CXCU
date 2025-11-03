@@ -28,6 +28,12 @@ Batch exports of text responses, with a row per respondent and a column per ques
 - `data/` - Data files directory
 - `results/` - Analysis results directory
 
+## UV Assembly Stages
+- **Stage 1 – Demographics:** Extract respondent metadata from sensor exports, enrich with `grid.csv` (including the `grid_comments` context field), and publish the baseline `results/uv_stage1.csv`.
+- **Stage 2 – Exposure-Day Survey:** Reload the Stage 1 baseline, harmonise group-specific survey TSVs via `survey_metadata`, and emit `uv_stage2.csv` plus companion feature/open-ended tables and an issues log.
+- **Stage 3 – Post Questionnaire:** Map post-viewing recognition metrics using `post_survey_map`, join them onto the Stage 1 baseline, and write `uv_stage3.csv` with an accompanying issues report.
+- **UV Merge:** Consolidate Stage 2 and Stage 3 outputs back onto Stage 1, flagging duplicates or baseline mismatches in `merge_issues.csv` while producing the master `uv_merged.csv`.
+
 ## Setup Instructions
 1. Install required dependencies: `pip install -r requirements.txt`
 2. Place data files in the `data/` directory

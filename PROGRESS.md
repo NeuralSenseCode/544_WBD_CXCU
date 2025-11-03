@@ -95,4 +95,16 @@ The notebook is organized into sections with the active work under **Feature Ext
 3. Plan integration of survey/self-report datasets (e.g., `data/Export/.../Survey/`) alongside the Stage 2 metrics for the full UV.
 
 ---
+
+## Pipeline Restructure (2025-11-03)
+- Archived the legacy Stage 2 sensor feature pipeline in `analysis/assemble_uv.ipynb`. Stage numbering now aligns to data sources: Stage 1 (demographics), Stage 2 (exposure-day survey metrics), Stage 3 (post questionnaire recognition features).
+- Stage 2 notebooks cells now reload `results/uv_stage1.csv` as the authoritative base before merging survey features and writing `uv_stage2.csv`, `uv_stage2_features.csv`, and `uv_stage2_issues.csv`.
+- Stage 3 cells follow the same pattern, reloading Stage 1, engineering recognition metrics directly from the post questionnaire exports, and emitting `uv_stage3.csv` plus `uv_stage3_issues.csv`.
+- Added a new "UV Merge" section that reads `uv_stage2.csv` and `uv_stage3.csv`, compares Stage 1 metadata for inconsistencies, and produces `uv_merged.csv` alongside `merge_issues.csv` to track duplicates, missing respondents, or baseline mismatches.
+
+## Stage 1 Grid Enhancements (2025-11-03)
+- Normalized the headers from `data/grid.csv`, added the respondent-level `Comments` field as `grid_comments`, and preserved it through the Stage 1 merge so contextual notes surface in `results/uv_stage1.csv`.
+- Trimmed comment strings and ensured the new column is available to downstream stages for diagnostics and issue reconciliation.
+
+---
 Use this log to quickly re-establish context before continuing the analysis or before engaging with Copilot for future feature extraction tasks.

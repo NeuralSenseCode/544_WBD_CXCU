@@ -51,25 +51,24 @@ Use underscores *only* to separate the major segments shown above (`form_title_s
 
 ### Stage 1 Demographics
 - Use sensor metadata as the backbone for respondent IDs, group assignments, and study timestamps, relying on `read_imotions` to extract `Study name`, `Respondent Name`, `Respondent Group`, and `Recording time` while ignoring `Respondent Age` and `Respondent Gender` fields that frequently drift from grid answers.
-- Treat `data/grid.csv` as the authoritative source for demographic attributes. Rename `QB2. Age` to `age`, `QB2. Age.1` to `age_group`, and `QA2. Gender` to `gender`, trimming whitespace across string responses and coercing numeric columns (`age`, `content_consumption_*`) to nullable integers.
-- Drop duplicate grid respondents after coercing the identifier to string, then left-join the cleaned grid slice onto `uv_stage1` so the demographic baseline fills `age`, `gender`, `age_group`, `ethnicity`, `income_group`, and content-consumption measures without introducing parallel age columns.
-- Apply manual gender overrides as needed to honour client-approved corrections, and persist the Stage 1 snapshot to `results/uv_stage1_demographics.csv` before downstream merges.
+- Treat `data/grid.csv` as the authoritative source for demographic attributes. Trim header whitespace, rename `QB2. Age` to `age`, `QB2. Age.1` to `age_group`, `QA2. Gender` to `gender`, and preserve the `Comments` field as `grid_comments` for qualitative context.
+- Drop duplicate grid respondents after coercing the identifier to string, then left-join the cleaned grid slice onto `uv_stage1` so the demographic baseline fills `age`, `gender`, `age_group`, `ethnicity`, `income_group`, content-consumption measures, and the new `grid_comments` column without introducing parallel age fields.
+- Apply manual overrides as needed to honour client-approved corrections, and persist the Stage 1 snapshot to `results/uv_stage1.csv` before downstream merges.
 
-### Stage 2 Sensor Feature Pipeline
-- The helper trio `prepare_stimulus_segment`, `compute_sensor_features`, and `_trapezoid_integral` standardises windowing, metric calculation, and numerical integration (falling back to `np.trapz` when `numpy.trapezoid` is unavailable).
-- `run_sensor_feature_pipeline(respondent_ids=None, export_label="uv_stage2_full", save_outputs=True)` orchestrates full-cohort processing: it validates mandatory columns per sensor modality, resolves EEG alias names (for example `Frontal Asymmetry Alpha`), applies key-moment clipping for long-form stimuli, and aggregates metrics following the UV naming convention.
-- The function returns three DataFrames—`features_df`, `issues_df`, and the merged `uv` slice—and writes them to `results/` using safe timestamped fallbacks to avoid permission collisions (`*_features.csv`, `*_uv.csv`, `*_issues.csv`).
-- Garbage collection (`gc.collect()`) after each respondent keeps memory usage stable when looping across dozens of large sensor files.
-- Review the exported issues log before downstream modeling to reconcile missing sensors, unmapped stimuli, or empty windows.
+### Stage 2 Survey Feature Pipeline
+- Reload `results/uv_stage1.csv` at the top of the stage to ensure a consistent respondent baseline before ingesting exposure-day survey exports.
+- Normalise each TSV by trimming column names, coercing respondent identifiers to strings, and mapping raw question headers to canonical targets through `survey_metadata`.
+- Split the cleansed survey frame into numeric features, composite scales, and open-ended responses; compute derived scores (Likert parsing, familiarity, recency, etc.) while logging any unmapped or duplicate respondents to `results/uv_stage2_issues.csv`.
+- Write the consolidated Stage 2 products—`uv_stage2.csv`, `uv_stage2_features.csv`, and `uv_stage2_open_ended.csv`—so subsequent notebooks can join them without re-running the survey ETL.
 
-### Stage 4 Post Questionnaire Integration
-- **Objective**: Incorporate the seven-day Post questionnaire responses into the canonical `uv` DataFrame without disrupting respondent alignment established in earlier stages.
-- **Source files**: Use the `data/Recall/Group *_ Post Viewing Questionnaire Part Two*.csv` exports, coercing respondent identifiers as strings to preserve leading zeros and suffixes.
-- **Reference map**: Rely on `data/post_survey_map.csv` to harmonise question wording across groups, extracting `question_code`, subscale metadata, stimulus titles, and accuracy labels before any reshaping.
-- **Feature engineering**: Convert multi-select or correctness-based questions into scalar metrics per respondent. Follow the UV naming scheme, using `Post` for the source segment (for example, `long_mad max fury road_Post_CorrectAnswers_Count`). Keep free-text answers in a parallel long-form table for qualitative review.
-- **Merging**: Left-join the Post feature matrix onto the existing `uv` using `respondent` and `group`. Track missing respondents in an issues log (`results/uv_stage4_post_issues.csv`) so no demographic rows are lost silently.
-- **Validation**: Confirm row counts, inspect summary statistics for newly added Post metrics, and ensure every column respects the naming convention. Surface data gaps or unexpected formats in notebook markdown cells for transparency.
-- **Outputs**: Save enriched UV snapshots (`results/uv_stage4_full_uv.csv`) plus Post feature and issues files, applying timestamped fallbacks when filename collisions occur.
+### Stage 3 Post Questionnaire Integration
+- **Objective**: Merge the recognition and recall metrics captured in the post-viewing questionnaire directly onto the Stage 1 baseline while keeping survey and demographic features intact.
+- **Source files**: Use the `data/Post/Group *_ Post Viewing Questionnaire Part Two*.csv` exports, coercing respondent identifiers as strings to maintain alignment with Stage 1/Stage 2.
+- **Reference map**: Rely on `data/post_survey_map.csv` along with `results/post_question_map.csv` to harmonise question wording across groups, extracting `question_code`, subscale metadata, stimulus titles, and accuracy labels before reshaping.
+- **Feature engineering**: Convert multi-select or correctness-based questions into scalar metrics per respondent. Follow the UV naming scheme, using a `post_` or domain-specific prefix (e.g., `post_recognition_accuracy`) and retain free-text answers in a long-form table for qualitative review.
+- **Merging**: Left-join the engineered Stage 3 feature matrix onto `uv_stage1`, surface gaps in `results/uv_stage3_issues.csv`, and export the enriched UV to `results/uv_stage3.csv`.
+- **Validation**: Confirm row counts, inspect summary statistics for newly added metrics, and document notable discrepancies in notebook markdown cells for transparency.
+- **Outputs**: Save the Stage 3 features and issues files with timestamp-safe fallbacks when filename collisions occur, ensuring the UV merge step can reconcile Stage 2 and Stage 3 against the Stage 1 baseline.
 
 ## Best Practices
 - Maintain helper dictionaries that translate raw stimulus names to canonical titles before populating the UV.
