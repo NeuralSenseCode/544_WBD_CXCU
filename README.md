@@ -30,8 +30,8 @@ Batch exports of text responses, with a row per respondent and a column per ques
 
 ## UV Assembly Stages
 - **Stage 1 – Demographics:** Extract respondent metadata from sensor exports, enrich with `grid.csv` (including the `grid_comments` context field), and publish the baseline `results/uv_stage1.csv`.
-- **Stage 2 – Exposure-Day Survey:** Reload the Stage 1 baseline, harmonise group-specific survey TSVs via `survey_metadata`, and emit `uv_stage2.csv` plus companion feature/open-ended tables and an issues log.
-- **Stage 3 – Post Questionnaire:** Map post-viewing recognition metrics using `post_survey_map`, join them onto the Stage 1 baseline, and write `uv_stage3.csv` with an accompanying issues report.
+- **Stage 2 – Exposure-Day Survey:** Reload the Stage 1 baseline, harmonise group-specific survey TSVs via `survey_metadata`, and emit `uv_stage2_full_uv.csv` plus companion feature/open-ended tables and an issues log.
+- **Stage 3 – Post Questionnaire Recognition:** Reload `uv_stage1.csv` as the ground truth for respondent group and form exposure, map post-viewing recognition metrics via `post_survey_map` keyed on `question_code`, and compute per-category aggregates (Count, Sum, Mean, Normalized Mean) after remapping categories to the approved vocabulary. Persist the originating CSV path for each respondent and export the enriched UV to `results/uv_stage3.csv` alongside a detailed issues report.
 - **UV Merge:** Consolidate Stage 2 and Stage 3 outputs back onto Stage 1, flagging duplicates or baseline mismatches in `merge_issues.csv` while producing the master `uv_merged.csv`.
 
 ## Setup Instructions

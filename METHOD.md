@@ -62,13 +62,15 @@ Use underscores *only* to separate the major segments shown above (`form_title_s
 - Write the consolidated Stage 2 products—`uv_stage2.csv`, `uv_stage2_features.csv`, and `uv_stage2_open_ended.csv`—so subsequent notebooks can join them without re-running the survey ETL.
 
 ### Stage 3 Post Questionnaire Integration
-- **Objective**: Merge the recognition and recall metrics captured in the post-viewing questionnaire directly onto the Stage 1 baseline while keeping survey and demographic features intact.
-- **Source files**: Use the `data/Post/Group *_ Post Viewing Questionnaire Part Two*.csv` exports, coercing respondent identifiers as strings to maintain alignment with Stage 1/Stage 2.
-- **Reference map**: Rely on `data/post_survey_map.csv` along with `results/post_question_map.csv` to harmonise question wording across groups, extracting `question_code`, subscale metadata, stimulus titles, and accuracy labels before reshaping.
-- **Feature engineering**: Convert multi-select or correctness-based questions into scalar metrics per respondent. Follow the UV naming scheme, using a `post_` or domain-specific prefix (e.g., `post_recognition_accuracy`) and retain free-text answers in a long-form table for qualitative review.
+- **Objective**: Merge recognition metrics captured in the post-viewing questionnaire directly onto the Stage 1 baseline while keeping survey and demographic features intact.
+- **Source files**: Use the `data/Post/Group *_ Post Viewing Questionnaire Part Two*.csv` exports, coercing respondent identifiers to strings and reloading `uv_stage1_demographics.csv` as the single source of truth for respondent group and Short/Long exposure titles before parsing.
+- **Reference map**: Rely on `data/post_survey_map.csv` (supplemented by `results/post_question_map.csv`) keyed on `question_code` so variant wordings across groups continue to align.
+- **Feature engineering**: Collapse duplicate headers, parse binary accuracy, confidence, and composite scores per respondent, and remap category labels with the agreed vocabulary (`key` ➜ `wb-key`, `seen` ➜ `wb-notKeySeen`, `unseen` ➜ `wb-notKeyUnseen`, `fake` ➜ `distractor`, `distractor` ➜ `comp-key`, `distractor2` ➜ `comp-notKeySeen`). Aggregate recognition composites with two paths: for `key`/`seen`, restrict to the respondent’s Stage 1 Long/Short titles so outputs follow `{form}_{category}_Post_Recognition_{Statistic}`; for `unseen`, `fake`, `distractor`, and `distractor2`, collect across all appearances and emit `{category}_Post_Recognition_{Statistic}` columns.
+- **Alignment check**: Only accept recognition responses when the Stage 1 group matches the group parsed from the post questionnaire filename; mismatches are logged and the respondent is skipped to keep UV groups consistent.
+- **Traceability**: Persist the relative path to each respondent's post questionnaire export as `post_survey_source_path` for quick audit replays.
 - **Merging**: Left-join the engineered Stage 3 feature matrix onto `uv_stage1`, surface gaps in `results/uv_stage3_issues.csv`, and export the enriched UV to `results/uv_stage3.csv`.
-- **Validation**: Confirm row counts, inspect summary statistics for newly added metrics, and document notable discrepancies in notebook markdown cells for transparency.
-- **Outputs**: Save the Stage 3 features and issues files with timestamp-safe fallbacks when filename collisions occur, ensuring the UV merge step can reconcile Stage 2 and Stage 3 against the Stage 1 baseline.
+- **Validation**: Confirm row counts, inspect category aggregates against raw composite scores, and document notable discrepancies in notebook markdown cells for transparency.
+- **Outputs**: Save Stage 3 features and issues files with timestamp-safe fallbacks when filename collisions occur; this keeps the UV merge step aligned with the simplified three-stage pipeline.
 
 ## Best Practices
 - Maintain helper dictionaries that translate raw stimulus names to canonical titles before populating the UV.

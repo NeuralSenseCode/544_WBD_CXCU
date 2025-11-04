@@ -1,0 +1,5 @@
+- Adjusted 006_11 to respondent 14 in sensor data and merged_data. Adjusted number and gender
+- Missing Short_wb-notKeySeen for Group A and C
+- 116 and 117 post questionnaires were swapped around
+- 93 and 6 post questionnaire missing
+- 1 and 2 post questionnaire, change in question scheme: are category labels still accurate

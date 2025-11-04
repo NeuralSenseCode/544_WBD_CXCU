@@ -50,39 +50,41 @@ The notebook is organized into sections with the active work under **Feature Ext
 - Dropped duplicate grid respondents after coercing the identifier to string and exported the refreshed demographic UV snapshot to `results/uv_stage1_demographics.csv`.
 - Verified there are no duplicate respondents.
 
-### Stage 2: Sensor Data (Full Sample)
-- Finalized helper stack: `read_imotions`, `prepare_stimulus_segment`, `compute_sensor_features`, and the new orchestration wrapper `run_sensor_feature_pipeline`.
-- The pipeline now validates sensor coverage per respondent, auto-detects EEG alias columns, handles long-form key-moment windowing, and computes FAC/EEG/GSR/ET metrics with unified naming.
-- Executed `run_sensor_feature_pipeline()` across all respondents (83 total); results exported to:
+### Stage 2: Exposure-Day Survey Metrics
+- Reload the Stage 1 demographic baseline at the start of the stage so respondent metadata remains authoritative during survey merges.
+- Normalize each `MERGED_SURVEY_RESPONSE_MATRIX-*.txt` surface (one per group) by trimming headers, coercing respondent identifiers to strings, and mapping raw question headers through `survey_column_rename_stage3.csv` into canonical targets.
+- Build parsers for Likert scales, familiarity prompts (`F1`/`F3`), and recency checks (`F2`), including keyword backstops, polarity handling, and clipping to the 0–4 range.
+- Deduplicate to one numeric survey record per respondent, split open-ended responses into `survey_open_ended`, and left-join the engineered metrics onto the Stage 1 baseline to produce `results/uv_stage2_full_uv.csv`, `results/uv_stage2_full_features.csv`, and `results/uv_stage2_full_open_ended.csv` accompanied by `results/uv_stage2_full_issues.csv` for audit.
+- Integrate screening familiarity composites from `results/individual_composite_scores.csv`, canonicalizing title strings and inferring presentation form per respondent before emitting `{form}_{title}_Screening_Familiarity_{question_code}` columns.
+
+### Sensor Feature Archive (Legacy Stage 2)
+- Finalized helper stack: `read_imotions`, `prepare_stimulus_segment`, `compute_sensor_features`, and the orchestration wrapper `run_sensor_feature_pipeline`.
+- The pipeline validates sensor coverage per respondent, auto-detects EEG alias columns, handles long-form key-moment windowing, and computes FAC/EEG/GSR/ET metrics with unified naming.
+- Executed `run_sensor_feature_pipeline()` across all respondents (83 total); results archived at:
   - `results/uv_stage2_full_features.csv`
   - `results/uv_stage2_full_uv.csv`
   - `results/uv_stage2_full_issues.csv` (38 rows documenting missing sensors, unmapped stimuli, or empty windows).
-- Implemented safe CSV writing with timestamped fallbacks to avoid permission clashes and added `gc.collect()` guards to keep memory pressure manageable during batch processing.
+- Uses timestamped fallback filenames and manual `gc.collect()` guards to keep batch processing stable; retained here for reference should sensor features be reintegrated later.
 
-### Stage 3
-- Loaded the Stage 3 rename map (`data/survey_column_rename_stage3.csv`) and question catalog (`data/survey_questions.csv`) to construct a metadata lookup covering target columns, question types, polarity flags, and enjoyment subscales.
-- Processed every `MERGED_SURVEY_RESPONSE_MATRIX-*.txt` file under `data/Export/Group */Analyses/*/Survey/`, normalizing respondent IDs, harmonizing group/study/gender fields, and applying group-specific column renaming.
-- Built parsers for Likert-style responses, including keyword fallback scoring, reverse-coding for negatively keyed items, and specialized scorers for familiarity (`F1`/`F3`) and recency (`F2`).
-- Computed enjoyment subscale aggregates and standardized familiarity composites (sum/count/mean/normalized) for each stimulus prefix while preserving raw open-ended responses in a separate frame.
-- Deduplicated to a single numeric survey record per respondent, split open-ended text columns into `survey_open_ended`, and merged the numeric features with the existing unified view (`full_uv` when available, otherwise Stage 1 demographics).
-- Hardened the F1/F2 familiarity remapping to enforce the 0–4 scale for both prompts, including raw numeric prefixes (for example "5.0"), and added defensive clipping to prevent scale drift in future reruns.
-- Recomputed enjoyment composites so `_Sum` reflects the raw (pre-polarity) totals, `_Corrected` and `_Mean` use polarity-adjusted scores, `_Normalized` scales the raw totals, and the new `_NormalizedCorrected` column scales the corrected totals.
-- Integrated screening familiarity composites from `results/individual_composite_scores.csv`, canonicalizing title strings (collapsing `Abbot`/`Abbott`) and inferring `Long`/`Short` forms per respondent group before emitting `{form}_{title}_Screening_Familiarity_{question_code}` columns.
-- Exported Stage 3 deliverables to `results/uv_stage3_full_features.csv`, `results/uv_stage3_full_open_ended.csv`, and `results/uv_stage3_full_uv.csv`; merge warnings surface any duplicate respondent entries for follow-up. The latest run saved `results/uv_stage3_full_features_20251030155141.csv` after a permission fallback and now reports 356 engineered survey columns.
-- Latest export run saved the feature matrix as `results/uv_stage3_full_features_20251030152658.csv` because the base filename was in use; contents mirror the corrected schema described above.
+### Stage 3: Post Questionnaire Recognition
+- Stage 3 now ingests the post-viewing questionnaire exports under `data/Post/`, collapsing duplicate headers and aligning responses to `post_survey_map.csv` via the shared `question_code` column.
+- `uv_stage1.csv` is reloaded as the ground truth for respondent group assignment and Short/Long form exposure titles before any post data is parsed.
+- Parsed records capture binary accuracy, confidence, and composite scores for each question, normalize respondent IDs, and attach the relative path of the originating CSV for traceability (`post_survey_source_path`).
+- Category labels from the map are remapped (`key` ➜ `wb-key`, `seen` ➜ `wb-notKeySeen`, `unseen` ➜ `wb-notKeyUnseen`, `fake` ➜ `distractor`, `distractor` ➜ `comp-key`, `distractor2` ➜ `comp-notKeySeen`).
+- For Post recognition composites, questions tagged `key`/`seen` are restricted to the respondent’s Stage 1 Long/Short titles so the aggregates emit as `{form}_{category}_Post_Recognition_{Statistic}`, while the remaining categories (`unseen`, `fake`, `distractor`, `distractor2`) collect across all appearances and emit as `{category}_Post_Recognition_{Statistic}`.
+- Added a guard that only merges post-recognition responses when the Stage 1 group matches the group encoded in the source filename, skipping mismatched respondents (currently 6, 116, and 117) and logging the exclusion.
+- The aggregated feature matrix is merged back onto the Stage 1 baseline and written to `results/uv_stage3.csv`, with companion issues captured in `results/uv_stage3_issues.csv` for diagnostics.
+- Issues are surfaced whenever binary or confidence responses are missing, when forms must fall back to the group stimulus map, or when respondent groups are absent from both Stage 1 and the filename.
 
 ### Notebook Outputs
 - `full_features` dataframe currently holds 1,076 Stage 2 feature columns aligned to 83 respondents.
 - `full_issues` records outstanding data gaps per respondent/stimulus to triage before downstream modeling.
 - `full_uv` merges Stage 1 demographics with Stage 2 features, providing the latest unified view snapshot.
 
-### Stage 4: Post Questionnaire (Planned)
-- Goal is to ingest the seven-day Post questionnaire exports located under `data/Recall/` for Groups A–F.
-- The canonical item map now lives at `data/post_survey_map.csv`; we rely on its `question_code`-ready numbering to align variant wordings across groups before feature extraction.
-- Plan to coerce respondent identifiers as strings before joins to avoid dropping participants with padded IDs; merge on (`respondent`, `group`).
-- Will generate Post-specific feature and issues outputs (`results/uv_stage4_post_features.csv`, `results/uv_stage4_post_issues.csv`) and append the enriched UV snapshot to `results/uv_stage4_full_uv.csv` once validated.
-- Pending validation steps include confirming questionnaire completeness per group and drafting helper functions for accuracy and confidence scoring keyed off `question_code`.
-- Verification scripts now read the canonical map directly, collapsing duplicate headers in the raw exports, confirming inferred response types against the map for audit purposes, and emitting an audited copy to `results/post_question_map.csv` when rerun.
+### UV Merge Snapshot
+- Combines the Stage 2 survey metrics and Stage 3 post-recognition composites back onto the Stage 1 demographic baseline.
+- Highlights respondent-level discrepancies (duplicates, missing exposures, mismatched form assignments) in `results/merge_issues.csv` while emitting the consolidated UV at `results/uv_merged.csv`.
+- Provides a quick audit path to ensure category-level recognition aggregates align with survey familiarity measures after the latest pipeline simplifications.
 
 ### Variables in Notebook Session
 - `uv_stage1` and `uv` hold the demographic dataset; manual overrides are applied in place.
