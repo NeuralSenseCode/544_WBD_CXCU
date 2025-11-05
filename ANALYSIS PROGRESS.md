@@ -15,3 +15,4 @@
 - 2025-11-04: Created H4 section pairing normalised familiarity with post-recognition scores; replicated the four-part workflow (overall, format split, title split, and title-format comparison) with updated slope tests and correlation callouts.
 - 2025-11-04: Added Exploratory Analysis 1 (Enjoyment vs Recall) mirroring the H3/H4 structure by merging enjoyment composites with recall metrics and producing the same four-part correlation suite.
 - 2025-11-04: Extended H2 Part 2 with separate title-level models and visuals for the binary recognition hits and the confidence multipliers, mirroring the composite plots while reporting their mixed-model coefficients and summaries.
+- 2025-11-05: Refined H2 Part 2a/2b binary recognition reporting so the notebook now prints per-title tables and one-liners with sample counts, one-tailed proportion z-tests (with Welch fallback), and references to the overall mixed-model p-value.
