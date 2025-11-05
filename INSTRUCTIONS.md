@@ -5,3 +5,5 @@ Begin with Stage 3: post-viewing recall/recognition. Create or update the corres
 
 Follow the guidelines outlined in `METHOD.md`, referencing `PROGRESS.md` for the historical context of the Stage 1–3 pipeline restructuring.
 When modifying existing cells, rerun them (and any downstream dependencies) automatically, then verify the refreshed output files are free of the errors we intended to address.
+
+You can use pylanceRunCOdeSnippet / pylance MCP server
