@@ -1,6 +1,6 @@
 # Project Progress Log
 
-- _Last updated: 2025-10-31_
+- _Last updated: 2025-11-07_
 
 This log captures the current state of analysis so future sessions can resume seamlessly. The immediate focus is reviewing full-cohort Stage 2 results and addressing the logged issues.
 
@@ -83,6 +83,7 @@ The notebook is organized into sections with the active work under **Feature Ext
 
 ### UV Merge Snapshot
 - Combines the Stage 2 survey metrics and Stage 3 post-recognition composites back onto the Stage 1 demographic baseline.
+- Introduced recall coding support: when `results/coded_responses_full.csv` is available, the merge cell pivots `recall_score` and `recall_score_normalised` into `{form}_{title}_Post_Recall_OpenEndedSum` and `{form}_{title}_Post_Recall_OpenEndedNormalised` columns before writing `uv_merged.csv`, logging any unmatched respondents to `results/merge_issues.csv`.
 - Highlights respondent-level discrepancies (duplicates, missing exposures, mismatched form assignments) in `results/merge_issues.csv` while emitting the consolidated UV at `results/uv_merged.csv`.
 - Provides a quick audit path to ensure category-level recognition aggregates align with survey familiarity measures after the latest pipeline simplifications.
 
@@ -93,8 +94,9 @@ The notebook is organized into sections with the active work under **Feature Ext
 
 ## Next Steps
 1. Review `results/uv_stage2_full_issues.csv` to reconcile missing sensor streams or unmapped stimuli (38 entries).
-2. Confirm downstream consumers ingest the new `uv_stage2_full_uv.csv` and coordinate with analytics leads on required feature subsets.
-3. Plan integration of survey/self-report datasets (e.g., `data/Export/.../Survey/`) alongside the Stage 2 metrics for the full UV.
+2. Provide `results/coded_responses_full.csv` (or rerun recall coding export) and execute the updated UV Merge cell so the recall composites land in `results/uv_merged.csv` without new issues.
+3. Confirm downstream consumers ingest the refreshed `uv_stage2_full_uv.csv` and the new Stage 4 exports (`uv_open_ended.csv`, `uv_open_ended_long.csv`) before downstream reporting.
+4. Plan integration of survey/self-report datasets (e.g., `data/Export/.../Survey/`) alongside the Stage 2 metrics for the full UV.
 
 ---
 
@@ -107,6 +109,13 @@ The notebook is organized into sections with the active work under **Feature Ext
 ## Stage 1 Grid Enhancements (2025-11-03)
 - Normalized the headers from `data/grid.csv`, added the respondent-level `Comments` field as `grid_comments`, and preserved it through the Stage 1 merge so contextual notes surface in `results/uv_stage1.csv`.
 - Trimmed comment strings and ensured the new column is available to downstream stages for diagnostics and issue reconciliation.
+
+---
+## Stage 4 Open-Ended Integration (2025-11-07)
+- Folded the Stage 4 assembler (`compile_open_ended.py`) directly into `analysis/assemble_uv.ipynb`, so the open-ended export rebuilds inside the notebook without external scripts.
+- Stage 4 now rereads `survey_questions.csv` and `post_survey_map.csv` on each execution, pulling only open-ended prompts plus the requested extras (`E21`, `Q15`, `Q18`) and omitting non-open-ended items like `WBD1`.
+- The rebuilt pipeline writes the wide output to `results/uv_open_ended.csv`, preserving `survey_open_source_path` and `post_open_source_path` for provenance.
+- Added a companion notebook cell that melts the wide table into `results/uv_open_ended_long.csv` with the schema (`respondent`, `group`, `questionnaire`, `question_code`, `question`, `format`, `title`, `response`) after dropping empty responses.
 
 ---
 Use this log to quickly re-establish context before continuing the analysis or before engaging with Copilot for future feature extraction tasks.
