@@ -1,6 +1,6 @@
 # Project Progress Log
 
-- _Last updated: 2025-11-07_
+- _Last updated: 2025-11-11_
 
 This log captures the current state of analysis so future sessions can resume seamlessly. The immediate focus is reviewing full-cohort Stage 2 results and addressing the logged issues.
 
@@ -81,9 +81,16 @@ The notebook is organized into sections with the active work under **Feature Ext
 - `full_issues` records outstanding data gaps per respondent/stimulus to triage before downstream modeling.
 - `full_uv` merges Stage 1 demographics with Stage 2 features, providing the latest unified view snapshot.
 
+### Stage 5: Recall Scoring Enhancements (2025-11-11)
+- Stage 5.1 (Method 2) now serves as the canonical full-event recall pipeline, exporting `results/recall_coded_responses_full.csv` with `recall_score`, `confidence_score`, and `rationale` columns after batching responses against the long-form event lists in `data/model_answers_events.md`.
+- Stage 5.2 introduces key-moment scoring: long-form respondents are re-evaluated against the short-form event lists, rerunning any missing scores individually. Successful runs write `results/recall_coded_responses_key_moment.csv`, while unresolved rows (after single-response retries) surface in `results/recall_coded_responses_key_moment_errors.csv` for audit.
+- Shared helper functions (prompt builders, event resolution, LLM retry harness, JSON parsing) are now defined once near the start of the Stage 5 section in `analysis/assemble_uv.ipynb`, ensuring both stages stay in sync.
+- The Stage 5.2 execution cell logs event-source metadata (including rerun flags) and prints per-batch coverage so we can trace which respondents leveraged fallback event lists.
+
 ### UV Merge Snapshot
 - Combines the Stage 2 survey metrics and Stage 3 post-recognition composites back onto the Stage 1 demographic baseline.
-- Introduced recall coding support: when `results/coded_responses_full.csv` is available, the merge cell pivots `recall_score` and `recall_score_normalised` into `{form}_{title}_Post_Recall_OpenEndedSum` and `{form}_{title}_Post_Recall_OpenEndedNormalised` columns before writing `uv_merged.csv`, logging any unmatched respondents to `results/merge_issues.csv`.
+- Stage 5.1 recall exports (`results/recall_coded_responses_full.csv`) now pivot into `{Form}_{Title}_Post_Recall_OpenEndedSum` columns during the merge; Stage 5.2 key-moment exports (`results/recall_coded_responses_key_moment.csv`) add `{Form}_{Title}_Post_Recall_OpenEndedKMS` columns so short- vs long-form recall can be compared on the same scale.
+- The merge section reports which recall columns are appended and skips gracefully when either export is missing, preserving backward compatibility with legacy file names.
 - Highlights respondent-level discrepancies (duplicates, missing exposures, mismatched form assignments) in `results/merge_issues.csv` while emitting the consolidated UV at `results/uv_merged.csv`.
 - Provides a quick audit path to ensure category-level recognition aggregates align with survey familiarity measures after the latest pipeline simplifications.
 
@@ -94,9 +101,9 @@ The notebook is organized into sections with the active work under **Feature Ext
 
 ## Next Steps
 1. Review `results/uv_stage2_full_issues.csv` to reconcile missing sensor streams or unmapped stimuli (38 entries).
-2. Provide `results/coded_responses_full.csv` (or rerun recall coding export) and execute the updated UV Merge cell so the recall composites land in `results/uv_merged.csv` without new issues.
-3. Confirm downstream consumers ingest the refreshed `uv_stage2_full_uv.csv` and the new Stage 4 exports (`uv_open_ended.csv`, `uv_open_ended_long.csv`) before downstream reporting.
-4. Plan integration of survey/self-report datasets (e.g., `data/Export/.../Survey/`) alongside the Stage 2 metrics for the full UV.
+2. Execute Stage 5.2 across the full cohort (after sign-off) and confirm `results/recall_coded_responses_key_moment_errors.csv` remains empty; re-run affected respondents if needed.
+3. Rebuild the UV via the updated merge cell and spot-check that both `{Form}_{Title}_Post_Recall_OpenEndedSum` and `{Form}_{Title}_Post_Recall_OpenEndedKMS` columns populate as expected.
+4. Confirm downstream consumers ingest the refreshed `uv_stage2_full_uv.csv`, `uv_stage3.csv`, and both Stage 5 exports before reporting or modeling updates.
 
 ---
 

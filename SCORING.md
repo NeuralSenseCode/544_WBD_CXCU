@@ -88,12 +88,18 @@
 - Survey questions labeled as `open ended` are preserved verbatim and exported to `results/uv_stage3_full_open_ended.csv` alongside respondent metadata.
 - The numeric feature matrix (`results/uv_stage3_full_features.csv`) excludes these free-text columns but retains the engineered metrics described above.
 
-## Recall Scoring (Stage 5 Method 2)
-- Inputs: `results/uv_open_ended_long.csv` from Stage 4 and `data/model_answers_events.md` containing long/short event lists per title.
-- The Stage 5 notebook section batches recall responses (default `BATCH_SIZE = 5`) and calls the OpenAI Responses API (`gpt-4.1`) to assign `recall_score`, `confidence_score`, and a short `rationale` for each row. Model outputs are parsed with strict JSON validation and merged back onto the source dataframe.
-- Results are written to `results/recall_coded_responses.csv` with the columns: `id`, `respondent`, `group`, `questionnaire`, `question_code`, `question`, `form`, `title`, `response`, `recall_score`, `confidence_score`, `rationale`.
-- Setting `BATCH_SIZE` lower (for example, 1) reduces per-request token load and simplifies debugging at the cost of more API calls, longer runtimes, and higher usage fees. Larger batches improve throughput but risk exceeding context limits if responses are lengthy.
-- During the UV merge step the recall file is pivoted into `{Form}_{Title}_Post_Recall_OpenEndedSum`, allowing the new scores to flow into `results/uv_stage3.csv` alongside prior Stage 1-3 metrics.
+## Recall Scoring (Stage 5.1 Full Events & Stage 5.2 Key Moments)
+- **Inputs:** Both stages read `results/uv_open_ended_long_recall.csv` (Stage 4 output) and the canonical event lists in `data/model_answers_events.md`.
+- **Shared harness:** Helper functions for event resolution, prompt construction, JSON parsing, and LLM retries are defined once in `analysis/assemble_uv.ipynb` and reused by both stages.
+- **Stage 5.1 (full-event recall):**
+  - Batches responses (default `BATCH_SIZE = 3`) and evaluates long-form respondents against long-form event lists.
+  - Writes `results/recall_coded_responses_full.csv` containing `id`, `respondent`, `group`, `questionnaire`, `question_code`, `question`, `form`, `title`, `response`, `recall_score`, `confidence_score`, and `rationale`.
+  - UV merge pivots the export into `{Form}_{Title}_Post_Recall_OpenEndedSum` columns.
+- **Stage 5.2 (key-moment recall):**
+  - Reuses the same batching but forces long-form respondents to use short-form event lists so scores are comparable to short-form viewers.
+  - After each batch, any missing or malformed scores are automatically re-run as single-response batches; unresolved rows are recorded (with reason) in `results/recall_coded_responses_key_moment_errors.csv`.
+  - Successful runs emit `results/recall_coded_responses_key_moment.csv`, which the UV merge pivots into `{Form}_{Title}_Post_Recall_OpenEndedKMS` columns.
+- **Operational notes:** Setting `BATCH_SIZE` lower reduces per-request context but increases API calls. The rerun logic makes isolated retries inexpensive while protecting against silent missing scores.
 
 ## Screening Familiarity Integration
 - The screening composites in `results/individual_composite_scores.csv` are merged into the Stage 3 feature matrix after canonicalizing title strings (collapsing spelling variants such as `Abbot` and `Abbott`).
