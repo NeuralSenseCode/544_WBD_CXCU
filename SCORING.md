@@ -88,6 +88,13 @@
 - Survey questions labeled as `open ended` are preserved verbatim and exported to `results/uv_stage3_full_open_ended.csv` alongside respondent metadata.
 - The numeric feature matrix (`results/uv_stage3_full_features.csv`) excludes these free-text columns but retains the engineered metrics described above.
 
+## Recall Scoring (Stage 5 Method 2)
+- Inputs: `results/uv_open_ended_long.csv` from Stage 4 and `data/model_answers_events.md` containing long/short event lists per title.
+- The Stage 5 notebook section batches recall responses (default `BATCH_SIZE = 5`) and calls the OpenAI Responses API (`gpt-4.1`) to assign `recall_score`, `confidence_score`, and a short `rationale` for each row. Model outputs are parsed with strict JSON validation and merged back onto the source dataframe.
+- Results are written to `results/recall_coded_responses.csv` with the columns: `id`, `respondent`, `group`, `questionnaire`, `question_code`, `question`, `form`, `title`, `response`, `recall_score`, `confidence_score`, `rationale`.
+- Setting `BATCH_SIZE` lower (for example, 1) reduces per-request token load and simplifies debugging at the cost of more API calls, longer runtimes, and higher usage fees. Larger batches improve throughput but risk exceeding context limits if responses are lengthy.
+- During the UV merge step the recall file is pivoted into `{Form}_{Title}_Post_Recall_OpenEndedSum`, allowing the new scores to flow into `results/uv_stage3.csv` alongside prior Stage 1-3 metrics.
+
 ## Screening Familiarity Integration
 - The screening composites in `results/individual_composite_scores.csv` are merged into the Stage 3 feature matrix after canonicalizing title strings (collapsing spelling variants such as `Abbot` and `Abbott`).
 - For each respondent, the Stage 1 demographic table supplies the group letter that, combined with `data/stimulus_rename.csv`, determines whether the screening response should be tagged as `Long` or `Short` form.

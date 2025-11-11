@@ -162,50 +162,61 @@
 
 ## Mad Max - Short Form
 
-1. A group of four thieves wearing black nun masks and habits ambush an armored truck in Boston’s North End.
+# Mad Max: Fury Road – Short Form Scene Events
 
-2. The thieves jump out of their vehicle with guns drawn and order the armored car guards to surrender.
+1. On the open desert flats, Imperator Furiosa drives the massive War Rig at high speed.
 
-3. The surprised guards hesitate and freeze in place as the situation escalates.
+2. A swarm of war vehicles from the Citadel pursues the War Rig across the desert.
 
-4. One of the guards is struck (pistol-whipped or shoved) and knocked to the ground by a robber.
+3. Pale War Boys, fanatical soldiers of Immortan Joe, cling to cars and motorcycles as they chase Furiosa.
 
-5. Another guard resists the robbers and is shot and wounded, instantly raising the stakes of the robbery.
+4. The chase becomes intense as engines roar and plumes of sand rise behind the racing vehicles.
 
-6. The thieves quickly grab bags of cash from the armored truck.
+5. Furiosa drives aggressively, trying to outrun and outmaneuver the pursuing War Boys.
 
-7. After securing the money, the robbers pile back into their gray minivan getaway vehicle.
+6. The War Boys begin their attack using explosive-tipped spears thrown at the War Rig and its escorts.
 
-8. The minivan speeds away from the scene, pulling out into the street.
+7. Gunfire erupts as the War Boys fire weapons in an attempt to disable or stop the War Rig.
 
-9. A police patrol car immediately notices the fleeing van and begins to pursue it with lights and siren blaring.
+8. Some War Boys use long pole-mounted rigs to swing themselves from their vehicles onto the moving tanker.
 
-10. A high-speed chase ensues through the cramped streets of the North End as the van weaves around parked cars and barrels down narrow lanes.
+9. Furiosa fights back by swerving the War Rig to shake off attackers and firing her own weapons at the pursuing vehicles.
 
-11. One thief leans out of the van’s window with an assault rifle and fires bursts of gunfire toward the pursuing police car to keep it at a distance.
+10. In the midst of the chaos, one zealous War Boy prepares for a suicide attack to earn “glory” in death.
 
-12. Despite the chaos of the chase, the thieves follow a prearranged plan to escape.
+11. This War Boy jumps from his vehicle while carrying a lit explosive.
 
-13. The getaway van suddenly turns into a side alley under a bridge, where a second car has been hidden in advance.
+12. He sacrifices himself by detonating the bomb, blowing up an enemy vehicle in a fiery explosion that other War Boys cheer.
 
-14. In one continuous, fluid sequence, the thieves abandon the gray minivan and scramble into the waiting backup vehicle.
+13. As the running battle continues, the convoy heads toward a gigantic sandstorm looming on the horizon.
 
-15. Still wearing their eerie nun masks and habits, the thieves briefly lock eyes with a lone police officer on a nearby street.
+14. Instead of avoiding the storm, Furiosa maintains her speed and drives the War Rig directly toward the churning wall of dust.
 
-16. The officer sees that the robbers are heavily armed with automatic weapons and chooses not to engage them, allowing them to drive past rather than risk a suicidal confrontation.
+15. The War Rig plunges into the sandstorm, and the pursuing vehicles follow into the violent, swirling chaos.
 
-17. The thieves set about destroying evidence by preparing to burn the original gray minivan.
+16. Inside the storm, deafening winds, flying debris, and lightning strikes begin to rip apart vehicles.
 
-18. As they drive away in the new car, they ignite the abandoned van using gasoline and a thrown lighter.
+17. Most of the pursuing War Boys fall back or are destroyed, unable to handle the extreme conditions in the storm.
 
-19. The gray minivan erupts into flames, sending thick smoke billowing into the air and serving as a fiery decoy.
+18. One crazed War Boy, Nux, continues the pursuit inside the storm, refusing to give up the chase.
 
-20. Police units converge on the burning vehicle, focusing their attention and resources on the flaming van.
+19. Max, still chained to the front of Nux’s car as a human “blood bag,” is dragged along as a hood ornament.
 
-21. While law enforcement is distracted by the decoy, the thieves have already escaped in the second car and vanish into the city streets.
+20. In the storm’s eerie, glowing light, Nux attempts a suicide attack by trying to ram his car into the War Rig and detonate it like a bomb.
 
-22. The scene concludes with the robbers successfully evading capture, leaving only the scorched remains of the van and a city full of unanswered questions about their identities and next move.
+21. At the critical moment, Max manages to break free enough to interfere with Nux’s plan.
 
+22. Max struggles physically with Nux inside the car, preventing him from completing the suicide collision.
+
+23. Furiosa uses the distraction to maneuver the War Rig away from Nux’s out-of-control vehicle.
+
+24. Nux’s car loses control in the violent winds and begins to tumble end-over-end inside the storm.
+
+25. The tumbling vehicle is battered by the gale and is ultimately consumed by the storm, erupting in flames off-screen.
+
+26. Furiosa’s War Rig disappears deeper into the dust and chaos of the sandstorm.
+
+27. The remaining pursuers are scattered or destroyed, and Furiosa gains a temporary escape from Immortan Joe’s forces.
 
 ## The Town Long Form
 
