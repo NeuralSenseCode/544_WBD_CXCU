@@ -1,0 +1,13 @@
+{
+  "respondents_in_long": 83,
+  "respondents_in_wide": 83,
+  "respondent_sets_match": true,
+  "response_rows": 7553,
+  "expected_response_slots": 7553,
+  "duplicate_response_pairs": 0,
+  "non_null_responses": 2478,
+  "empty_responses": 5075,
+  "score_rows": 10814,
+  "target_column_coverage": true,
+  "issues_flagged": 91
+}

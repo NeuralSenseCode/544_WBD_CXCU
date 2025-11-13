@@ -1,6 +1,6 @@
 # Project Progress Log
 
-- _Last updated: 2025-11-11_
+- _Last updated: 2025-11-13_
 
 This log captures the current state of analysis so future sessions can resume seamlessly. The immediate focus is reviewing full-cohort Stage 2 results and addressing the logged issues.
 
@@ -57,14 +57,15 @@ The notebook is organized into sections with the active work under **Feature Ext
 - Deduplicate to one numeric survey record per respondent, split open-ended responses into `survey_open_ended`, and left-join the engineered metrics onto the Stage 1 baseline to produce `results/uv_stage2_full_uv.csv`, `results/uv_stage2_full_features.csv`, and `results/uv_stage2_full_open_ended.csv` accompanied by `results/uv_stage2_full_issues.csv` for audit.
 - Integrate screening familiarity composites from `results/individual_composite_scores.csv`, canonicalizing title strings and inferring presentation form per respondent before emitting `{form}_{title}_Screening_Familiarity_{question_code}` columns.
 
-### Sensor Feature Archive (Legacy Stage 2)
-- Finalized helper stack: `read_imotions`, `prepare_stimulus_segment`, `compute_sensor_features`, and the orchestration wrapper `run_sensor_feature_pipeline`.
-- The pipeline validates sensor coverage per respondent, auto-detects EEG alias columns, handles long-form key-moment windowing, and computes FAC/EEG/GSR/ET metrics with unified naming.
-- Executed `run_sensor_feature_pipeline()` across all respondents (83 total); results archived at:
-  - `results/uv_stage2_full_features.csv`
-  - `results/uv_stage2_full_uv.csv`
-  - `results/uv_stage2_full_issues.csv` (38 rows documenting missing sensors, unmapped stimuli, or empty windows).
-- Uses timestamped fallback filenames and manual `gc.collect()` guards to keep batch processing stable; retained here for reference should sensor features be reintegrated later.
+### Biometric Stage 2 Sensor Features (2025-11-13)
+- Re-ran `run_sensor_feature_pipeline(stage1_df=uv_stage1, export_label="uv_biometric_stage2")` inside `analysis/assemble_uv_biometric.ipynb` after reloading the vetted Stage 1 roster.
+- Pipeline validates sensor coverage, resolves EEG aliases, windows long-form stimuli to key-moment segments, and computes the FAC/EEG/GSR/ET summaries with the shared helper stack.
+- Exported biometric-specific artifacts:
+  - `results/uv_biometric_stage2_features.csv`
+  - `results/uv_biometric_stage2_uv.csv`
+  - `results/uv_biometric_stage2_issues_20251113131859.csv` (permission-safe fallback while the baseline filename was locked; contains 34 coverage/windowing logs).
+- Merged the sensor feature matrix with the self-report UV, yielding `results/uv_biometric_full.csv` (83 respondents, 1,075 biometric columns appended, no respondents missing every biometric metric).
+- Retained `gc.collect()` guards so multiple notebook runs do not exhaust memory.
 
 ### Stage 3: Post Questionnaire Recognition
 - Stage 3 now ingests the post-viewing questionnaire exports under `data/Post/`, collapsing duplicate headers and aligning responses to `post_survey_map.csv` via the shared `question_code` column.
@@ -77,9 +78,9 @@ The notebook is organized into sections with the active work under **Feature Ext
 - Issues are surfaced whenever binary or confidence responses are missing, when forms must fall back to the group stimulus map, or when respondent groups are absent from both Stage 1 and the filename.
 
 ### Notebook Outputs
-- `full_features` dataframe currently holds 1,076 Stage 2 feature columns aligned to 83 respondents.
-- `full_issues` records outstanding data gaps per respondent/stimulus to triage before downstream modeling.
-- `full_uv` merges Stage 1 demographics with Stage 2 features, providing the latest unified view snapshot.
+- `biometric_features` now contains 1,076 biometric summary columns across 83 respondents following the Stage 2 rerun.
+- `biometric_issues` logs 34 outstanding data gaps (sensor coverage, unmapped stimuli, empty windowing) saved with the timestamped filename noted above.
+- `biometric_uv` captures the Stage 1 roster joined to the biometric features, while `uv_biometric_full` extends the self-report UV with the same feature set for downstream analysis.
 
 ### Stage 5: Recall Scoring Enhancements (2025-11-11)
 - Stage 5.1 (Method 2) now serves as the canonical full-event recall pipeline, exporting `results/recall_coded_responses_full.csv` with `recall_score`, `confidence_score`, and `rationale` columns after batching responses against the long-form event lists in `data/model_answers_events.md`.
@@ -100,10 +101,10 @@ The notebook is organized into sections with the active work under **Feature Ext
 - `full_features`, `full_uv`, and `full_issues` persist in memory for quick inspection during issue resolution.
 
 ## Next Steps
-1. Review `results/uv_stage2_full_issues.csv` to reconcile missing sensor streams or unmapped stimuli (38 entries).
-2. Execute Stage 5.2 across the full cohort (after sign-off) and confirm `results/recall_coded_responses_key_moment_errors.csv` remains empty; re-run affected respondents if needed.
-3. Rebuild the UV via the updated merge cell and spot-check that both `{Form}_{Title}_Post_Recall_OpenEndedSum` and `{Form}_{Title}_Post_Recall_OpenEndedKMS` columns populate as expected.
-4. Confirm downstream consumers ingest the refreshed `uv_stage2_full_uv.csv`, `uv_stage3.csv`, and both Stage 5 exports before reporting or modeling updates.
+1. Review `results/uv_biometric_stage2_issues_20251113131859.csv` and resolve missing sensor streams or unmapped stimuli before the next biometric rerun.
+2. Spot-check `results/uv_biometric_stage2_features.csv` and `results/uv_biometric_full.csv` to confirm key metrics (e.g., FAC AUC, EEG means) align with expected magnitudes per title/form.
+3. Execute Stage 5.2 across the full cohort (after sign-off) and confirm `results/recall_coded_responses_key_moment_errors.csv` remains empty; re-run affected respondents if needed.
+4. Rebuild the UV via the updated merge cell and validate `{Form}_{Title}_Post_Recall_OpenEndedSum` and `{Form}_{Title}_Post_Recall_OpenEndedKMS` population alongside the new biometric columns for downstream consumers.
 
 ---
 
