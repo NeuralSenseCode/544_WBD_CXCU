@@ -1,6 +1,6 @@
 # Project Progress Log
 
-- _Last updated: 2025-11-13_
+- _Last updated: 2025-11-20_
 
 This log captures the current state of analysis so future sessions can resume seamlessly. The immediate focus is reviewing full-cohort Stage 2 results and addressing the logged issues.
 
@@ -67,6 +67,35 @@ The notebook is organized into sections with the active work under **Feature Ext
 - Merged the sensor feature matrix with the self-report UV, yielding `results/uv_biometric_full.csv` (83 respondents, 1,075 biometric columns appended, no respondents missing every biometric metric).
 - Retained `gc.collect()` guards so multiple notebook runs do not exhaust memory.
 
+### Biometric Notebook Refinements (2025-11-14)
+- Added respondent-level outlier tracking to the Part 1 summaries in `analysis/analysis_biometric.ipynb`, surfacing counts in both the tables and narratives for EEG, ET, FAC, and GSR.
+- Propagated the same outlier sets into the Part 2 mixed-effects workflow so model inputs exclude flagged respondents, and the resulting tables report the number of rows and unique respondents removed.
+- Updated the aggregated mixed-effects results assembler to include `respondent_outliers_removed` and `rows_removed` columns for all sensors, matching downstream reporting expectations.
+- Recorded the ground-truth outlier identifiers in `wbdlib` helper structures to support future diagnostics or appendix reporting.
+
+### Biometric Mixed-Effects Consolidation (2025-11-17)
+- Refactored `analysis/analysis_biometric.ipynb` mixed-effects cells into a reusable helper that standardises outlier exclusion, plotting, and summary table generation across sensors.
+- Auto-generated per-metric Markdown narratives summarising coefficients, p-values, sample sizes, and outlier counts for every mixed-effects result to satisfy Step 8 requirements.
+- Centralised Part 1 plotting through a shared helper leveraging `build_format_annotation`, ensuring palettes, annotations, and subplot styling match the self-report notebook (Step 9).
+- Harmonised the cross-sensor aggregation cell to consume the helper outputs, reducing duplication while preserving respondent-level removal metadata.
+- Added sensor-level wrap-up Markdown blocks and an overall biometric conclusion section that pull directly from the Part 1/Part 2 structures, completing Step 10 of the task plan.
+- Executed `analysis/analysis_biometric.ipynb` end-to-end after the helper refactor; run completed without warnings or errors, closing Step 11 and confirming reproducibility.
+
+### Biometric Hypothesis Workflow Replication (2025-11-20)
+- Completed Task `tasks/18-11-25 Attempt 2/TASK_PLAN.md` by mirroring the self-report hypothesis-testing structure for biometric metrics in `analysis/analysis_biometric.ipynb` (renamed from `analysis_attempt2.ipynb`).
+- Catalogued required helpers from `analysis_self-report.ipynb`, scaffolded the biometric notebook with matching styling, and loaded `results/uv_biometric_long.csv` to inventory 62 sensor/metric/stat combinations across 83 respondents.
+- Added reusable helpers for per-form IQR outlier removal, paired t-tests, mixed-effects models (title random intercept), and shared plotting routines so downstream updates live in one place.
+- Implemented driver functions (`run_metric_analysis`, `analyze_sensor`) that iterate each sensor’s metric/stat combinations, emit paired-test text, mixed-model summaries, annotated plots, and tabular outputs while logging removed outliers.
+- Inserted a sensor loop section so running a single cell executes the full workflow for every sensor, aligning narratives, figures, and statistics with the established self-report formatting.
+
+### Time-Series Notebook Completion (2025-11-20)
+- Finalised Task `tasks/13-11-25 Time series/TASK_PLAN.md` by enriching `analysis/time_series.ipynb` with aggregation, visualisation, and export stages built on the promoted `wbdlib` helpers.
+- Tightened respondent-level processing: limited sensor CSV loads to the needed columns, coerced numerics, adjusted bin coverage heuristics, and cached per-respondent bins plus diagnostics with empty issues logs.
+- Added `aggregate_binned_time_series` to `wbdlib`, enabling cohort means, confidence bands, and contributor counts; notebook now writes aggregated short-form, long-form, and all-group caches under `results/time_series_cache/` with contributor summaries.
+- Created overlay plotting helpers that mirror self-report styling (Century Gothic, COLOR_MAP, consistent axes) and confirmed long vs short traces represent all respondents via contributor audits.
+- Implemented preview and batch export cells that generate every metric/title combination PNG to `results/time_series_cache/plots`, with console confirmations of file counts.
+- Documented outstanding diagnostics (bin coverage QA) for a future pass while leaving plots and aggregated frames ready for reporting.
+
 ### Stage 3: Post Questionnaire Recognition
 - Stage 3 now ingests the post-viewing questionnaire exports under `data/Post/`, collapsing duplicate headers and aligning responses to `post_survey_map.csv` via the shared `question_code` column.
 - `uv_stage1.csv` is reloaded as the ground truth for respondent group assignment and Short/Long form exposure titles before any post data is parsed.
@@ -101,10 +130,10 @@ The notebook is organized into sections with the active work under **Feature Ext
 - `full_features`, `full_uv`, and `full_issues` persist in memory for quick inspection during issue resolution.
 
 ## Next Steps
-1. Review `results/uv_biometric_stage2_issues_20251113131859.csv` and resolve missing sensor streams or unmapped stimuli before the next biometric rerun.
-2. Spot-check `results/uv_biometric_stage2_features.csv` and `results/uv_biometric_full.csv` to confirm key metrics (e.g., FAC AUC, EEG means) align with expected magnitudes per title/form.
-3. Execute Stage 5.2 across the full cohort (after sign-off) and confirm `results/recall_coded_responses_key_moment_errors.csv` remains empty; re-run affected respondents if needed.
-4. Rebuild the UV via the updated merge cell and validate `{Form}_{Title}_Post_Recall_OpenEndedSum` and `{Form}_{Title}_Post_Recall_OpenEndedKMS` population alongside the new biometric columns for downstream consumers.
+1. Draft diagnostics section in `analysis/time_series.ipynb` to surface bins below coverage thresholds and corroborate the aggregated contributor counts.
+2. QA the biometric hypothesis notebook outputs against the self-report benchmarks (sample effect sizes, narrative phrasing) before distributing summaries.
+3. Review `results/uv_biometric_stage2_issues_20251113131859.csv` for any remaining sensor gaps ahead of the next pipeline rerun.
+4. Update downstream documentation (e.g., task folders) with pointers to the new time-series plots and biometric analysis automation for stakeholder handoff.
 
 ---
 

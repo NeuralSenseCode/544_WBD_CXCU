@@ -1,0 +1,23 @@
+## Objectives
+- Replicate the hypothesis-testing workflow from `analysis_self-report.ipynb` for biometric metrics stored in `results/uv_biometric_long.csv`.
+- Produce automated per-sensor analyses covering within-subject comparisons and mixed-effects modelling by title, with visuals and summaries matching the established formatting.
+
+## Detailed Plan
+1. **Review reference assets**: Scan `analysis_self-report.ipynb` to catalogue helper utilities (formatting, summary printing, plotting styles, statistical routines) that must be mirrored in the new notebook, noting any dependencies (e.g., `COLOR_MAP`, `print_long_short_summary`, mixed-model setup).
+2. **Profile biometric dataset**: Load `results/uv_biometric_long.csv`, verify column schema (`respondent_id`, `form`, `title`, `sensor`, `metric`, `stat`, `value`), and enumerate the available sensor / metric / stat combinations to drive the looping structure.
+3. **Set up notebook preamble**: In `analysis_attempt2.ipynb`, add sections for imports, configuration (plot style, colour map, formatting helpers), data loading, and reusable helper functions for:
+   - IQR-based outlier removal performed separately within each `form`.
+   - Paired (within-subject) data preparation and two-sided paired t-tests with summary string construction.
+   - Mixed-effects modelling with `title` as random intercept and post-hoc title-level summaries + text output matching the reference style.
+   - Common plotting routines that emit the annotated box/strip plots and mean bar charts with consistent layout and annotations.
+4. **Implement analysis driver**: Build a parameterised function that accepts a `sensor` name, iterates through its metric/stat combinations, and for each combination orchestrates Part 1 and Part 2 (data filtering, outlier handling, testing, plotting, summary tables, one-liners). Ensure graceful handling of insufficient data and propagate counts of removed outliers.
+5. **Create sensor sections**: For every distinct `sensor` in the dataset, add a markdown header and a single execution cell that invokes the driver function (or a short loop) to run the full analysis for that sensor while reusing the shared helpers.
+6. **Quality checks**: Dry-run the notebook sections (or representative subsets) to confirm statistical outputs, annotation strings, and figure styles align with the reference workflow; adjust helper defaults as needed to maintain consistent presentation.
+7. **Documentation & reuse notes**: Add brief inline comments where logic is non-obvious (e.g., paired sample alignment, post-hoc summary assembly) and ensure the notebook cells are organised to support future extension (such as parameter tweaks or sensor filtering).
+
+### Progress Notes
+- **Step 1 complete**: Confirmed `analysis_self-report.ipynb` relies on `matplotlib`, `seaborn`, `statsmodels`, and `scipy.stats` alongside shared helpers from `wbdlib` such as `COLOR_MAP`, `format_p_value`, `print_long_short_summary`, `register_boxplot_with_means`, and `to_percent_table`. Plot defaults (`Century Gothic`, 8×4 figures, font size 10) and the mixed-effects workflow (`smf.mixedlm` with manual z/p annotation plus title-level post hocs) will be mirrored to keep outputs consistent.
+- **Step 2 complete**: Profiled `results/uv_biometric_long.csv`; dataset contains 9,576 rows across 83 respondents, two forms, and three titles. Sensors span `FAC`, `GSR`, `ET`, and `EEG`, yielding 62 distinct sensor/metric/stat combinations (e.g., EEG high/low engagement mean & AUC, ET fixation metrics, FAC adaptive engagement). This informs the loop structure and validates the expected schema (`respondent_id`, `form`, `title`, `sensor`, `metric`, `stat`, `value`).
+- **Step 3 complete**: Scaffolded `analysis_attempt2.ipynb` with setup cells that mirror the reference environment (shared imports, plotting defaults, data load). Added reusable helpers for per-form IQR filtering, paired t-tests, mixed-model fitting, per-title comparisons, annotation builders, and plotting routines so subsequent steps can call a single driver per sensor.
+- **Step 4 complete**: Implemented `run_metric_analysis` and `analyze_sensor` helpers that orchestrate the full workflow for each sensor/metric/stat combo—handling IQR filtering, paired tests, mixed models, annotated visuals, tabular summaries, and narrative one-liners. The notebook now needs only sensor-level driver cells to execute the full analysis.
+- **Step 5 complete**: Appended a `Sensor Analyses` section with a loop over each sensor in `biometric_long`, calling `analyze_sensor` and providing clear print headers so every sensor’s metrics run in sequence within the notebook (reinstated after manual file restoration).

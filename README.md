@@ -3,11 +3,11 @@
 ## Project Overview
 This is a neural data analysis project for WBD CXCU.
 ### Study Description
-In this study, individuals were shown content that was either long-form or short-form. They were then asked questions regarding their expereince. 
+In this study, individuals were shown content that was either long-form or short-form. They were then asked questions regarding their experience.
 
-EEG, Eye-tracking, Facial coding and GSR data was mesured throuhgout the individuals experience. 
+EEG, eye-tracking, facial coding, and GSR data were measured throughout the individuals' experience.
 
-Each individual was assigned into a group, ranging A-F. Each group was shown a unique combiantion of longform and short form stimuli.
+Each individual was assigned into a group, ranging A–F. Each group was shown a unique combination of long-form and short-form stimuli.
 
 ### Data description
 Data was collected and exported from imotions. Data is organised into a folder per group. Within each folder, there are two analyses. The first one has sensor data exports, and the second has merged survey responses.
@@ -25,6 +25,9 @@ Batch exports of text responses, with a row per respondent and a column per ques
 - `544_WBD_CXCU.py` - Main analysis script
 - `requirements.txt` - Python dependencies
 - `analysis/assemble_uv.ipynb` - Notebook assembling the unified view and feature extraction stages
+- `analysis/analysis_self-report.ipynb` - Hypothesis testing notebook for survey composites
+- `analysis/analysis_biometric.ipynb` - Biometric hypothesis-testing workflow mirroring the self-report analyses (renamed from `analysis_attempt2.ipynb`)
+- `analysis/time_series.ipynb` - Time-series aggregation and visualisation notebook for sensor traces
 - `data/` - Data files directory
 - `results/` - Analysis results directory
 
@@ -39,6 +42,16 @@ Batch exports of text responses, with a row per respondent and a column per ques
 2. Place data files in the `data/` directory
 3. Run the analysis script: `python 544_WBD_CXCU.py`
 
+## Recent Deliverables
+- Automated biometric hypothesis-testing notebook (`analysis/analysis_biometric.ipynb`, formerly `analysis_attempt2.ipynb`) that reuses shared helpers for outlier handling, paired/mixed-effects statistics, and annotated visuals across all sensors.
+- Time-series pipeline completion with respondent-level caches, cohort aggregations, and batch PNG exports under `results/time_series_cache/`.
+- Updated task logs (`PROGRESS.md`, `ANALYSIS PROGRESS.md`) reflecting the biometric replication and time-series outcomes.
+
 ## Project Status
 - Created: September 26, 2025
 - Status: In Development
+
+## Next steps
+- Add diagnostics section to `analysis/time_series.ipynb` to surface low-coverage bins and confirm contributor counts.
+- QA the biometric hypothesis notebook outputs against the self-report baselines prior to stakeholder circulation.
+- Review `results/uv_biometric_stage2_issues_20251113131859.csv` to resolve remaining sensor coverage gaps ahead of the next rerun.

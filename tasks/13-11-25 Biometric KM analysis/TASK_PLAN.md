@@ -8,11 +8,27 @@ Numbered Task Plan:
 4. Implement reusable data preparation helpers to reshape the biometric dataset per sensor and metric (long-form tables containing respondent, title, form, metric value, and stat type) while preserving consistency with prior notebook conventions, prioritising existing utilities from `analysis/wbdlib`; introduce or modify helpers in that library only when strictly necessary and backed by docstrings.
 5. Audit `{form}_{title}_duration` fields in `results/uv_biometric_full.csv` to confirm Long and Short segments differ by no more than 1–2 seconds per title, ensuring comparable measurement windows once the notebook structure is in place.
 6. For each sensor, create a dedicated section in the notebook with subsections per metric, matching heading levels, markdown styling, and color palettes used previously.
-7. Within each sensor-metric subsection Part 1, compute respondent-level averages across Long and Short forms for every stat, derive Long–Short differences, perform one-tailed paired t-tests (expecting Long > Short), and render tables plus narrative summaries (means, t statistics, p-values) in the established format.
+7. Within each sensor-metric subsection Part 1, use `wbdlib.build_within_subject_table` to generate respondent-level Long/Short pivots, derive differences, apply the one-tailed paired t-test helper, and render tables plus narrative summaries (means, t statistics, p-values) mirroring the Hypothesis 1 format.
 8. Within each sensor-metric subsection Part 2, fit mixed-effects models (`title` as random intercept, `form_long` as fixed effect) using the reshaped data, extract coefficient estimates and confidence intervals, and replicate the model summary presentation style from Hypothesis 1, including text interpretation.
 9. Generate visualizations for both Parts: paired plots for within-subject comparisons and title-level distributions with overlaid model predictions, ensuring the aesthetics (fonts, sizing, color schemes) match `analysis_self-report.ipynb` outputs.
 10. Compile section-level summary statements that highlight mean Long and Short values (no normalized percentages), key statistical outcomes, and any notable sensor-specific insights, mirroring the one-liner structure from the reference notebook.
 11. Validate notebook reproducibility by running all cells sequentially, resolving warnings or errors, and documenting any limitations or follow-ups in `tasks/13-11-25 Biometric KM analysis` for future reference.
+
+Status Snapshot (2025-11-14):
+- Step 1: Completed on 2025-11-13; no further action required.
+- Step 2: Completed on 2025-11-13; data audit verified target titles and naming pattern.
+- Step 3: Completed on 2025-11-13; notebook skeleton established.
+- Step 4: Completed on 2025-11-13; helpers live in `analysis/wbdlib/biometric.py` and exported.
+- Step 5: Completed on 2025-11-13; duration gaps confirmed within tolerance.
+- Step 6: Completed on 2025-11-14; notebook markdown now mirrors Hypothesis 1 headings, phrasing, and sensor intros.
+- Step 7: Completed on 2025-11-14; Part 1 tables and narratives render for EEG, ET, FAC, and GSR with outlier counts propagated from the helper stack.
+- Step 8: Completed on 2025-11-17; consolidated the mixed-effects workflow into a reusable helper, injected respondent-level outlier counts into every summary, and added per-metric narrative markdown generated alongside the tables.
+- Step 9: Completed on 2025-11-17; standardized the Part 1/Part 2 plotting helpers around `FORMAT_PALETTE`, restored annotation generation via the shared builder, and aligned legends/padding to the self-report style.
+- Step 10: Completed on 2025-11-17; sensor wrap-up markdown and the overall cross-sensor conclusion section now auto-generate from the Part 1/Part 2 outputs using the new helper functions.
+- Step 11: Completed on 2025-11-17; notebook executes cleanly end-to-end with no warnings observed during the validation run.
+
+Outstanding Actions Before Closure:
+- None — task plan complete pending final review or sign-off.
 
 Notebook Outline (Step 3 Draft):
 1. Markdown title and introduction summarising biometric hypothesis focus and referencing EEG, ET, FAC, and GSR sensors.
@@ -53,4 +69,11 @@ Progress:
 - 2025-11-13: Completed Step 4 by introducing reusable helpers in `analysis/wbdlib/biometric.py` for parsing headers, reshaping to tidy form, summarising coverage, and auditing duration gaps; exposed them via `wbdlib.__init__` for notebook use.
 - 2025-11-13: Completed Step 5 by auditing `{form}_{title}_duration` columns through `wbdlib.get_duration_differences`; confirmed Long vs Short windows differ by ≤1.48s (Mad Max ≈1.48s, The Town ≈1.20s, Abbott Elementary ≈0.47s), satisfying the comparability check.
 - 2025-11-13: Completed Step 6 by inventorying EEG/ET/FAC/GSR metric-stat combinations for target titles and drafting per-sensor section blueprints to mirror Hypothesis 1 structure in the forthcoming notebook.
-- 2025-11-13: Completed Step 5 by auditing `{form}_{title}_duration` columns through `wbdlib.get_duration_differences`; confirmed Long vs Short windows differ by ≤1.48s (Mad Max ≈1.48s, The Town ≈1.20s, Abbott Elementary ≈0.47s), satisfying the comparability check.
+- 2025-11-13: Advanced Step 7 by implementing within-subject summary helpers in `analysis/wbdlib/biometric.py`, providing `build_within_subject_table` and `compute_within_subject_summary` for reusable Part 1 analyses across sensor metrics.
+- 2025-11-13: Advanced Step 7 by wiring the new helpers into `analysis/analysis_biometric.ipynb`, generating the first EEG Part 1 table and narrative for the Distraction metric to validate the workflow.
+- 2025-11-14: Advanced Steps 6–9 by updating `analysis/wbdlib/plotting.py` for self-report styling, adding annotation hooks, and iterating on per-sensor plotting loops in `analysis/analysis_biometric.ipynb`; automation to inject the reusable annotation helper failed, leaving notebook visuals partially aligned and requiring manual cleanup.
+- 2025-11-14: Completed Step 6 refinements; `analysis/analysis_biometric.ipynb` now uses the Hypothesis 1 introduction language and sensor section markdown for stylistic parity.
+- 2025-11-14: Completed Step 7 by propagating outlier tracking into the Part 1 summaries for all sensors and wiring those exclusions into the Part 2 mixed-effects setup, exposing removal counts throughout the notebook and aggregated tables.
+- 2025-11-17: Completed Steps 8 and 9 by refactoring mixed-effects analysis into reusable helpers, generating per-metric markdown summaries, and standardising all Part 1/Part 2 visuals around the shared formatting helpers.
+- 2025-11-17: Completed Step 10 by generating sensor-level wrap-up Markdown plus an overall cross-sensor conclusion fed directly from the Part 1/Part 2 outputs.
+- 2025-11-17: Completed Step 11 by running `analysis/analysis_biometric.ipynb` sequentially without errors or warnings; no follow-up actions required.

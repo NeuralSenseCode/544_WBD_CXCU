@@ -126,11 +126,59 @@ def boxplot_with_means(
     hue = kwargs.get("hue")
     order = kwargs.get("order")
     hue_order = kwargs.get("hue_order")
+    annotation = kwargs.pop("annotation", None)
+    palette = kwargs.get("palette")
+    color_sequence: list[str] | None = None
+    if (
+        palette is not None
+        and hue is None
+        and x is not None
+        and isinstance(data, pd.DataFrame)
+        and x in data.columns
+    ):
+        if isinstance(palette, Mapping):
+            levels = (
+                list(order)
+                if order is not None
+                else list(dict.fromkeys(data[x].dropna()))
+            )
+            if levels:
+                fallback = next(iter(palette.values()), "#4c72b0")
+                color_sequence = [
+                    palette.get(level, fallback)
+                    for level in levels
+                ]
+        elif isinstance(palette, (list, tuple)):
+            color_sequence = list(palette)
+        if color_sequence:
+            # Remove palette kwarg to avoid seaborn hue warning
+            kwargs.pop("palette", None)
     kwargs["showmeans"] = True
     if "meanprops" not in kwargs:
         kwargs["meanprops"] = BOXPLOT_MEANPROPS
     ax = _ORIGINAL_SNS_BOXPLOT(*args, **kwargs)
     target_ax = kwargs.get("ax", ax)
+    if color_sequence:
+        # Apply palette manually to keep colors consistent
+        boxes = [
+            artist
+            for artist in target_ax.artists
+            if isinstance(artist, patches.PathPatch)
+        ]
+        if len(boxes) < len(color_sequence):
+            extra_boxes = [
+                child
+                for child in target_ax.get_children()
+                if isinstance(child, patches.PathPatch)
+            ]
+            boxes = (
+                extra_boxes[-len(color_sequence):]
+                if len(extra_boxes) >= len(color_sequence)
+                else boxes
+            )
+        for patch, color in zip(boxes, color_sequence):
+            patch.set_facecolor(color)
+            patch.set_edgecolor("#222")
     if annotate and data is not None and x is not None and y is not None:
         annotate_params = {
             "ax": target_ax,
@@ -145,6 +193,23 @@ def boxplot_with_means(
         if annotate_kwargs:
             annotate_params.update(dict(annotate_kwargs))
         annotate_boxplot_means(**annotate_params)
+    # Draw a box around the plot (all spines visible)
+    for spine in ["top", "right", "bottom", "left"]:
+        ax.spines[spine].set_visible(True)
+        ax.spines[spine].set_color("#222")
+        ax.spines[spine].set_linewidth(1.2)
+    # Optionally print annotation below plot
+    if annotation:
+        ax.text(
+            0.0,
+            -0.22,
+            annotation,
+            transform=ax.transAxes,
+            ha="left",
+            va="top",
+            fontsize=9,
+        )
+    target_ax.figure.subplots_adjust(bottom=0.25, right=0.95)
     return ax
 
 
@@ -155,9 +220,88 @@ def register_boxplot_with_means() -> None:
     boxplot_with_means.__copilot_original__ = _ORIGINAL_SNS_BOXPLOT
 
 
+def bargraph_with_errors(
+    data: pd.DataFrame,
+    x: str,
+    y: str,
+    ax=None,
+    palette=None,
+    capsize=6,
+    alpha=0.85,
+    ylabel=None,
+    title=None,
+    **kwargs,
+) -> Any:
+    """Bar graph of means with standard error bars."""
+    import matplotlib.pyplot as plt
+    from scipy.stats import sem
+    # Enforce self-report style globally for this plot
+    plt.rcParams['font.family'] = "Century Gothic"
+    plt.rcParams['figure.figsize'] = [8, 4]
+    plt.rcParams.update({'font.size': 10})
+
+    if ax is None:
+        ax = plt.subplots()[1]
+    annotation = kwargs.pop("annotation", None)
+    means = data.groupby(x, observed=True)[y].mean()
+    errors = data.groupby(x, observed=True)[y].apply(sem)
+    color_list = None
+    if palette:
+        color_list = [palette.get(f, "#888") for f in means.index]
+    means.plot(
+        kind="bar",
+        yerr=errors,
+        ax=ax,
+        color=color_list,
+        capsize=capsize,
+        alpha=alpha,
+    )
+    ax.tick_params(axis="x", labelrotation=0)
+    if ylabel:
+        ax.set_ylabel(ylabel)
+    if title:
+        ax.set_title(title)
+    ax.set_xlabel(x.capitalize())
+    for spine in ["top", "right", "bottom", "left"]:
+        ax.spines[spine].set_visible(True)
+        ax.spines[spine].set_color("#222")
+        ax.spines[spine].set_linewidth(1.2)
+    ax.grid(axis="y", linestyle="--", alpha=0.3)
+    # Annotate means above bars (optional, matches boxplot_with_means style)
+    for idx, val in enumerate(means):
+        if np.isfinite(val):
+            ax.text(
+                idx,
+                val
+                + errors.iloc[idx]
+                + 0.02 * (ax.get_ylim()[1] - ax.get_ylim()[0]),
+                f"{val:.2f}",
+                ha="center",
+                va="bottom",
+                fontsize=9,
+                color="#2f2f2f",
+                fontweight="bold",
+            )
+    # Optionally print annotation below plot
+    if annotation:
+        ax.text(
+            0.0,
+            -0.22,
+            annotation,
+            transform=ax.transAxes,
+            ha="left",
+            va="top",
+            fontsize=9,
+        )
+    ax.figure.subplots_adjust(bottom=0.25, right=0.95)
+    plt.tight_layout()
+    return ax
+
+
 __all__ = [
     "annotate_boxplot_means",
     "boxplot_with_means",
     "register_boxplot_with_means",
+    "bargraph_with_errors",
     "BOXPLOT_MEANPROPS",
 ]

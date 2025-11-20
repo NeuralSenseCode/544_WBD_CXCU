@@ -47,6 +47,14 @@ def format_percent(value: object, decimals: int = 0) -> str:
     return f"{numeric * 100:.{decimals}f}%"
 
 
+def format_value(value: object, decimals: int = 0) -> str:
+    """Return a percentage string for a 0-1 scaled value."""
+    numeric = _coerce_finite_float(value)
+    if numeric is None:
+        return "NA"
+    return f"{numeric:.{decimals}f}"
+
+
 def percentage_point_phrase(
     long_value: object,
     short_value: object,
@@ -60,6 +68,21 @@ def percentage_point_phrase(
     diff = (long_numeric - short_numeric) * 100
     direction = "greater" if diff >= 0 else "lower"
     return f"{abs(diff):.{decimals}f}% {direction}"
+
+
+def percentage_point_phrase_value(
+    long_value: object,
+    short_value: object,
+    decimals: int = 0,
+) -> str:
+    """Describe the percentage-point shift between long and short means."""
+    long_numeric = _coerce_finite_float(long_value)
+    short_numeric = _coerce_finite_float(short_value)
+    if long_numeric is None or short_numeric is None:
+        return "an indeterminate difference"
+    diff = (long_numeric - short_numeric)
+    direction = "greater" if diff >= 0 else "lower"
+    return f"{abs(diff):.{decimals}f} {direction}"
 
 
 def format_p_value(p_value: object) -> str:
@@ -86,6 +109,31 @@ def print_long_short_summary(
     long_txt = format_percent(long_mean, decimals)
     short_txt = format_percent(short_mean, decimals)
     diff_phrase = percentage_point_phrase(long_mean, short_mean, decimals)
+    sig_txt = (
+        format_p_value(p_value)
+        if p_value is not None
+        else (extra_note or "")
+    )
+    if sig_txt:
+        sig_txt = f" ({sig_txt})"
+    print(
+        f"{label}: Long form ({long_txt}) showed {diff_phrase} "
+        f"than short form ({short_txt}){sig_txt}."
+    )
+
+
+def print_long_short_summary_value(
+    label: str,
+    long_mean: object,
+    short_mean: object,
+    p_value: object | None = None,
+    extra_note: str | None = None,
+    decimals: int = 0,
+) -> None:
+    """Print a one-liner comparing long vs short form results."""
+    long_txt = format_value(long_mean, decimals)
+    short_txt = format_value(short_mean, decimals)
+    diff_phrase = percentage_point_phrase_value(long_mean, short_mean, decimals)
     sig_txt = (
         format_p_value(p_value)
         if p_value is not None
