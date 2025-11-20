@@ -1,0 +1,392 @@
+title,form,sensor,metric,bins,avg_contributors,min_contributors,max_contributors,groups_present,total_unique_contributors
+A Star Is Born,Short,EEG,Distraction,249,9.45,4,12,2,19
+A Star Is Born,Short,EEG,Drowsy,249,9.45,4,12,2,19
+A Star Is Born,Short,EEG,Frontal Alpha Asymmetry,249,9.33,5,12,2,20
+A Star Is Born,Short,EEG,High Engagement,249,9.45,4,12,2,19
+A Star Is Born,Short,EEG,Low Engagement,249,9.45,4,12,2,19
+A Star Is Born,Short,EEG,Workload Average,249,9.0,3,12,2,19
+A Star Is Born,Short,ET,Blink Detected,249,10.5,7,14,2,21
+A Star Is Born,Short,ET,Fixation Dispersion,249,12.73,10,14,2,26
+A Star Is Born,Short,ET,Fixation Duration,249,12.67,10,14,2,26
+A Star Is Born,Short,ET,Fixation Index,249,12.73,10,14,2,26
+A Star Is Born,Short,FAC,Anger,249,13.0,12,14,2,26
+A Star Is Born,Short,FAC,Confusion,249,13.0,12,14,2,26
+A Star Is Born,Short,FAC,Contempt,249,13.0,12,14,2,26
+A Star Is Born,Short,FAC,Disgust,249,13.0,12,14,2,26
+A Star Is Born,Short,FAC,Engagement,249,13.0,12,14,2,26
+A Star Is Born,Short,FAC,Fear,249,13.0,12,14,2,26
+A Star Is Born,Short,FAC,Joy,249,13.0,12,14,2,26
+A Star Is Born,Short,FAC,Neutral,249,13.0,12,14,2,26
+A Star Is Born,Short,FAC,Sadness,249,13.0,12,14,2,26
+A Star Is Born,Short,FAC,Sentimentality,249,13.0,12,14,2,26
+A Star Is Born,Short,FAC,Surprise,249,13.0,12,14,2,26
+A Star Is Born,Short,GSR,Peak Detected,249,13.0,12,14,2,26
+A Star Is Born,Short,GSR,Phasic Signal,249,13.0,12,14,2,26
+Abbott Elementary,Long,EEG,Distraction,99,10.45,8,12,2,21
+Abbott Elementary,Long,EEG,Drowsy,99,10.45,8,12,2,21
+Abbott Elementary,Long,EEG,Frontal Alpha Asymmetry,99,10.28,6,12,2,22
+Abbott Elementary,Long,EEG,High Engagement,99,10.45,8,12,2,21
+Abbott Elementary,Long,EEG,Low Engagement,99,10.45,8,12,2,21
+Abbott Elementary,Long,EEG,Workload Average,99,9.68,6,12,2,21
+Abbott Elementary,Long,ET,Blink Detected,100,10.95,1,14,2,22
+Abbott Elementary,Long,ET,Fixation Dispersion,100,14.17,1,16,2,30
+Abbott Elementary,Long,ET,Fixation Duration,100,14.17,1,16,2,30
+Abbott Elementary,Long,ET,Fixation Index,100,14.17,1,16,2,30
+Abbott Elementary,Long,FAC,Anger,99,15.0,14,16,2,30
+Abbott Elementary,Long,FAC,Confusion,99,15.0,14,16,2,30
+Abbott Elementary,Long,FAC,Contempt,99,15.0,14,16,2,30
+Abbott Elementary,Long,FAC,Disgust,99,15.0,14,16,2,30
+Abbott Elementary,Long,FAC,Engagement,99,15.0,14,16,2,30
+Abbott Elementary,Long,FAC,Fear,99,15.0,14,16,2,30
+Abbott Elementary,Long,FAC,Joy,99,15.0,14,16,2,30
+Abbott Elementary,Long,FAC,Neutral,99,15.0,14,16,2,30
+Abbott Elementary,Long,FAC,Sadness,99,15.0,14,16,2,30
+Abbott Elementary,Long,FAC,Sentimentality,99,15.0,14,16,2,30
+Abbott Elementary,Long,FAC,Surprise,99,15.0,14,16,2,30
+Abbott Elementary,Long,GSR,Peak Detected,100,14.44,3,15,2,29
+Abbott Elementary,Long,GSR,Phasic Signal,100,14.44,3,15,2,29
+Abbott Elementary,Short,EEG,Distraction,99,11.8,4,12,2,24
+Abbott Elementary,Short,EEG,Drowsy,99,11.8,4,12,2,24
+Abbott Elementary,Short,EEG,Frontal Alpha Asymmetry,99,10.61,6,12,2,24
+Abbott Elementary,Short,EEG,High Engagement,99,11.8,4,12,2,24
+Abbott Elementary,Short,EEG,Low Engagement,99,11.8,4,12,2,24
+Abbott Elementary,Short,EEG,Workload Average,99,9.58,3,11,2,24
+Abbott Elementary,Short,ET,Blink Detected,99,14.9,5,16,2,30
+Abbott Elementary,Short,ET,Fixation Dispersion,99,14.73,2,16,2,30
+Abbott Elementary,Short,ET,Fixation Duration,99,14.73,2,16,2,30
+Abbott Elementary,Short,ET,Fixation Index,99,14.73,2,16,2,30
+Abbott Elementary,Short,FAC,Anger,99,14.86,1,16,2,30
+Abbott Elementary,Short,FAC,Confusion,99,14.86,1,16,2,30
+Abbott Elementary,Short,FAC,Contempt,99,14.86,1,16,2,30
+Abbott Elementary,Short,FAC,Disgust,99,14.86,1,16,2,30
+Abbott Elementary,Short,FAC,Engagement,99,14.86,1,16,2,30
+Abbott Elementary,Short,FAC,Fear,99,14.86,1,16,2,30
+Abbott Elementary,Short,FAC,Joy,99,14.86,1,16,2,30
+Abbott Elementary,Short,FAC,Neutral,99,14.86,1,16,2,30
+Abbott Elementary,Short,FAC,Sadness,99,14.86,1,16,2,30
+Abbott Elementary,Short,FAC,Sentimentality,99,14.86,1,16,2,30
+Abbott Elementary,Short,FAC,Surprise,99,14.86,1,16,2,30
+Abbott Elementary,Short,GSR,Peak Detected,99,14.93,8,16,2,30
+Abbott Elementary,Short,GSR,Phasic Signal,99,14.88,8,16,2,30
+Home Alone,Short,EEG,Distraction,116,9.15,1,12,4,37
+Home Alone,Short,EEG,Drowsy,116,9.15,1,12,4,37
+Home Alone,Short,EEG,Frontal Alpha Asymmetry,116,9.06,2,12,4,39
+Home Alone,Short,EEG,High Engagement,116,9.15,1,12,4,37
+Home Alone,Short,EEG,Low Engagement,116,9.15,1,12,4,37
+Home Alone,Short,EEG,Workload Average,116,8.44,1,12,4,37
+Home Alone,Short,ET,Blink Detected,115,9.75,7,14,4,39
+Home Alone,Short,ET,Fixation Dispersion,115,12.73,9,16,4,52
+Home Alone,Short,ET,Fixation Duration,115,12.7,9,16,4,52
+Home Alone,Short,ET,Fixation Index,115,12.73,9,16,4,52
+Home Alone,Short,FAC,Anger,115,13.0,10,16,4,52
+Home Alone,Short,FAC,Confusion,115,13.0,10,16,4,52
+Home Alone,Short,FAC,Contempt,115,13.0,10,16,4,52
+Home Alone,Short,FAC,Disgust,115,13.0,10,16,4,52
+Home Alone,Short,FAC,Engagement,115,13.0,10,16,4,52
+Home Alone,Short,FAC,Fear,115,13.0,10,16,4,52
+Home Alone,Short,FAC,Joy,115,13.0,10,16,4,52
+Home Alone,Short,FAC,Neutral,115,13.0,10,16,4,52
+Home Alone,Short,FAC,Sadness,115,13.0,10,16,4,52
+Home Alone,Short,FAC,Sentimentality,115,13.0,10,16,4,52
+Home Alone,Short,FAC,Surprise,115,13.0,10,16,4,52
+Home Alone,Short,GSR,Peak Detected,115,12.25,8,15,4,49
+Home Alone,Short,GSR,Phasic Signal,115,12.25,8,15,4,49
+I Am Legend,Short,EEG,Distraction,119,8.29,3,9,2,17
+I Am Legend,Short,EEG,Drowsy,119,8.29,3,9,2,17
+I Am Legend,Short,EEG,Frontal Alpha Asymmetry,119,8.48,5,10,2,18
+I Am Legend,Short,EEG,High Engagement,119,8.29,3,9,2,17
+I Am Legend,Short,EEG,Low Engagement,119,8.29,3,9,2,17
+I Am Legend,Short,EEG,Workload Average,119,7.58,3,9,2,17
+I Am Legend,Short,ET,Blink Detected,119,8.97,2,10,2,18
+I Am Legend,Short,ET,Fixation Dispersion,118,12.8,8,16,2,26
+I Am Legend,Short,ET,Fixation Duration,118,12.8,8,16,2,26
+I Am Legend,Short,ET,Fixation Index,118,12.8,8,16,2,26
+I Am Legend,Short,FAC,Anger,119,12.95,1,16,2,26
+I Am Legend,Short,FAC,Confusion,119,12.95,1,16,2,26
+I Am Legend,Short,FAC,Contempt,119,12.95,1,16,2,26
+I Am Legend,Short,FAC,Disgust,119,12.95,1,16,2,26
+I Am Legend,Short,FAC,Engagement,119,12.95,1,16,2,26
+I Am Legend,Short,FAC,Fear,119,12.95,1,16,2,26
+I Am Legend,Short,FAC,Joy,119,12.95,1,16,2,26
+I Am Legend,Short,FAC,Neutral,119,12.95,1,16,2,26
+I Am Legend,Short,FAC,Sadness,119,12.95,1,16,2,26
+I Am Legend,Short,FAC,Sentimentality,119,12.95,1,16,2,26
+I Am Legend,Short,FAC,Surprise,119,12.95,1,16,2,26
+I Am Legend,Short,GSR,Peak Detected,119,11.42,1,15,2,23
+I Am Legend,Short,GSR,Phasic Signal,119,11.42,1,15,2,23
+Iron Man,Short,EEG,Distraction,123,8.89,7,10,2,18
+Iron Man,Short,EEG,Drowsy,123,8.89,7,10,2,18
+Iron Man,Short,EEG,Frontal Alpha Asymmetry,123,8.9,5,11,2,19
+Iron Man,Short,EEG,High Engagement,123,8.89,7,10,2,18
+Iron Man,Short,EEG,Low Engagement,123,8.89,7,10,2,18
+Iron Man,Short,EEG,Workload Average,123,8.29,5,10,2,18
+Iron Man,Short,ET,Blink Detected,123,9.0,8,10,2,18
+Iron Man,Short,ET,Fixation Dispersion,123,12.75,8,16,2,26
+Iron Man,Short,ET,Fixation Duration,123,12.46,8,16,2,26
+Iron Man,Short,ET,Fixation Index,123,12.75,8,16,2,26
+Iron Man,Short,FAC,Anger,123,13.0,10,16,2,26
+Iron Man,Short,FAC,Confusion,123,13.0,10,16,2,26
+Iron Man,Short,FAC,Contempt,123,13.0,10,16,2,26
+Iron Man,Short,FAC,Disgust,123,13.0,10,16,2,26
+Iron Man,Short,FAC,Engagement,123,13.0,10,16,2,26
+Iron Man,Short,FAC,Fear,123,13.0,10,16,2,26
+Iron Man,Short,FAC,Joy,123,13.0,10,16,2,26
+Iron Man,Short,FAC,Neutral,123,13.0,10,16,2,26
+Iron Man,Short,FAC,Sadness,123,13.0,10,16,2,26
+Iron Man,Short,FAC,Sentimentality,123,13.0,10,16,2,26
+Iron Man,Short,FAC,Surprise,123,13.0,10,16,2,26
+Iron Man,Short,GSR,Peak Detected,123,11.5,8,15,2,23
+Iron Man,Short,GSR,Phasic Signal,123,11.5,8,15,2,23
+Mad Max,Long,EEG,Distraction,225,9.79,7,12,2,20
+Mad Max,Long,EEG,Drowsy,225,9.79,7,12,2,20
+Mad Max,Long,EEG,Frontal Alpha Asymmetry,225,9.21,6,12,2,20
+Mad Max,Long,EEG,High Engagement,225,9.79,7,12,2,20
+Mad Max,Long,EEG,Low Engagement,225,9.79,7,12,2,20
+Mad Max,Long,EEG,Workload Average,225,7.94,5,12,2,20
+Mad Max,Long,ET,Blink Detected,225,12.0,10,14,2,24
+Mad Max,Long,ET,Fixation Dispersion,225,11.64,8,14,2,24
+Mad Max,Long,ET,Fixation Duration,225,11.64,8,14,2,24
+Mad Max,Long,ET,Fixation Index,225,11.64,8,14,2,24
+Mad Max,Long,FAC,Anger,226,11.98,1,14,2,24
+Mad Max,Long,FAC,Confusion,226,11.98,1,14,2,24
+Mad Max,Long,FAC,Contempt,226,11.98,1,14,2,24
+Mad Max,Long,FAC,Disgust,226,11.98,1,14,2,24
+Mad Max,Long,FAC,Engagement,226,11.98,1,14,2,24
+Mad Max,Long,FAC,Fear,226,11.98,1,14,2,24
+Mad Max,Long,FAC,Joy,226,11.98,1,14,2,24
+Mad Max,Long,FAC,Neutral,226,11.98,1,14,2,24
+Mad Max,Long,FAC,Sadness,226,11.98,1,14,2,24
+Mad Max,Long,FAC,Sentimentality,226,11.98,1,14,2,24
+Mad Max,Long,FAC,Surprise,226,11.98,1,14,2,24
+Mad Max,Long,GSR,Peak Detected,226,10.46,1,12,2,21
+Mad Max,Long,GSR,Phasic Signal,226,10.46,1,12,2,21
+Mad Max,Short,EEG,Distraction,227,9.47,2,12,2,19
+Mad Max,Short,EEG,Drowsy,227,9.47,2,12,2,19
+Mad Max,Short,EEG,Frontal Alpha Asymmetry,227,9.58,6,12,2,20
+Mad Max,Short,EEG,High Engagement,227,9.47,2,12,2,19
+Mad Max,Short,EEG,Low Engagement,227,9.47,2,12,2,19
+Mad Max,Short,EEG,Workload Average,227,9.09,2,12,2,19
+Mad Max,Short,ET,Blink Detected,226,10.5,7,14,2,21
+Mad Max,Short,ET,Fixation Dispersion,227,12.88,1,14,2,26
+Mad Max,Short,ET,Fixation Duration,227,12.8,1,14,2,26
+Mad Max,Short,ET,Fixation Index,227,12.88,1,14,2,26
+Mad Max,Short,FAC,Anger,226,13.0,12,14,2,26
+Mad Max,Short,FAC,Confusion,226,13.0,12,14,2,26
+Mad Max,Short,FAC,Contempt,226,13.0,12,14,2,26
+Mad Max,Short,FAC,Disgust,226,13.0,12,14,2,26
+Mad Max,Short,FAC,Engagement,226,13.0,12,14,2,26
+Mad Max,Short,FAC,Fear,226,13.0,12,14,2,26
+Mad Max,Short,FAC,Joy,226,13.0,12,14,2,26
+Mad Max,Short,FAC,Neutral,226,13.0,12,14,2,26
+Mad Max,Short,FAC,Sadness,226,13.0,12,14,2,26
+Mad Max,Short,FAC,Sentimentality,226,13.0,12,14,2,26
+Mad Max,Short,FAC,Surprise,226,13.0,12,14,2,26
+Mad Max,Short,GSR,Peak Detected,227,12.98,2,14,2,26
+Mad Max,Short,GSR,Phasic Signal,227,12.98,2,14,2,26
+Schittss Creek,Short,EEG,Distraction,87,11.8,3,12,2,24
+Schittss Creek,Short,EEG,Drowsy,87,11.8,3,12,2,24
+Schittss Creek,Short,EEG,Frontal Alpha Asymmetry,87,11.06,4,12,2,24
+Schittss Creek,Short,EEG,High Engagement,87,11.8,3,12,2,24
+Schittss Creek,Short,EEG,Low Engagement,87,11.8,3,12,2,24
+Schittss Creek,Short,EEG,Workload Average,87,9.43,2,12,2,24
+Schittss Creek,Short,ET,Blink Detected,86,15.0,14,16,2,30
+Schittss Creek,Short,ET,Fixation Dispersion,87,14.75,1,16,2,30
+Schittss Creek,Short,ET,Fixation Duration,87,14.68,1,16,2,30
+Schittss Creek,Short,ET,Fixation Index,87,14.75,1,16,2,30
+Schittss Creek,Short,FAC,Anger,86,15.0,14,16,2,30
+Schittss Creek,Short,FAC,Confusion,86,15.0,14,16,2,30
+Schittss Creek,Short,FAC,Contempt,86,15.0,14,16,2,30
+Schittss Creek,Short,FAC,Disgust,86,15.0,14,16,2,30
+Schittss Creek,Short,FAC,Engagement,86,15.0,14,16,2,30
+Schittss Creek,Short,FAC,Fear,86,15.0,14,16,2,30
+Schittss Creek,Short,FAC,Joy,86,15.0,14,16,2,30
+Schittss Creek,Short,FAC,Neutral,86,15.0,14,16,2,30
+Schittss Creek,Short,FAC,Sadness,86,15.0,14,16,2,30
+Schittss Creek,Short,FAC,Sentimentality,86,15.0,14,16,2,30
+Schittss Creek,Short,FAC,Surprise,86,15.0,14,16,2,30
+Schittss Creek,Short,GSR,Peak Detected,86,14.95,13,16,2,30
+Schittss Creek,Short,GSR,Phasic Signal,86,14.74,13,16,2,30
+The Big Bang Theory,Short,EEG,Distraction,187,11.71,10,12,2,24
+The Big Bang Theory,Short,EEG,Drowsy,187,11.71,10,12,2,24
+The Big Bang Theory,Short,EEG,Frontal Alpha Asymmetry,187,10.76,7,12,2,24
+The Big Bang Theory,Short,EEG,High Engagement,187,11.71,10,12,2,24
+The Big Bang Theory,Short,EEG,Low Engagement,187,11.71,10,12,2,24
+The Big Bang Theory,Short,EEG,Workload Average,187,9.65,6,12,2,24
+The Big Bang Theory,Short,ET,Blink Detected,187,15.0,14,16,2,30
+The Big Bang Theory,Short,ET,Fixation Dispersion,187,14.68,12,16,2,30
+The Big Bang Theory,Short,ET,Fixation Duration,187,14.68,12,16,2,30
+The Big Bang Theory,Short,ET,Fixation Index,187,14.68,12,16,2,30
+The Big Bang Theory,Short,FAC,Anger,187,15.0,14,16,2,30
+The Big Bang Theory,Short,FAC,Confusion,187,15.0,14,16,2,30
+The Big Bang Theory,Short,FAC,Contempt,187,15.0,14,16,2,30
+The Big Bang Theory,Short,FAC,Disgust,187,15.0,14,16,2,30
+The Big Bang Theory,Short,FAC,Engagement,187,15.0,14,16,2,30
+The Big Bang Theory,Short,FAC,Fear,187,15.0,14,16,2,30
+The Big Bang Theory,Short,FAC,Joy,187,15.0,14,16,2,30
+The Big Bang Theory,Short,FAC,Neutral,187,15.0,14,16,2,30
+The Big Bang Theory,Short,FAC,Sadness,187,15.0,14,16,2,30
+The Big Bang Theory,Short,FAC,Sentimentality,187,15.0,14,16,2,30
+The Big Bang Theory,Short,FAC,Surprise,187,15.0,14,16,2,30
+The Big Bang Theory,Short,GSR,Peak Detected,187,15.0,14,16,2,30
+The Big Bang Theory,Short,GSR,Phasic Signal,187,15.0,14,16,2,30
+The Conjuring,Short,EEG,Distraction,172,9.41,4,12,2,19
+The Conjuring,Short,EEG,Drowsy,172,9.41,4,12,2,19
+The Conjuring,Short,EEG,Frontal Alpha Asymmetry,172,9.25,4,12,2,20
+The Conjuring,Short,EEG,High Engagement,172,9.41,4,12,2,19
+The Conjuring,Short,EEG,Low Engagement,172,9.41,4,12,2,19
+The Conjuring,Short,EEG,Workload Average,172,8.99,4,12,2,19
+The Conjuring,Short,ET,Blink Detected,171,10.5,7,14,2,21
+The Conjuring,Short,ET,Fixation Dispersion,172,12.55,1,14,2,26
+The Conjuring,Short,ET,Fixation Duration,172,12.5,1,14,2,26
+The Conjuring,Short,ET,Fixation Index,172,12.55,1,14,2,26
+The Conjuring,Short,FAC,Anger,171,13.0,12,14,2,26
+The Conjuring,Short,FAC,Confusion,171,13.0,12,14,2,26
+The Conjuring,Short,FAC,Contempt,171,13.0,12,14,2,26
+The Conjuring,Short,FAC,Disgust,171,13.0,12,14,2,26
+The Conjuring,Short,FAC,Engagement,171,13.0,12,14,2,26
+The Conjuring,Short,FAC,Fear,171,13.0,12,14,2,26
+The Conjuring,Short,FAC,Joy,171,13.0,12,14,2,26
+The Conjuring,Short,FAC,Neutral,171,13.0,12,14,2,26
+The Conjuring,Short,FAC,Sadness,171,13.0,12,14,2,26
+The Conjuring,Short,FAC,Sentimentality,171,13.0,12,14,2,26
+The Conjuring,Short,FAC,Surprise,171,13.0,12,14,2,26
+The Conjuring,Short,GSR,Peak Detected,171,13.0,12,14,2,26
+The Conjuring,Short,GSR,Phasic Signal,171,13.0,12,14,2,26
+The Middle,Short,EEG,Distraction,118,11.9,10,12,2,24
+The Middle,Short,EEG,Drowsy,118,11.9,10,12,2,24
+The Middle,Short,EEG,Frontal Alpha Asymmetry,119,10.56,1,12,2,24
+The Middle,Short,EEG,High Engagement,118,11.9,10,12,2,24
+The Middle,Short,EEG,Low Engagement,118,11.9,10,12,2,24
+The Middle,Short,EEG,Workload Average,118,9.75,7,12,2,24
+The Middle,Short,ET,Blink Detected,119,14.91,4,16,2,30
+The Middle,Short,ET,Fixation Dispersion,119,14.73,3,16,2,30
+The Middle,Short,ET,Fixation Duration,119,14.73,3,16,2,30
+The Middle,Short,ET,Fixation Index,119,14.73,3,16,2,30
+The Middle,Short,FAC,Anger,119,14.9,2,16,2,30
+The Middle,Short,FAC,Confusion,119,14.9,2,16,2,30
+The Middle,Short,FAC,Contempt,119,14.9,2,16,2,30
+The Middle,Short,FAC,Disgust,119,14.9,2,16,2,30
+The Middle,Short,FAC,Engagement,119,14.9,2,16,2,30
+The Middle,Short,FAC,Fear,119,14.9,2,16,2,30
+The Middle,Short,FAC,Joy,119,14.9,2,16,2,30
+The Middle,Short,FAC,Neutral,119,14.9,2,16,2,30
+The Middle,Short,FAC,Sadness,119,14.9,2,16,2,30
+The Middle,Short,FAC,Sentimentality,119,14.9,2,16,2,30
+The Middle,Short,FAC,Surprise,119,14.9,2,16,2,30
+The Middle,Short,GSR,Peak Detected,119,14.39,1,16,2,29
+The Middle,Short,GSR,Phasic Signal,119,14.39,1,16,2,29
+The Notebook,Short,EEG,Distraction,66,8.32,2,9,2,17
+The Notebook,Short,EEG,Drowsy,66,8.32,2,9,2,17
+The Notebook,Short,EEG,Frontal Alpha Asymmetry,66,8.26,6,10,2,18
+The Notebook,Short,EEG,High Engagement,66,8.32,2,9,2,17
+The Notebook,Short,EEG,Low Engagement,66,8.32,2,9,2,17
+The Notebook,Short,EEG,Workload Average,66,7.64,2,9,2,17
+The Notebook,Short,ET,Blink Detected,65,9.0,8,10,2,18
+The Notebook,Short,ET,Fixation Dispersion,65,12.72,8,16,2,26
+The Notebook,Short,ET,Fixation Duration,65,12.72,8,16,2,26
+The Notebook,Short,ET,Fixation Index,65,12.72,8,16,2,26
+The Notebook,Short,FAC,Anger,65,13.0,10,16,2,26
+The Notebook,Short,FAC,Confusion,65,13.0,10,16,2,26
+The Notebook,Short,FAC,Contempt,65,13.0,10,16,2,26
+The Notebook,Short,FAC,Disgust,65,13.0,10,16,2,26
+The Notebook,Short,FAC,Engagement,65,13.0,10,16,2,26
+The Notebook,Short,FAC,Fear,65,13.0,10,16,2,26
+The Notebook,Short,FAC,Joy,65,13.0,10,16,2,26
+The Notebook,Short,FAC,Neutral,65,13.0,10,16,2,26
+The Notebook,Short,FAC,Sadness,65,13.0,10,16,2,26
+The Notebook,Short,FAC,Sentimentality,65,13.0,10,16,2,26
+The Notebook,Short,FAC,Surprise,65,13.0,10,16,2,26
+The Notebook,Short,GSR,Peak Detected,65,11.5,8,15,2,23
+The Notebook,Short,GSR,Phasic Signal,65,11.5,8,15,2,23
+The Office,Short,EEG,Distraction,177,11.84,1,12,2,24
+The Office,Short,EEG,Drowsy,177,11.84,1,12,2,24
+The Office,Short,EEG,Frontal Alpha Asymmetry,177,10.52,1,12,2,24
+The Office,Short,EEG,High Engagement,177,11.84,1,12,2,24
+The Office,Short,EEG,Low Engagement,177,11.84,1,12,2,24
+The Office,Short,EEG,Workload Average,177,9.78,2,12,2,24
+The Office,Short,ET,Blink Detected,176,15.0,14,16,2,30
+The Office,Short,ET,Fixation Dispersion,177,14.39,2,16,2,30
+The Office,Short,ET,Fixation Duration,177,14.39,2,16,2,30
+The Office,Short,ET,Fixation Index,177,14.39,2,16,2,30
+The Office,Short,FAC,Anger,177,14.96,2,16,2,30
+The Office,Short,FAC,Confusion,177,14.96,2,16,2,30
+The Office,Short,FAC,Contempt,177,14.96,2,16,2,30
+The Office,Short,FAC,Disgust,177,14.96,2,16,2,30
+The Office,Short,FAC,Engagement,177,14.96,2,16,2,30
+The Office,Short,FAC,Fear,177,14.96,2,16,2,30
+The Office,Short,FAC,Joy,177,14.96,2,16,2,30
+The Office,Short,FAC,Neutral,177,14.96,2,16,2,30
+The Office,Short,FAC,Sadness,177,14.96,2,16,2,30
+The Office,Short,FAC,Sentimentality,177,14.96,2,16,2,30
+The Office,Short,FAC,Surprise,177,14.96,2,16,2,30
+The Office,Short,GSR,Peak Detected,176,15.0,14,16,2,30
+The Office,Short,GSR,Phasic Signal,176,15.0,14,16,2,30
+The Town,Long,EEG,Distraction,262,9.95,6,13,2,20
+The Town,Long,EEG,Drowsy,262,9.95,6,13,2,20
+The Town,Long,EEG,Frontal Alpha Asymmetry,262,9.99,5,13,2,21
+The Town,Long,EEG,High Engagement,262,9.95,6,13,2,20
+The Town,Long,EEG,Low Engagement,262,9.95,6,13,2,20
+The Town,Long,EEG,Workload Average,262,8.95,4,13,2,20
+The Town,Long,ET,Blink Detected,262,12.0,7,17,2,24
+The Town,Long,ET,Fixation Dispersion,263,14.3,2,17,2,29
+The Town,Long,ET,Fixation Duration,263,14.26,2,17,2,29
+The Town,Long,ET,Fixation Index,263,14.3,2,17,2,29
+The Town,Long,FAC,Anger,262,14.5,12,17,2,29
+The Town,Long,FAC,Confusion,262,14.5,12,17,2,29
+The Town,Long,FAC,Contempt,262,14.5,12,17,2,29
+The Town,Long,FAC,Disgust,262,14.5,12,17,2,29
+The Town,Long,FAC,Engagement,262,14.5,12,17,2,29
+The Town,Long,FAC,Fear,262,14.5,12,17,2,29
+The Town,Long,FAC,Joy,262,14.5,12,17,2,29
+The Town,Long,FAC,Neutral,262,14.5,12,17,2,29
+The Town,Long,FAC,Sadness,262,14.5,12,17,2,29
+The Town,Long,FAC,Sentimentality,262,14.5,12,17,2,29
+The Town,Long,FAC,Surprise,262,14.5,12,17,2,29
+The Town,Long,GSR,Peak Detected,263,14.45,1,17,2,29
+The Town,Long,GSR,Phasic Signal,263,14.45,1,17,2,29
+The Town,Short,EEG,Distraction,264,8.69,1,10,2,18
+The Town,Short,EEG,Drowsy,264,8.69,1,10,2,18
+The Town,Short,EEG,Frontal Alpha Asymmetry,264,8.68,5,11,2,19
+The Town,Short,EEG,High Engagement,264,8.69,1,10,2,18
+The Town,Short,EEG,Low Engagement,264,8.69,1,10,2,18
+The Town,Short,EEG,Workload Average,264,8.2,1,10,2,18
+The Town,Short,ET,Blink Detected,263,9.0,8,10,2,18
+The Town,Short,ET,Fixation Dispersion,264,12.81,1,16,2,26
+The Town,Short,ET,Fixation Duration,264,12.81,1,16,2,26
+The Town,Short,ET,Fixation Index,264,12.81,1,16,2,26
+The Town,Short,FAC,Anger,263,13.0,10,16,2,26
+The Town,Short,FAC,Confusion,263,13.0,10,16,2,26
+The Town,Short,FAC,Contempt,263,13.0,10,16,2,26
+The Town,Short,FAC,Disgust,263,13.0,10,16,2,26
+The Town,Short,FAC,Engagement,263,13.0,10,16,2,26
+The Town,Short,FAC,Fear,263,13.0,10,16,2,26
+The Town,Short,FAC,Joy,263,13.0,10,16,2,26
+The Town,Short,FAC,Neutral,263,13.0,10,16,2,26
+The Town,Short,FAC,Sadness,263,13.0,10,16,2,26
+The Town,Short,FAC,Sentimentality,263,13.0,10,16,2,26
+The Town,Short,FAC,Surprise,263,13.0,10,16,2,26
+The Town,Short,GSR,Peak Detected,263,11.5,8,15,2,23
+The Town,Short,GSR,Phasic Signal,263,11.5,8,15,2,23
+Titanic,Short,EEG,Distraction,60,9.46,6,12,2,19
+Titanic,Short,EEG,Drowsy,60,9.46,6,12,2,19
+Titanic,Short,EEG,Frontal Alpha Asymmetry,60,9.18,5,12,2,20
+Titanic,Short,EEG,High Engagement,60,9.46,6,12,2,19
+Titanic,Short,EEG,Low Engagement,60,9.46,6,12,2,19
+Titanic,Short,EEG,Workload Average,60,9.21,5,12,2,19
+Titanic,Short,ET,Blink Detected,60,10.5,7,14,2,21
+Titanic,Short,ET,Fixation Dispersion,60,12.84,11,14,2,26
+Titanic,Short,ET,Fixation Duration,60,12.84,11,14,2,26
+Titanic,Short,ET,Fixation Index,60,12.84,11,14,2,26
+Titanic,Short,FAC,Anger,60,13.0,12,14,2,26
+Titanic,Short,FAC,Confusion,60,13.0,12,14,2,26
+Titanic,Short,FAC,Contempt,60,13.0,12,14,2,26
+Titanic,Short,FAC,Disgust,60,13.0,12,14,2,26
+Titanic,Short,FAC,Engagement,60,13.0,12,14,2,26
+Titanic,Short,FAC,Fear,60,13.0,12,14,2,26
+Titanic,Short,FAC,Joy,60,13.0,12,14,2,26
+Titanic,Short,FAC,Neutral,60,13.0,12,14,2,26
+Titanic,Short,FAC,Sadness,60,13.0,12,14,2,26
+Titanic,Short,FAC,Sentimentality,60,13.0,12,14,2,26
+Titanic,Short,FAC,Surprise,60,13.0,12,14,2,26
+Titanic,Short,GSR,Peak Detected,60,13.0,12,14,2,26
+Titanic,Short,GSR,Phasic Signal,60,13.0,12,14,2,26

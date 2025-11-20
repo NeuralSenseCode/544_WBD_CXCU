@@ -161,6 +161,9 @@ Thumbs.db
 *.hdf5
 *.pkl
 *.pickle
-results/
 data/Export/
 !data/.gitkeep
+
+# Allow tracked artefacts under results/
+!results/
+!results/**

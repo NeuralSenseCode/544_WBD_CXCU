@@ -1,0 +1,35 @@
+respondent,group,stimulus,issue
+1,C,,"Missing EEG columns: High Engagement, Low Engagement, Distraction, Drowsy, Workload Average, Frontal Alpha Asymmetry."
+10,B,,"Missing EEG columns: High Engagement, Low Engagement, Distraction, Drowsy, Workload Average, Frontal Alpha Asymmetry."
+10,B,,Missing GSR columns: Peak Detected.
+101,C,,"Missing EEG columns: High Engagement, Low Engagement, Distraction, Drowsy, Workload Average."
+101,C,,Missing ET columns: Blink Detected.
+106,A,,"Missing EEG columns: High Engagement, Low Engagement, Distraction, Drowsy, Workload Average, Frontal Alpha Asymmetry."
+11,F,,"Missing EEG columns: High Engagement, Low Engagement, Distraction, Drowsy, Workload Average, Frontal Alpha Asymmetry."
+114,C,,Missing ET columns: Blink Detected.
+13,C,,"Missing EEG columns: High Engagement, Low Engagement, Distraction, Drowsy, Workload Average, Frontal Alpha Asymmetry."
+14,A,,"Missing EEG columns: High Engagement, Low Engagement, Distraction, Drowsy, Workload Average, Frontal Alpha Asymmetry."
+15,B,,"Missing EEG columns: High Engagement, Low Engagement, Distraction, Drowsy, Workload Average, Frontal Alpha Asymmetry."
+16,C,,"Missing EEG columns: High Engagement, Low Engagement, Distraction, Drowsy, Workload Average, Frontal Alpha Asymmetry."
+17,F,,"Missing EEG columns: High Engagement, Low Engagement, Distraction, Drowsy, Workload Average, Frontal Alpha Asymmetry."
+19,D,,"Missing EEG columns: High Engagement, Low Engagement, Distraction, Drowsy, Workload Average, Frontal Alpha Asymmetry."
+2,D,,"Missing EEG columns: High Engagement, Low Engagement, Distraction, Drowsy, Workload Average, Frontal Alpha Asymmetry."
+20,E,,"Missing EEG columns: High Engagement, Low Engagement, Distraction, Drowsy, Workload Average, Frontal Alpha Asymmetry."
+3,A,,"Missing EEG columns: High Engagement, Low Engagement, Distraction, Drowsy, Workload Average, Frontal Alpha Asymmetry."
+4,D,,"Missing EEG columns: High Engagement, Low Engagement, Distraction, Drowsy, Workload Average, Frontal Alpha Asymmetry."
+43,C,,Missing ET columns: Blink Detected.
+52,A,,Missing ET columns: Blink Detected.
+59,C,,Missing ET columns: Blink Detected.
+6,C,,"Missing EEG columns: High Engagement, Low Engagement, Distraction, Drowsy, Workload Average, Frontal Alpha Asymmetry."
+6,C,,Missing ET columns: Blink Detected.
+63,C,,Missing ET columns: Blink Detected.
+8,A,,"Missing EEG columns: High Engagement, Low Engagement, Distraction, Drowsy, Workload Average, Frontal Alpha Asymmetry."
+8,A,,Missing ET columns: Blink Detected.
+81,A,,Missing ET columns: Blink Detected.
+82,C,,Missing ET columns: Blink Detected.
+83,A,,Missing ET columns: Blink Detected.
+89,C,,"Missing EEG columns: High Engagement, Low Engagement, Distraction, Drowsy, Workload Average, Frontal Alpha Asymmetry."
+89,C,,Missing ET columns: Blink Detected.
+9,E,,"Missing EEG columns: High Engagement, Low Engagement, Distraction, Drowsy, Workload Average, Frontal Alpha Asymmetry."
+98,A,,"Missing EEG columns: High Engagement, Low Engagement, Distraction, Drowsy, Workload Average."
+99,A,,Missing ET columns: Blink Detected.

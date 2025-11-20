@@ -1,0 +1,600 @@
+respondent,group,question_number,title,issue,source_file
+1,C,2.0,Goodfellas,form_unresolved_default_short,Group C_Post Viewing Questionnaire Part Two.csv
+1,C,3.0,The Notebook,form_from_group_stimulus_map,Group C_Post Viewing Questionnaire Part Two.csv
+1,C,6.0,Seinfeld,form_unresolved_default_short,Group C_Post Viewing Questionnaire Part Two.csv
+1,C,8.0,Friends,binary_response_missing_or_unrecognized,Group C_Post Viewing Questionnaire Part Two.csv
+1,C,8.0,Friends,confidence_missing_or_unrecognized,Group C_Post Viewing Questionnaire Part Two.csv
+1,C,8.0,Friends,form_unresolved_default_short,Group C_Post Viewing Questionnaire Part Two.csv
+1,C,9.0,Abbot Elementary,binary_response_missing_or_unrecognized,Group C_Post Viewing Questionnaire Part Two.csv
+1,C,9.0,Abbot Elementary,confidence_missing_or_unrecognized,Group C_Post Viewing Questionnaire Part Two.csv
+1,C,10.0,Ironman,binary_response_missing_or_unrecognized,Group C_Post Viewing Questionnaire Part Two.csv
+1,C,10.0,Ironman,confidence_missing_or_unrecognized,Group C_Post Viewing Questionnaire Part Two.csv
+1,C,10.0,Ironman,form_unresolved_default_short,Group C_Post Viewing Questionnaire Part Two.csv
+1,C,11.0,A Star Is Born,binary_response_missing_or_unrecognized,Group C_Post Viewing Questionnaire Part Two.csv
+1,C,11.0,A Star Is Born,confidence_missing_or_unrecognized,Group C_Post Viewing Questionnaire Part Two.csv
+1,C,11.0,A Star Is Born,form_unresolved_default_short,Group C_Post Viewing Questionnaire Part Two.csv
+1,C,12.0,Ironman,binary_response_missing_or_unrecognized,Group C_Post Viewing Questionnaire Part Two.csv
+1,C,12.0,Ironman,confidence_missing_or_unrecognized,Group C_Post Viewing Questionnaire Part Two.csv
+1,C,12.0,Ironman,form_unresolved_default_short,Group C_Post Viewing Questionnaire Part Two.csv
+10,B,2.0,The Dark Knight,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+10,B,3.0,The Notebook,form_from_group_stimulus_map,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+10,B,6.0,Titanic,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+10,B,8.0,Friends,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+10,B,10.0,Ironman,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+10,B,11.0,A Star Is Born,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+10,B,12.0,Ironman,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+100,E,2.0,Wonder Woman,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+100,E,2.0,Wonder Woman,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+100,E,3.0,Schittss Creek,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+100,E,3.0,Schittss Creek,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+100,E,6.0,Friends,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+100,E,6.0,Friends,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+100,E,8.0,Seinfeld,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+100,E,8.0,Seinfeld,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+100,E,10.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+100,E,10.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+100,E,11.0,Sherlock Holmes,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+100,E,11.0,Sherlock Holmes,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+100,E,12.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+100,E,12.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+101,C,2.0,Goodfellas,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+101,C,3.0,The Notebook,form_from_group_stimulus_map,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+101,C,6.0,Seinfeld,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+101,C,8.0,Friends,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+101,C,10.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+101,C,11.0,A Star Is Born,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+101,C,12.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+102,D,2.0,Goodfellas,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+102,D,3.0,Schittss Creek,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+102,D,6.0,Seinfeld,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+102,D,8.0,Friends,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+102,D,10.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+102,D,11.0,Sherlock Holmes,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+102,D,12.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+103,C,2.0,Goodfellas,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+103,C,3.0,The Notebook,form_from_group_stimulus_map,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+103,C,6.0,Seinfeld,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+103,C,8.0,Friends,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+103,C,10.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+103,C,11.0,A Star Is Born,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+103,C,12.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+104,A,2.0,The Dark Knight,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+104,A,3.0,Titanic,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+104,A,6.0,I am Legend,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+104,A,8.0,Friends,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+104,A,10.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+104,A,11.0,Sherlock Holmes,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+104,A,12.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+105,C,2.0,Goodfellas,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+105,C,3.0,The Notebook,form_from_group_stimulus_map,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+105,C,6.0,Seinfeld,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+105,C,8.0,Friends,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+105,C,10.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+105,C,11.0,A Star Is Born,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+105,C,12.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+106,A,2.0,The Dark Knight,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+106,A,3.0,Titanic,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+106,A,6.0,I am Legend,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+106,A,8.0,Friends,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+106,A,10.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+106,A,11.0,Sherlock Holmes,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+106,A,12.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+107,F,2.0,Wonder Woman,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+107,F,3.0,Titanic,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+107,F,6.0,Friends,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+107,F,8.0,Seinfeld,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+107,F,10.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+107,F,11.0,Sherlock Holmes,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+107,F,12.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+108,E,2.0,Wonder Woman,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+108,E,3.0,Schittss Creek,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+108,E,6.0,Friends,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+108,E,8.0,Seinfeld,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+108,E,10.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+108,E,11.0,Sherlock Holmes,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+108,E,12.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+109,F,2.0,Wonder Woman,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+109,F,3.0,Titanic,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+109,F,6.0,Friends,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+109,F,8.0,Seinfeld,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+109,F,10.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+109,F,11.0,Sherlock Holmes,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+109,F,12.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+11,F,2.0,Wonder Woman,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+11,F,3.0,Titanic,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+11,F,6.0,Friends,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+11,F,8.0,Seinfeld,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+11,F,10.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+11,F,11.0,Sherlock Holmes,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+11,F,12.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+111,D,2.0,Goodfellas,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+111,D,3.0,Schittss Creek,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+111,D,6.0,Seinfeld,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+111,D,8.0,Friends,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+111,D,10.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+111,D,11.0,Sherlock Holmes,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+111,D,12.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+113,F,2.0,Wonder Woman,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+113,F,3.0,Titanic,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+113,F,6.0,Friends,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+113,F,8.0,Seinfeld,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+113,F,10.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+113,F,11.0,Sherlock Holmes,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+113,F,12.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+114,C,2.0,Goodfellas,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+114,C,3.0,The Notebook,form_from_group_stimulus_map,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+114,C,6.0,Seinfeld,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+114,C,8.0,Friends,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+114,C,10.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+114,C,11.0,A Star Is Born,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+114,C,12.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+115,D,2.0,Goodfellas,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+115,D,3.0,Schittss Creek,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+115,D,6.0,Seinfeld,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+115,D,8.0,Friends,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+115,D,10.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+115,D,11.0,Sherlock Holmes,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+115,D,12.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+116,A,,,post_group_mismatch_uv_A_file_F,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+117,F,,,post_group_mismatch_uv_F_file_A,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+13,C,2.0,Goodfellas,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+13,C,3.0,The Notebook,form_from_group_stimulus_map,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+13,C,6.0,Seinfeld,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+13,C,8.0,Friends,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+13,C,10.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+13,C,11.0,A Star Is Born,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+13,C,12.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+14,A,2.0,The Dark Knight,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+14,A,3.0,Titanic,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+14,A,6.0,I am Legend,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+14,A,8.0,Friends,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+14,A,10.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+14,A,11.0,Sherlock Holmes,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+14,A,12.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+15,B,2.0,The Dark Knight,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+15,B,3.0,The Notebook,form_from_group_stimulus_map,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+15,B,6.0,Titanic,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+15,B,8.0,Friends,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+15,B,10.0,Ironman,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+15,B,11.0,A Star Is Born,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+15,B,12.0,Ironman,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+16,C,2.0,Goodfellas,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+16,C,3.0,The Notebook,form_from_group_stimulus_map,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+16,C,6.0,Seinfeld,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+16,C,8.0,Friends,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+16,C,10.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+16,C,11.0,A Star Is Born,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+16,C,12.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+17,F,2.0,Wonder Woman,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+17,F,3.0,Titanic,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+17,F,6.0,Friends,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+17,F,8.0,Seinfeld,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+17,F,10.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+17,F,11.0,Sherlock Holmes,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+17,F,12.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+19,D,2.0,Goodfellas,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+19,D,3.0,Schittss Creek,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+19,D,6.0,Seinfeld,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+19,D,8.0,Friends,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+19,D,10.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+19,D,11.0,Sherlock Holmes,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+19,D,12.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+2,D,2.0,Goodfellas,form_unresolved_default_short,Group D_Post Viewing Questionnaire Part Two.csv
+2,D,3.0,Schittss Creek,form_from_group_stimulus_map,Group D_Post Viewing Questionnaire Part Two.csv
+2,D,6.0,Seinfeld,form_unresolved_default_short,Group D_Post Viewing Questionnaire Part Two.csv
+2,D,8.0,Friends,binary_response_missing_or_unrecognized,Group D_Post Viewing Questionnaire Part Two.csv
+2,D,8.0,Friends,confidence_missing_or_unrecognized,Group D_Post Viewing Questionnaire Part Two.csv
+2,D,8.0,Friends,form_unresolved_default_short,Group D_Post Viewing Questionnaire Part Two.csv
+2,D,9.0,Abbot Elementary,binary_response_missing_or_unrecognized,Group D_Post Viewing Questionnaire Part Two.csv
+2,D,9.0,Abbot Elementary,confidence_missing_or_unrecognized,Group D_Post Viewing Questionnaire Part Two.csv
+2,D,10.0,The Office,binary_response_missing_or_unrecognized,Group D_Post Viewing Questionnaire Part Two.csv
+2,D,10.0,The Office,confidence_missing_or_unrecognized,Group D_Post Viewing Questionnaire Part Two.csv
+2,D,10.0,The Office,form_from_group_stimulus_map,Group D_Post Viewing Questionnaire Part Two.csv
+2,D,11.0,Sherlock Holmes,binary_response_missing_or_unrecognized,Group D_Post Viewing Questionnaire Part Two.csv
+2,D,11.0,Sherlock Holmes,confidence_missing_or_unrecognized,Group D_Post Viewing Questionnaire Part Two.csv
+2,D,11.0,Sherlock Holmes,form_unresolved_default_short,Group D_Post Viewing Questionnaire Part Two.csv
+2,D,12.0,The Office,binary_response_missing_or_unrecognized,Group D_Post Viewing Questionnaire Part Two.csv
+2,D,12.0,The Office,confidence_missing_or_unrecognized,Group D_Post Viewing Questionnaire Part Two.csv
+2,D,12.0,The Office,form_from_group_stimulus_map,Group D_Post Viewing Questionnaire Part Two.csv
+20,E,2.0,Wonder Woman,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+20,E,3.0,Schittss Creek,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+20,E,6.0,Friends,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+20,E,8.0,Seinfeld,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+20,E,10.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+20,E,11.0,Sherlock Holmes,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+20,E,12.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+3,A,2.0,The Dark Knight,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+3,A,3.0,Titanic,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+3,A,6.0,I am Legend,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+3,A,8.0,Friends,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+3,A,10.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+3,A,11.0,Sherlock Holmes,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+3,A,12.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+35,D,2.0,Goodfellas,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+35,D,3.0,Schittss Creek,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+35,D,6.0,Seinfeld,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+35,D,8.0,Friends,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+35,D,10.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+35,D,11.0,Sherlock Holmes,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+35,D,12.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+36,E,2.0,Wonder Woman,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+36,E,3.0,Schittss Creek,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+36,E,6.0,Friends,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+36,E,8.0,Seinfeld,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+36,E,10.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+36,E,11.0,Sherlock Holmes,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+36,E,12.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+37,B,2.0,The Dark Knight,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+37,B,3.0,The Notebook,form_from_group_stimulus_map,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+37,B,6.0,Titanic,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+37,B,8.0,Friends,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+37,B,10.0,Ironman,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+37,B,11.0,A Star Is Born,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+37,B,12.0,Ironman,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+39,B,2.0,The Dark Knight,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+39,B,3.0,The Notebook,form_from_group_stimulus_map,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+39,B,6.0,Titanic,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+39,B,8.0,Friends,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+39,B,10.0,Ironman,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+39,B,11.0,A Star Is Born,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+39,B,12.0,Ironman,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+4,D,2.0,Goodfellas,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+4,D,3.0,Schittss Creek,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+4,D,6.0,Seinfeld,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+4,D,8.0,Friends,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+4,D,10.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+4,D,11.0,Sherlock Holmes,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+4,D,12.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+40,E,2.0,Wonder Woman,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+40,E,3.0,Schittss Creek,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+40,E,6.0,Friends,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+40,E,8.0,Seinfeld,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+40,E,10.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+40,E,11.0,Sherlock Holmes,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+40,E,12.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+41,F,2.0,Wonder Woman,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+41,F,3.0,Titanic,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+41,F,6.0,Friends,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+41,F,8.0,Seinfeld,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+41,F,10.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+41,F,11.0,Sherlock Holmes,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+41,F,12.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+42,F,2.0,Wonder Woman,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+42,F,3.0,Titanic,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+42,F,6.0,Friends,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+42,F,8.0,Seinfeld,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+42,F,10.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+42,F,11.0,Sherlock Holmes,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+42,F,12.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+43,C,2.0,Goodfellas,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+43,C,3.0,The Notebook,form_from_group_stimulus_map,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+43,C,6.0,Seinfeld,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+43,C,8.0,Friends,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+43,C,10.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+43,C,11.0,A Star Is Born,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+43,C,12.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+44,F,2.0,Wonder Woman,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+44,F,3.0,Titanic,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+44,F,6.0,Friends,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+44,F,8.0,Seinfeld,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+44,F,10.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+44,F,11.0,Sherlock Holmes,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+44,F,12.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+46,D,2.0,Goodfellas,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+46,D,3.0,Schittss Creek,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+46,D,6.0,Seinfeld,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+46,D,8.0,Friends,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+46,D,10.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+46,D,11.0,Sherlock Holmes,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+46,D,12.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+49,E,2.0,Wonder Woman,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+49,E,3.0,Schittss Creek,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+49,E,6.0,Friends,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+49,E,8.0,Seinfeld,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+49,E,10.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+49,E,11.0,Sherlock Holmes,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+49,E,12.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+50,F,2.0,Wonder Woman,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+50,F,3.0,Titanic,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+50,F,6.0,Friends,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+50,F,8.0,Seinfeld,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+50,F,10.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+50,F,11.0,Sherlock Holmes,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+50,F,12.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+51,D,2.0,Goodfellas,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+51,D,3.0,Schittss Creek,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+51,D,6.0,Seinfeld,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+51,D,8.0,Friends,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+51,D,10.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+51,D,11.0,Sherlock Holmes,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+51,D,12.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+52,A,2.0,The Dark Knight,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+52,A,3.0,Titanic,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+52,A,6.0,I am Legend,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+52,A,8.0,Friends,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+52,A,10.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+52,A,11.0,Sherlock Holmes,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+52,A,12.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+55,A,2.0,The Dark Knight,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+55,A,3.0,Titanic,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+55,A,6.0,I am Legend,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+55,A,8.0,Friends,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+55,A,10.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+55,A,11.0,Sherlock Holmes,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+55,A,12.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+56,B,2.0,The Dark Knight,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+56,B,3.0,The Notebook,form_from_group_stimulus_map,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+56,B,6.0,Titanic,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+56,B,8.0,Friends,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+56,B,10.0,Ironman,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+56,B,11.0,A Star Is Born,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+56,B,12.0,Ironman,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+58,B,2.0,The Dark Knight,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+58,B,3.0,The Notebook,form_from_group_stimulus_map,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+58,B,6.0,Titanic,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+58,B,8.0,Friends,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+58,B,10.0,Ironman,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+58,B,11.0,A Star Is Born,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+58,B,12.0,Ironman,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+59,C,2.0,Goodfellas,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+59,C,3.0,The Notebook,form_from_group_stimulus_map,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+59,C,6.0,Seinfeld,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+59,C,8.0,Friends,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+59,C,10.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+59,C,11.0,A Star Is Born,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+59,C,12.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+6,C,,,post_group_mismatch_uv_C_file_D,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+60,F,2.0,Wonder Woman,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+60,F,3.0,Titanic,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+60,F,6.0,Friends,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+60,F,8.0,Seinfeld,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+60,F,10.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+60,F,11.0,Sherlock Holmes,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+60,F,12.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+62,C,2.0,Goodfellas,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+62,C,3.0,The Notebook,form_from_group_stimulus_map,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+62,C,6.0,Seinfeld,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+62,C,8.0,Friends,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+62,C,10.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+62,C,11.0,A Star Is Born,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+62,C,12.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+63,C,2.0,Goodfellas,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+63,C,3.0,The Notebook,form_from_group_stimulus_map,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+63,C,6.0,Seinfeld,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+63,C,8.0,Friends,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+63,C,10.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+63,C,11.0,A Star Is Born,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+63,C,12.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+64,B,2.0,The Dark Knight,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+64,B,3.0,The Notebook,form_from_group_stimulus_map,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+64,B,6.0,Titanic,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+64,B,8.0,Friends,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+64,B,10.0,Ironman,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+64,B,11.0,A Star Is Born,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+64,B,12.0,Ironman,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+66,D,2.0,Goodfellas,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+66,D,3.0,Schittss Creek,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+66,D,6.0,Seinfeld,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+66,D,8.0,Friends,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+66,D,10.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+66,D,11.0,Sherlock Holmes,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+66,D,12.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+67,D,2.0,Goodfellas,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+67,D,3.0,Schittss Creek,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+67,D,6.0,Seinfeld,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+67,D,8.0,Friends,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+67,D,10.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+67,D,11.0,Sherlock Holmes,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+67,D,12.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+68,D,2.0,Goodfellas,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+68,D,3.0,Schittss Creek,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+68,D,6.0,Seinfeld,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+68,D,8.0,Friends,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+68,D,10.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+68,D,11.0,Sherlock Holmes,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+68,D,12.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+69,E,2.0,Wonder Woman,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+69,E,3.0,Schittss Creek,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+69,E,6.0,Friends,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+69,E,8.0,Seinfeld,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+69,E,10.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+69,E,11.0,Sherlock Holmes,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+69,E,12.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+70,F,2.0,Wonder Woman,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+70,F,3.0,Titanic,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+70,F,6.0,Friends,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+70,F,8.0,Seinfeld,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+70,F,10.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+70,F,11.0,Sherlock Holmes,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+70,F,12.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+72,D,2.0,Goodfellas,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+72,D,3.0,Schittss Creek,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+72,D,6.0,Seinfeld,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+72,D,8.0,Friends,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+72,D,10.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+72,D,11.0,Sherlock Holmes,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+72,D,12.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+73,B,2.0,The Dark Knight,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+73,B,3.0,The Notebook,form_from_group_stimulus_map,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+73,B,6.0,Titanic,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+73,B,8.0,Friends,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+73,B,10.0,Ironman,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+73,B,11.0,A Star Is Born,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+73,B,12.0,Ironman,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+74,E,2.0,Wonder Woman,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+74,E,3.0,Schittss Creek,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+74,E,6.0,Friends,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+74,E,8.0,Seinfeld,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+74,E,10.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+74,E,11.0,Sherlock Holmes,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+74,E,12.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+76,D,2.0,Goodfellas,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+76,D,3.0,Schittss Creek,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+76,D,6.0,Seinfeld,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+76,D,8.0,Friends,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+76,D,10.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+76,D,11.0,Sherlock Holmes,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+76,D,12.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+77,B,2.0,The Dark Knight,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+77,B,3.0,The Notebook,form_from_group_stimulus_map,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+77,B,6.0,Titanic,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+77,B,8.0,Friends,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+77,B,10.0,Ironman,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+77,B,11.0,A Star Is Born,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+77,B,12.0,Ironman,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+79,E,2.0,Wonder Woman,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+79,E,3.0,Schittss Creek,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+79,E,6.0,Friends,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+79,E,8.0,Seinfeld,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+79,E,10.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+79,E,11.0,Sherlock Holmes,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+79,E,12.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+8,A,2.0,The Dark Knight,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+8,A,3.0,Titanic,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+8,A,6.0,I am Legend,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+8,A,8.0,Friends,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+8,A,10.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+8,A,11.0,Sherlock Holmes,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+8,A,12.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+80,E,2.0,Wonder Woman,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+80,E,3.0,Schittss Creek,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+80,E,6.0,Friends,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+80,E,8.0,Seinfeld,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+80,E,10.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+80,E,11.0,Sherlock Holmes,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+80,E,12.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+81,A,2.0,The Dark Knight,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+81,A,3.0,Titanic,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+81,A,6.0,I am Legend,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+81,A,8.0,Friends,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+81,A,10.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+81,A,11.0,Sherlock Holmes,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+81,A,12.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+82,C,2.0,Goodfellas,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+82,C,3.0,The Notebook,form_from_group_stimulus_map,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+82,C,6.0,Seinfeld,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+82,C,8.0,Friends,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+82,C,10.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+82,C,11.0,A Star Is Born,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+82,C,12.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+83,A,2.0,The Dark Knight,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+83,A,3.0,Titanic,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+83,A,6.0,I am Legend,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+83,A,8.0,Friends,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+83,A,10.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+83,A,11.0,Sherlock Holmes,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+83,A,12.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+84,E,2.0,Wonder Woman,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+84,E,3.0,Schittss Creek,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+84,E,6.0,Friends,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+84,E,8.0,Seinfeld,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+84,E,10.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+84,E,11.0,Sherlock Holmes,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+84,E,12.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+85,F,2.0,Wonder Woman,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+85,F,3.0,Titanic,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+85,F,6.0,Friends,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+85,F,8.0,Seinfeld,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+85,F,10.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+85,F,11.0,Sherlock Holmes,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+85,F,12.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+86,E,2.0,Wonder Woman,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+86,E,3.0,Schittss Creek,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+86,E,6.0,Friends,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+86,E,8.0,Seinfeld,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+86,E,10.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+86,E,11.0,Sherlock Holmes,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+86,E,12.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+88,C,2.0,Goodfellas,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+88,C,3.0,The Notebook,form_from_group_stimulus_map,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+88,C,6.0,Seinfeld,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+88,C,8.0,Friends,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+88,C,10.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+88,C,11.0,A Star Is Born,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+88,C,12.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+89,C,2.0,Goodfellas,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+89,C,3.0,The Notebook,form_from_group_stimulus_map,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+89,C,6.0,Seinfeld,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+89,C,8.0,Friends,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+89,C,10.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+89,C,11.0,A Star Is Born,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+89,C,12.0,Ironman,form_unresolved_default_short,Group C_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+9,E,2.0,Wonder Woman,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+9,E,3.0,Schittss Creek,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+9,E,6.0,Friends,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+9,E,8.0,Seinfeld,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+9,E,10.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+9,E,11.0,Sherlock Holmes,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+9,E,12.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+90,B,2.0,The Dark Knight,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+90,B,3.0,The Notebook,form_from_group_stimulus_map,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+90,B,6.0,Titanic,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+90,B,8.0,Friends,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+90,B,10.0,Ironman,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+90,B,11.0,A Star Is Born,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+90,B,12.0,Ironman,form_unresolved_default_short,Group B_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+91,D,2.0,Goodfellas,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+91,D,3.0,Schittss Creek,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+91,D,6.0,Seinfeld,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+91,D,8.0,Friends,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+91,D,10.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+91,D,11.0,Sherlock Holmes,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+91,D,12.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+92,D,2.0,Goodfellas,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+92,D,3.0,Schittss Creek,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+92,D,6.0,Seinfeld,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+92,D,8.0,Friends,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+92,D,10.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+92,D,11.0,Sherlock Holmes,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+92,D,12.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+94,D,2.0,Goodfellas,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+94,D,3.0,Schittss Creek,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+94,D,6.0,Seinfeld,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+94,D,8.0,Friends,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+94,D,10.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+94,D,11.0,Sherlock Holmes,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+94,D,12.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+96,F,2.0,Wonder Woman,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+96,F,3.0,Titanic,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+96,F,6.0,Friends,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+96,F,8.0,Seinfeld,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+96,F,10.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+96,F,11.0,Sherlock Holmes,form_unresolved_default_short,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+96,F,12.0,A Star Is Born,form_from_group_stimulus_map,Group F_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+97,E,2.0,Wonder Woman,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+97,E,3.0,Schittss Creek,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+97,E,6.0,Friends,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+97,E,8.0,Seinfeld,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+97,E,10.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+97,E,11.0,Sherlock Holmes,form_unresolved_default_short,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+97,E,12.0,The Office,form_from_group_stimulus_map,Group E_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+98,A,2.0,The Dark Knight,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+98,A,3.0,Titanic,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+98,A,6.0,I am Legend,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+98,A,8.0,Friends,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+98,A,10.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+98,A,11.0,Sherlock Holmes,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+98,A,12.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+99,A,2.0,The Dark Knight,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+99,A,3.0,Titanic,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+99,A,6.0,I am Legend,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+99,A,8.0,Friends,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+99,A,10.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+99,A,11.0,Sherlock Holmes,form_unresolved_default_short,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+99,A,12.0,A Star Is Born,form_from_group_stimulus_map,Group A_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+unknown,D,1.0,Abbot Elementary,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+unknown,,1.0,Abbot Elementary,post_form_title_not_in_stage1_exposures,data/Post/Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+unknown,D,2.0,Goodfellas,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+unknown,D,3.0,Schittss Creek,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+unknown,D,4.0,The Town,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+unknown,,4.0,The Town,post_form_title_not_in_stage1_exposures,data/Post/Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+unknown,D,5.0,Abbot Elementary,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+unknown,D,6.0,Seinfeld,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+unknown,D,7.0,The Town,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+unknown,,7.0,The Town,post_form_title_not_in_stage1_exposures,data/Post/Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+unknown,D,8.0,Friends,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+unknown,D,9.0,Abbot Elementary,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+unknown,,9.0,Abbot Elementary,post_form_title_not_in_stage1_exposures,data/Post/Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+unknown,D,10.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+unknown,D,11.0,Sherlock Holmes,form_unresolved_default_short,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv
+unknown,D,12.0,The Office,form_from_group_stimulus_map,Group D_ Post Viewing Questionnaire Part Two (Responses) - Form Responses 1.csv

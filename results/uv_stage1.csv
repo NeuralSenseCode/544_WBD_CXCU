@@ -1,0 +1,84 @@
+source_file,group,respondent,date_study,time_study,age,age_group,gender,ethnicity,income_group,content_consumption,content_consumption_movies,content_consumption_series,content_consumption_short,grid_comments,Short Form,Long Form
+003_104.csv,A,104,10/16/2025,18:09:03,59,44-59,Male,White,"$60,000 or more per year",More than 24 hours per week,10,90,0,,Mad Max,The Town
+002_106.csv,A,106,10/16/2025,19:35:05,30,28-43,Male,White,"$60,000 or more per year",3 to 12 hours per week,25,50,25,,Mad Max,The Town
+001_116.csv,A,116,10/18/2025,12:37:40,19,18-27,Male,White,"$35,000  $60,000 per year",3 to 12 hours per week,25,50,25,,Mad Max,The Town
+006_14.csv,A,14,10/11/2025,09:32:42,33,28-43,Male,Hispanic/Latino/Latina/Latinx,"$60,000 or more per year",More than 24 hours per week,20,40,40,No EEG.,Mad Max,The Town
+007_3.csv,A,3,10/10/2025,09:19:22,34,28-43,Female,White,"$60,000 or more per year",12 to 24 hours per week,10,70,20,No EEG.,Mad Max,The Town
+004_52.csv,A,52,10/14/2025,11:18:23,50,44-59,Female,White,"$35,000  $60,000 per year",3 to 12 hours per week,25,35,40,,Mad Max,The Town
+005_55.csv,A,55,10/14/2025,14:01:18,37,28-43,Female,White,"$35,000  $60,000 per year",12 to 24 hours per week,35,35,30,,Mad Max,The Town
+005_8.csv,A,8,10/10/2025,12:35:09,51,44-59,Female,Hispanic/Latino/Latina/Latinx,"$60,000 or more per year",3 to 12 hours per week,30,35,35,No EEG.,Mad Max,The Town
+002_81.csv,A,81,10/17/2025,11:22:46,24,18-27,Female,White,"$35,000  $60,000 per year",12 to 24 hours per week,25,25,50,May be a Benchamrking problem,Mad Max,The Town
+001_83.csv,A,83,10/17/2025,12:46:41,69,60-69,Male,Black/African American,"$35,000  $60,000 per year",3 to 12 hours per week,10,80,10,,Mad Max,The Town
+004_98.csv,A,98,10/15/2025,17:41:49,32,28-43,Male,White,"$35,000  $60,000 per year",More than 24 hours per week,5,20,75,,Mad Max,The Town
+003_99.csv,A,99,10/15/2025,19:09:48,25,18-27,Female,White,"$60,000 or more per year",More than 24 hours per week,25,25,50,,Mad Max,The Town
+005_10.csv,B,10,10/10/2025,13:17:14,65,60-69,Male,White,"$35,000  $60,000 per year",12 to 24 hours per week,15,80,5,GSR device died haflway through. No EEG.,The Town,Mad Max
+004_15.csv,B,15,10/11/2025,10:34:38,66,60-69,Male,White,"$60,000 or more per year",3 to 12 hours per week,30,25,45,No EEG.,The Town,Mad Max
+003_37.csv,B,37,10/13/2025,11:25:15,18,18-27,Male,White,"$35,000  $60,000 per year",12 to 24 hours per week,40,30,30,,The Town,Mad Max
+002_39.csv,B,39,10/13/2025,12:55:57,35,28-43,Male,White,"$60,000 or more per year",12 to 24 hours per week,25,25,50,,The Town,Mad Max
+004_56.csv,B,56,10/14/2025,14:25:10,26,18-27,Male,Hispanic/Latino/Latina/Latinx,"$35,000  $60,000 per year",More than 24 hours per week,30,20,50,,The Town,Mad Max
+001_58.csv,B,58,10/14/2025,16:01:18,40,28-43,Male,White,"$35,000  $60,000 per year",3 to 12 hours per week,50,50,0,,The Town,Mad Max
+003_64.csv,B,64,10/15/2025,12:29:49,26,18-27,Female,White,"$60,000 or more per year",More than 24 hours per week,15,15,70,,The Town,Mad Max
+002_73.csv,B,73,10/16/2025,12:18:19,20,18-27,Male,Hispanic/Latino/Latina/Latinx,"$35,000  $60,000 per year",3 to 12 hours per week,25,45,30,,The Town,Mad Max
+001_77.csv,B,77,10/16/2025,15:56:22,35,28-43,Male,White,"$35,000  $60,000 per year",More than 24 hours per week,10,50,40,,The Town,Mad Max
+005_90.csv,B,90,10/14/2025,12:47:44,24,18-27,Male,White,"$60,000 or more per year",3 to 12 hours per week,50,45,5,,The Town,Mad Max
+008_1.csv,C,1,10/07/2025,10:32:16,63,60-69,Male,Hispanic/Latino/Latina/Latinx,"$60,000 or more per year",More than 24 hours per week,70,20,10,No EEG.,The Town,Abbot Elementary
+003_101.csv,C,101,10/16/2025,14:58:27,67,60-69,Male,Black/African American,"$60,000 or more per year",12 to 24 hours per week,20,70,10,,The Town,Abbot Elementary
+003_103.csv,C,103,10/16/2025,17:44:05,46,44-59,Female,Black/African American,"$60,000 or more per year",More than 24 hours per week,30,50,20,,The Town,Abbot Elementary
+002_105.csv,C,105,10/16/2025,19:14:38,47,44-59,Female,White,"$35,000  $60,000 per year",12 to 24 hours per week,20,30,50,All black impedence,The Town,Abbot Elementary
+001_114.csv,C,114,10/18/2025,10:42:16,58,44-59,Female,White,"$35,000  $60,000 per year",3 to 12 hours per week,20,79,1,,The Town,Abbot Elementary
+007_13.csv,C,13,10/11/2025,09:34:19,31,28-43,Male,White,"$35,000  $60,000 per year",3 to 12 hours per week,20,50,30,No EEG.,The Town,Abbot Elementary
+006_16.csv,C,16,10/11/2025,10:24:15,27,18-27,Male,Hispanic/Latino/Latina/Latinx,"$60,000 or more per year",12 to 24 hours per week,30,30,40,No EEG.,The Town,Abbot Elementary
+006_43.csv,C,43,10/13/2025,16:12:14,47,44-59,Male,White,"$35,000  $60,000 per year",3 to 12 hours per week,10,40,50,,The Town,Abbot Elementary
+005_59.csv,C,59,10/15/2025,09:48:58,69,60-69,Female,Black/African American,"$35,000  $60,000 per year",3 to 12 hours per week,70,0,30,,The Town,Abbot Elementary
+008_6.csv,C,6,10/10/2025,10:42:48,26,18-27,Male,Black/African American,"$35,000  $60,000 per year",12 to 24 hours per week,10,70,20,"Poor visions, cross-eyed. No EEG.",The Town,Abbot Elementary
+004_62.csv,C,62,10/15/2025,11:11:33,38,28-43,Female,White,"$35,000  $60,000 per year",12 to 24 hours per week,30,50,20,,The Town,Abbot Elementary
+004_63.csv,C,63,10/15/2025,12:57:43,45,44-59,Male,Hispanic/Latino/Latina/Latinx,"$35,000  $60,000 per year",More than 24 hours per week,25,50,25,,The Town,Abbot Elementary
+002_82.csv,C,82,10/17/2025,11:31:04,67,60-69,Male,Black/African American,"$35,000  $60,000 per year",More than 24 hours per week,20,75,5,All black impedence,The Town,Abbot Elementary
+001_88.csv,C,88,10/17/2025,16:01:24,41,28-43,Male,Black/African American,"$35,000  $60,000 per year",12 to 24 hours per week,50,25,25,All black impedence,The Town,Abbot Elementary
+007_89.csv,C,89,10/10/2025,14:27:32,60,60-69,Female,White,"$60,000 or more per year",12 to 24 hours per week,60,30,10,,The Town,Abbot Elementary
+005_93.csv,C,93,10/14/2025,18:43:37,26,18-27,Female,Hispanic/Latino/Latina/Latinx,"$35,000  $60,000 per year",3 to 12 hours per week,10,20,70,,The Town,Abbot Elementary
+001_102.csv,D,102,10/16/2025,16:35:40,37,28-43,Male,Black/African American,"$35,000  $60,000 per year",More than 24 hours per week,40,35,25,,Abbot Elementary,The Town
+002_111.csv,D,111,10/17/2025,18:44:03,50,44-59,Female,White,"$35,000  $60,000 per year",More than 24 hours per week,30,40,30,,Abbot Elementary,The Town
+001_115.csv,D,115,10/18/2025,11:02:09,44,44-59,Male,White,"$35,000  $60,000 per year",12 to 24 hours per week,20,20,60,,Abbot Elementary,The Town
+007_19.csv,D,19,10/11/2025,13:49:21,29,28-43,Female,White,"$35,000  $60,000 per year",3 to 12 hours per week,20,70,10,No EEG.,Abbot Elementary,The Town
+009_2.csv,D,2,10/07/2025,10:48:27,38,28-43,Male,Hispanic/Latino/Latina/Latinx,"$35,000  $60,000 per year",More than 24 hours per week,50,25,25,No EEG.,Abbot Elementary,The Town
+008_35.csv,D,35,10/13/2025,10:10:32,31,28-43,Male,Hispanic/Latino/Latina/Latinx,"$35,000  $60,000 per year",12 to 24 hours per week,25,50,25,Only made it halfway through first stim. Did not complete and questionnaires. Time delays due to ABM disconnecting,Abbot Elementary,The Town
+008_4.csv,D,4,10/10/2025,09:19:46,60,60-69,Male,White,"$60,000 or more per year",12 to 24 hours per week,5,80,15,No EEG.,Abbot Elementary,The Town
+007_46.csv,D,46,10/13/2025,19:20:07,28,28-43,Female,White,"$60,000 or more per year",12 to 24 hours per week,5,60,35,,Abbot Elementary,The Town
+006_51.csv,D,51,10/14/2025,11:35:50,54,44-59,Male,White,"$35,000  $60,000 per year",3 to 12 hours per week,50,20,30,,Abbot Elementary,The Town
+005_66.csv,D,66,10/15/2025,13:57:00,64,60-69,Female,White,"$35,000  $60,000 per year",12 to 24 hours per week,35,65,0,,Abbot Elementary,The Town
+004_67.csv,D,67,10/15/2025,15:55:05,60,60-69,Female,Black/African American,"$35,000  $60,000 per year",3 to 12 hours per week,15,80,5,,Abbot Elementary,The Town
+003_68.csv,D,68,10/15/2025,15:57:03,21,18-27,Female,White,"$35,000  $60,000 per year",12 to 24 hours per week,20,25,55,,Abbot Elementary,The Town
+002_72.csv,D,72,10/16/2025,11:29:27,52,44-59,Female,Hispanic/Latino/Latina/Latinx,"$35,000  $60,000 per year",12 to 24 hours per week,10,88,2,,Abbot Elementary,The Town
+003_76.csv,D,76,10/16/2025,13:55:27,44,44-59,Male,White,"$60,000 or more per year",More than 24 hours per week,35,45,20,,Abbot Elementary,The Town
+006_91.csv,D,91,10/14/2025,16:55:30,69,60-69,Male,White,"$35,000  $60,000 per year",12 to 24 hours per week,30,50,20,,Abbot Elementary,The Town
+005_92.csv,D,92,10/14/2025,17:47:58,37,28-43,Male,White,"$60,000 or more per year",12 to 24 hours per week,55,35,10,,Abbot Elementary,The Town
+004_94.csv,D,94,10/15/2025,11:33:19,32,28-43,Male,White,"$35,000  $60,000 per year",3 to 12 hours per week,25,70,5,,Abbot Elementary,The Town
+005_100.csv,E,100,10/15/2025,19:14:06,25,18-27,Female,White,"$35,000  $60,000 per year",12 to 24 hours per week,10,80,10,,Abbot Elementary,Mad Max
+001_108.csv,E,108,10/17/2025,17:39:26,27,18-27,Female,Hispanic/Latino/Latina/Latinx,"$35,000  $60,000 per year",3 to 12 hours per week,30,30,40,All black impedence,Abbot Elementary,Mad Max
+007_20.csv,E,20,10/11/2025,14:22:13,19,18-27,Female,White,"$35,000  $60,000 per year",More than 24 hours per week,20,15,65,,Abbot Elementary,Mad Max
+006_36.csv,E,36,10/13/2025,09:44:14,55,44-59,Female,Black/African American,"$35,000  $60,000 per year",3 to 12 hours per week,40,40,20,,Abbot Elementary,Mad Max
+005_40.csv,E,40,10/13/2025,12:23:11,61,60-69,Female,White,"$35,000  $60,000 per year",12 to 24 hours per week,40,50,10,,Abbot Elementary,Mad Max
+006_49.csv,E,49,10/14/2025,09:59:21,66,60-69,Male,White,"$35,000  $60,000 per year",More than 24 hours per week,50,40,10,,Abbot Elementary,Mad Max
+003_69.csv,E,69,10/16/2025,10:18:26,67,60-69,Female,Black/African American,"$35,000  $60,000 per year",More than 24 hours per week,10,40,50,,Abbot Elementary,Mad Max
+004_74.csv,E,74,10/16/2025,12:53:18,62,60-69,Male,White,"$35,000  $60,000 per year",3 to 12 hours per week,50,40,10,"Left early, DNF",Abbot Elementary,Mad Max
+002_79.csv,E,79,10/17/2025,09:46:51,31,28-43,Female,White,"$60,000 or more per year",3 to 12 hours per week,30,60,10,,Abbot Elementary,Mad Max
+003_80.csv,E,80,10/17/2025,10:07:22,24,18-27,Male,Hispanic/Latino/Latina/Latinx,"$35,000  $60,000 per year",12 to 24 hours per week,20,20,60,,Abbot Elementary,Mad Max
+002_84.csv,E,84,10/17/2025,13:01:35,67,60-69,Male,Hispanic/Latino/Latina/Latinx,"$35,000  $60,000 per year",More than 24 hours per week,70,20,10,,Abbot Elementary,Mad Max
+001_86.csv,E,86,10/17/2025,14:30:36,25,18-27,Male,White,"$35,000  $60,000 per year",3 to 12 hours per week,20,30,50,All black impedence,Abbot Elementary,Mad Max
+007_9.csv,E,9,10/10/2025,13:39:55,42,28-43,Female,White,"$35,000  $60,000 per year",12 to 24 hours per week,5,5,90,No EEG.,Abbot Elementary,Mad Max
+004_97.csv,E,97,10/15/2025,17:41:01,32,28-43,Female,White,"$60,000 or more per year",3 to 12 hours per week,50,40,10,,Abbot Elementary,Mad Max
+001_107.csv,F,107,10/17/2025,16:12:26,33,28-43,Male,Hispanic/Latino/Latina/Latinx,"$35,000  $60,000 per year",3 to 12 hours per week,40,30,30,,Mad Max,Abbot Elementary
+003_109.csv,F,109,10/17/2025,17:24:02,47,44-59,Male,White,"$60,000 or more per year",More than 24 hours per week,30,40,30,,Mad Max,Abbot Elementary
+006_11.csv,F,11,10/10/2025,15:24:20,30,28-43,Female,White,"$35,000  $60,000 per year",12 to 24 hours per week,40,40,20,No EEG.,Mad Max,Abbot Elementary
+002_113.csv,F,113,10/18/2025,09:42:43,56,44-59,Male,Black/African American,"$35,000  $60,000 per year",12 to 24 hours per week,40,30,30,,Mad Max,Abbot Elementary
+001_117.csv,F,117,10/18/2025,12:46:43,44,44-59,Male,White,"$35,000  $60,000 per year",12 to 24 hours per week,10,30,60,,Mad Max,Abbot Elementary
+008_17.csv,F,17,10/11/2025,11:47:20,31,28-43,Female,White,"$60,000 or more per year",3 to 12 hours per week,10,70,20,No EEG.,Mad Max,Abbot Elementary
+005_41.csv,F,41,10/13/2025,14:37:42,53,44-59,Female,Hispanic/Latino/Latina/Latinx,"$35,000  $60,000 per year",12 to 24 hours per week,45,30,25,,Mad Max,Abbot Elementary
+007_42.csv,F,42,10/13/2025,14:43:47,25,18-27,Male,Hispanic/Latino/Latina/Latinx,"$35,000  $60,000 per year",12 to 24 hours per week,33,17,50,,Mad Max,Abbot Elementary
+006_44.csv,F,44,10/13/2025,16:09:49,24,18-27,Male,White,"$35,000  $60,000 per year",12 to 24 hours per week,20,50,30,,Mad Max,Abbot Elementary
+005_50.csv,F,50,10/14/2025,09:54:03,63,60-69,Male,Black/African American,"$60,000 or more per year",12 to 24 hours per week,70,20,10,,Mad Max,Abbot Elementary
+004_60.csv,F,60,10/15/2025,09:34:06,66,60-69,Male,White,"$35,000  $60,000 per year",3 to 12 hours per week,10,80,10,,Mad Max,Abbot Elementary
+003_70.csv,F,70,10/16/2025,09:49:14,61,60-69,Female,Black/African American,"$35,000  $60,000 per year",12 to 24 hours per week,30,30,40,,Mad Max,Abbot Elementary
+002_85.csv,F,85,10/17/2025,14:37:41,34,28-43,Female,White,"$60,000 or more per year",12 to 24 hours per week,40,60,0,,Mad Max,Abbot Elementary
+004_96.csv,F,96,10/15/2025,14:32:00,29,28-43,Female,White,"$60,000 or more per year",12 to 24 hours per week,20,60,20,,Mad Max,Abbot Elementary
