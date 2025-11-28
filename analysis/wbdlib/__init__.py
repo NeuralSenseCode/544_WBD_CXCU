@@ -33,6 +33,7 @@ from .formatting import (
     print_long_short_summary_value,
     significance_label,
     to_percent_table,
+    slugify_filename,
 )
 from .plotting import (
     annotate_boxplot_means,
@@ -40,7 +41,8 @@ from .plotting import (
     register_boxplot_with_means,
 )
 from .categories import assign_category
-from .io import safe_write_csv
+from .io import safe_write_csv, safe_write_excel
+from .exporters import PlotDataExporter
 from .recall_scoring import (
     SYSTEM_PROMPT_STAGE51,
     build_batch_prompt,
@@ -161,9 +163,12 @@ __all__ = [
     "score_familiarity",
     "score_last_watched",
     "safe_write_csv",
+    "safe_write_excel",
     "summarise_biometric_structure",
     "significance_label",
     "to_percent_table",
+    "slugify_filename",
+    "PlotDataExporter",
     "DEFAULT_SENSOR_METRICS",
     "KeyMomentWindow",
     "SensorProcessingResult",

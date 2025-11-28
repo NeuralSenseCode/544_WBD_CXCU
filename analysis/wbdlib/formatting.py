@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import re
+import unicodedata
 from numbers import Number
 from typing import Iterable
 
@@ -133,7 +135,9 @@ def print_long_short_summary_value(
     """Print a one-liner comparing long vs short form results."""
     long_txt = format_value(long_mean, decimals)
     short_txt = format_value(short_mean, decimals)
-    diff_phrase = percentage_point_phrase_value(long_mean, short_mean, decimals)
+    diff_phrase = percentage_point_phrase_value(
+        long_mean, short_mean, decimals
+    )
     sig_txt = (
         format_p_value(p_value)
         if p_value is not None
@@ -174,6 +178,54 @@ def significance_label(p_value: float) -> str:
     return ""
 
 
+_SAFE_CHAR_RE = re.compile(r"[^A-Za-z0-9._-]+")
+_DELIM_RE = re.compile(r"[_-]{2,}")
+
+
+def _slugify_component(value: str, placeholder: str) -> str:
+    """Return a filesystem-friendly token derived from ``value``."""
+    text = str(value or "").strip()
+    if not text:
+        return placeholder
+    ascii_value = unicodedata.normalize("NFKD", text)
+    ascii_value = ascii_value.encode("ascii", "ignore").decode("ascii")
+    ascii_value = _SAFE_CHAR_RE.sub("_", ascii_value)
+    ascii_value = _DELIM_RE.sub("_", ascii_value)
+    ascii_value = ascii_value.strip("._-")
+    ascii_value = ascii_value.lower()
+    return ascii_value or placeholder
+
+
+def slugify_filename(
+    value: str,
+    *,
+    suffix: str | None = None,
+    placeholder: str = "plot",
+    max_length: int = 120,
+) -> str:
+    """Convert ``value`` into a safe filename stem.
+
+    Parameters
+    ----------
+    value:
+        String to convert into a slug.
+    suffix:
+        Optional suffix that will be appended using ``__`` as delimiter.
+    placeholder:
+        Token to fall back to when ``value`` collapses to an empty string.
+    max_length:
+        Maximum number of characters returned (excludes extension callers add).
+    """
+
+    tokens = [_slugify_component(value, placeholder)]
+    if suffix:
+        tokens.append(_slugify_component(suffix, "extra"))
+    slug = "__".join(token for token in tokens if token)
+    if len(slug) > max_length:
+        slug = slug[:max_length].rstrip("._-")
+    return slug or placeholder
+
+
 __all__ = [
     "_fmt_stat",
     "format_percent",
@@ -182,4 +234,5 @@ __all__ = [
     "print_long_short_summary",
     "to_percent_table",
     "significance_label",
+    "slugify_filename",
 ]

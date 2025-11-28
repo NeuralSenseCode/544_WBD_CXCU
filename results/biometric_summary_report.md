@@ -1,0 +1,331 @@
+# Biometric Format Summary
+
+## EEG
+
+- Distraction (AUC) Part 1: Long=13.90, Short=21.40, diff=-7.50, p=0.006, n_pairs=52
+- Distraction (AUC) Part 2 Overall: Long=13.65, Short=27.30, diff=-13.65, coef=-13.606, z=-3.14, p=0.002, titles=3, obs=114, n_long=53, n_short=61
+- Distraction (Mean) Part 1: Long=0.12, Short=0.13, diff=-0.01, p=0.257, n_pairs=57
+- Distraction (Mean) Part 2 Overall: Long=0.11, Short=0.13, diff=-0.02, coef=-0.018, z=-0.75, p=0.453, titles=3, obs=117, n_long=58, n_short=59
+- Drowsy (AUC) Part 1: Long=4.21, Short=3.61, diff=0.60, p=0.362, n_pairs=52
+- Drowsy (AUC) Part 2 Overall: Long=4.78, Short=3.86, diff=0.92, coef=0.810, z=0.78, p=0.433, titles=3, obs=111, n_long=57, n_short=54
+- Drowsy (Mean) Part 1: Long=0.02, Short=0.02, diff=-0.00, p=0.498, n_pairs=53
+- Drowsy (Mean) Part 2 Overall: Long=0.03, Short=0.03, diff=-0.00, coef=-0.001, z=-0.11, p=0.911, titles=3, obs=112, n_long=57, n_short=55
+- FrontalAlphaAsymmetry (AUC) Part 1: Long=2.84, Short=2.68, diff=0.16, p=0.966, n_pairs=52
+- FrontalAlphaAsymmetry (AUC) Part 2 Overall: Long=1.45, Short=0.34, diff=1.10, coef=1.241, z=0.20, p=0.844, titles=3, obs=115, n_long=58, n_short=57
+- FrontalAlphaAsymmetry (Mean) Part 1: Long=-0.00, Short=-0.01, diff=0.01, p=0.354, n_pairs=58
+- FrontalAlphaAsymmetry (Mean) Part 2 Overall: Long=0.00, Short=-0.01, diff=0.02, coef=0.016, z=0.44, p=0.662, titles=3, obs=121, n_long=61, n_short=60
+- HighEngagement (AUC) Part 1: Long=86.42, Short=81.80, diff=4.62, p=0.592, n_pairs=60
+- HighEngagement (AUC) Part 2 Overall: Long=88.28, Short=81.69, diff=6.59, coef=3.372, z=0.50, p=0.615, titles=3, obs=122, n_long=61, n_short=61
+- HighEngagement (Mean) Part 1: Long=0.45, Short=0.45, diff=0.01, p=0.695, n_pairs=58
+- HighEngagement (Mean) Part 2 Overall: Long=0.46, Short=0.45, diff=0.01, coef=0.010, z=0.32, p=0.748, titles=3, obs=120, n_long=59, n_short=61
+- LowEngagement (AUC) Part 1: Long=68.52, Short=65.75, diff=2.77, p=0.696, n_pairs=60
+- LowEngagement (AUC) Part 2 Overall: Long=68.32, Short=65.56, diff=2.76, coef=-0.009, z=-0.00, p=0.999, titles=3, obs=122, n_long=61, n_short=61
+- LowEngagement (Mean) Part 1: Long=0.34, Short=0.34, diff=-0.00, p=0.917, n_pairs=52
+- LowEngagement (Mean) Part 2 Overall: Long=0.35, Short=0.34, diff=0.01, coef=0.005, z=0.23, p=0.820, titles=3, obs=112, n_long=56, n_short=56
+- Workload (AUC) Part 1: Long=103.15, Short=98.79, diff=4.36, p=0.636, n_pairs=60
+- Workload (AUC) Part 2 Overall: Long=103.20, Short=98.64, diff=4.56, coef=0.516, z=0.15, p=0.879, titles=3, obs=122, n_long=61, n_short=61
+- Workload (Mean) Part 1: Long=0.54, Short=0.54, diff=0.01, p=0.108, n_pairs=59
+- Workload (Mean) Part 2 Overall: Long=0.54, Short=0.54, diff=0.00, coef=0.005, z=0.30, p=0.765, titles=3, obs=121, n_long=61, n_short=60
+
+## ET
+
+- Blink (Count) Part 1: Long=250.28, Short=242.00, diff=8.28, p=0.756, n_pairs=58
+- Blink (Count) Part 2 Overall: Long=257.95, Short=259.02, diff=-1.06, coef=-12.136, z=-0.41, p=0.681, titles=3, obs=127, n_long=62, n_short=65
+- Blink (Rate) Part 1: Long=100.73, Short=95.95, diff=4.79, p=0.429, n_pairs=65
+- Blink (Rate) Part 2 Overall: Long=99.73, Short=99.97, diff=-0.24, coef=1.561, z=0.14, p=0.890, titles=3, obs=134, n_long=66, n_short=68
+- Fixation (Count) Part 1: Long=440.74, Short=438.56, diff=2.18, p=0.944, n_pairs=82
+- Fixation (Count) Part 2 Overall: Long=443.08, Short=438.56, diff=4.52, coef=0.317, z=0.03, p=0.976, titles=3, obs=165, n_long=83, n_short=82
+- Fixation (PerMinute) Part 1: Long=139.73, Short=140.45, diff=-0.72, p=0.731, n_pairs=78
+- Fixation (PerMinute) Part 2 Overall: Long=140.67, Short=140.03, diff=0.64, coef=0.440, z=0.15, p=0.882, titles=3, obs=161, n_long=81, n_short=80
+- FixationDispersion (Mean) Part 1: Long=0.47, Short=0.48, diff=-0.00, p=0.671, n_pairs=77
+- FixationDispersion (Mean) Part 2 Overall: Long=0.48, Short=0.48, diff=-0.00, coef=-0.002, z=-0.17, p=0.869, titles=3, obs=159, n_long=81, n_short=78
+- FixationDuration (Mean) Part 1: Long=563.34, Short=575.56, diff=-12.22, p=0.483, n_pairs=74
+- FixationDuration (Mean) Part 2 Overall: Long=565.36, Short=583.27, diff=-17.92, coef=-19.172, z=-0.91, p=0.362, titles=3, obs=157, n_long=80, n_short=77
+
+## FAC
+
+- AdaptiveEngagement (AUC) Part 1: Long=28.83, Short=18.59, diff=10.24, p=0.027, n_pairs=66
+- AdaptiveEngagement (AUC) Part 2 Overall: Long=32.38, Short=20.66, diff=11.72, coef=12.198, z=2.34, p=0.019, titles=3, obs=149, n_long=78, n_short=71
+- AdaptiveEngagement (Mean) Part 1: Long=0.25, Short=0.19, diff=0.07, p=0.052, n_pairs=79
+- AdaptiveEngagement (Mean) Part 2 Overall: Long=0.27, Short=0.19, diff=0.08, coef=0.075, z=1.75, p=0.080, titles=3, obs=162, n_long=83, n_short=79
+- Anger (AUC) Part 1: Long=0.00, Short=0.00, diff=0.00, n_pairs=62
+- Anger (AUC) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, titles=3, obs=138, n_long=66, n_short=72
+- Anger (Binary) Part 1: Long=0.00, Short=0.00, diff=0.00, n_pairs=82
+- Anger (Binary) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, titles=3, obs=165, n_long=83, n_short=82
+- Anger (Mean) Part 1: Long=0.00, Short=0.00, diff=0.00, n_pairs=62
+- Anger (Mean) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, titles=3, obs=138, n_long=66, n_short=72
+- Confusion (AUC) Part 1: Long=0.01, Short=0.00, diff=0.01, p=0.150, n_pairs=55
+- Confusion (AUC) Part 2 Overall: Long=0.01, Short=0.00, diff=0.01, coef=0.011, z=2.24, p=0.025, titles=3, obs=129, n_long=67, n_short=62
+- Confusion (Binary) Part 1: Long=0.00, Short=0.00, diff=0.00, n_pairs=82
+- Confusion (Binary) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, titles=3, obs=165, n_long=83, n_short=82
+- Confusion (Mean) Part 1: Long=0.00, Short=0.00, diff=0.00, p=0.059, n_pairs=56
+- Confusion (Mean) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, coef=0.000, z=2.39, p=0.017, titles=3, obs=129, n_long=67, n_short=62
+- Contempt (AUC) Part 1: Long=0.43, Short=0.20, diff=0.23, p=0.021, n_pairs=64
+- Contempt (AUC) Part 2 Overall: Long=0.49, Short=0.21, diff=0.28, coef=0.276, z=2.64, p=0.008, titles=3, obs=143, n_long=75, n_short=68
+- Contempt (Binary) Part 1: Long=0.00, Short=0.00, diff=0.00, n_pairs=82
+- Contempt (Binary) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, titles=3, obs=165, n_long=83, n_short=82
+- Contempt (Mean) Part 1: Long=0.00, Short=0.00, diff=0.00, p=0.002, n_pairs=65
+- Contempt (Mean) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, coef=0.003, z=3.86, p<0.001, titles=3, obs=143, n_long=77, n_short=66
+- Disgust (AUC) Part 1: Long=0.00, Short=0.00, diff=0.00, n_pairs=57
+- Disgust (AUC) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, titles=3, obs=137, n_long=67, n_short=70
+- Disgust (Binary) Part 1: Long=0.00, Short=0.00, diff=0.00, n_pairs=82
+- Disgust (Binary) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, titles=3, obs=165, n_long=83, n_short=82
+- Disgust (Mean) Part 1: Long=0.00, Short=0.00, diff=0.00, n_pairs=57
+- Disgust (Mean) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, titles=3, obs=137, n_long=67, n_short=70
+- Engagement (AUC) Part 1: Long=28.82, Short=21.86, diff=6.96, p=0.173, n_pairs=67
+- Engagement (AUC) Part 2 Overall: Long=32.49, Short=24.68, diff=7.82, coef=7.751, z=1.41, p=0.158, titles=3, obs=150, n_long=77, n_short=73
+- Engagement (Binary) Part 1: Long=0.00, Short=0.00, diff=0.00, n_pairs=82
+- Engagement (Binary) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, titles=3, obs=165, n_long=83, n_short=82
+- Engagement (Mean) Part 1: Long=0.27, Short=0.21, diff=0.07, p=0.061, n_pairs=80
+- Engagement (Mean) Part 2 Overall: Long=0.28, Short=0.21, diff=0.07, coef=0.067, z=1.49, p=0.136, titles=3, obs=163, n_long=83, n_short=80
+- Fear (AUC) Part 1: Long=0.01, Short=0.00, diff=0.01, p=0.083, n_pairs=56
+- Fear (AUC) Part 2 Overall: Long=0.01, Short=0.00, diff=0.01, coef=0.013, z=2.62, p=0.009, titles=3, obs=128, n_long=65, n_short=63
+- Fear (Binary) Part 1: Long=0.00, Short=0.00, diff=0.00, n_pairs=82
+- Fear (Binary) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, titles=3, obs=165, n_long=83, n_short=82
+- Fear (Mean) Part 1: Long=0.00, Short=0.00, diff=0.00, p=0.084, n_pairs=56
+- Fear (Mean) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, coef=0.000, z=2.78, p=0.005, titles=3, obs=127, n_long=64, n_short=63
+- Joy (AUC) Part 1: Long=3.30, Short=0.87, diff=2.43, p=0.004, n_pairs=64
+- Joy (AUC) Part 2 Overall: Long=3.39, Short=1.12, diff=2.27, coef=2.229, z=2.92, p=0.003, titles=3, obs=142, n_long=72, n_short=70
+- Joy (Binary) Part 1: Long=0.00, Short=0.00, diff=0.00, n_pairs=82
+- Joy (Binary) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, titles=3, obs=165, n_long=83, n_short=82
+- Joy (Mean) Part 1: Long=0.02, Short=0.00, diff=0.02, p=0.006, n_pairs=61
+- Joy (Mean) Part 2 Overall: Long=0.03, Short=0.01, diff=0.02, coef=0.023, z=3.70, p<0.001, titles=3, obs=142, n_long=73, n_short=69
+- NegativeAdaptiveValence (AUC) Part 1: Long=0.00, Short=0.00, diff=0.00, n_pairs=72
+- NegativeAdaptiveValence (AUC) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, titles=3, obs=152, n_long=76, n_short=76
+- NegativeAdaptiveValence (Mean) Part 1: Long=0.00, Short=0.00, diff=0.00, n_pairs=72
+- NegativeAdaptiveValence (Mean) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, titles=3, obs=152, n_long=76, n_short=76
+- Neutral (AUC) Part 1: Long=157.94, Short=159.68, diff=-1.74, p=0.897, n_pairs=82
+- Neutral (AUC) Part 2 Overall: Long=159.02, Short=159.68, diff=-0.66, coef=-1.683, z=-0.22, p=0.825, titles=3, obs=165, n_long=83, n_short=82
+- Neutral (Binary) Part 1: Long=0.00, Short=0.00, diff=0.00, n_pairs=82
+- Neutral (Binary) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, titles=3, obs=165, n_long=83, n_short=82
+- Neutral (Mean) Part 1: Long=0.85, Short=0.93, diff=-0.08, p<0.001, n_pairs=68
+- Neutral (Mean) Part 2 Overall: Long=0.84, Short=0.92, diff=-0.08, coef=-0.076, z=-2.97, p=0.003, titles=3, obs=147, n_long=76, n_short=71
+- NeutralAdaptiveValence (AUC) Part 1: Long=180.21, Short=181.68, diff=-1.47, p=0.925, n_pairs=82
+- NeutralAdaptiveValence (AUC) Part 2 Overall: Long=181.20, Short=181.68, diff=-0.49, coef=-2.189, z=-0.69, p=0.489, titles=3, obs=165, n_long=83, n_short=82
+- NeutralAdaptiveValence (Mean) Part 1: Long=0.97, Short=0.99, diff=-0.02, p=0.007, n_pairs=60
+- NeutralAdaptiveValence (Mean) Part 2 Overall: Long=0.97, Short=0.99, diff=-0.02, coef=-0.024, z=-3.62, p<0.001, titles=3, obs=140, n_long=72, n_short=68
+- PositiveAdaptiveValence (AUC) Part 1: Long=3.00, Short=0.89, diff=2.11, p=0.011, n_pairs=62
+- PositiveAdaptiveValence (AUC) Part 2 Overall: Long=3.33, Short=1.15, diff=2.19, coef=2.143, z=2.67, p=0.008, titles=3, obs=141, n_long=72, n_short=69
+- PositiveAdaptiveValence (Mean) Part 1: Long=0.01, Short=0.00, diff=0.01, p=0.067, n_pairs=58
+- PositiveAdaptiveValence (Mean) Part 2 Overall: Long=0.02, Short=0.01, diff=0.01, coef=0.012, z=2.65, p=0.008, titles=3, obs=138, n_long=69, n_short=69
+- Sadness (AUC) Part 1: Long=0.23, Short=0.18, diff=0.06, p=0.506, n_pairs=61
+- Sadness (AUC) Part 2 Overall: Long=0.25, Short=0.19, diff=0.06, coef=0.063, z=0.69, p=0.489, titles=3, obs=136, n_long=68, n_short=68
+- Sadness (Binary) Part 1: Long=0.00, Short=0.00, diff=0.00, n_pairs=82
+- Sadness (Binary) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, titles=3, obs=165, n_long=83, n_short=82
+- Sadness (Mean) Part 1: Long=0.00, Short=0.00, diff=0.00, p=0.306, n_pairs=60
+- Sadness (Mean) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, coef=0.001, z=1.24, p=0.215, titles=3, obs=134, n_long=67, n_short=67
+- Sentimentality (AUC) Part 1: Long=0.53, Short=0.21, diff=0.32, p=0.004, n_pairs=65
+- Sentimentality (AUC) Part 2 Overall: Long=0.51, Short=0.22, diff=0.29, coef=0.304, z=2.73, p=0.006, titles=3, obs=143, n_long=71, n_short=72
+- Sentimentality (Binary) Part 1: Long=0.00, Short=0.00, diff=0.00, n_pairs=82
+- Sentimentality (Binary) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, titles=3, obs=165, n_long=83, n_short=82
+- Sentimentality (Mean) Part 1: Long=0.00, Short=0.00, diff=0.00, p=0.025, n_pairs=61
+- Sentimentality (Mean) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, coef=0.002, z=2.82, p=0.005, titles=3, obs=139, n_long=69, n_short=70
+- Surprise (AUC) Part 1: Long=0.06, Short=0.01, diff=0.05, p=0.032, n_pairs=58
+- Surprise (AUC) Part 2 Overall: Long=0.09, Short=0.00, diff=0.09, coef=0.092, z=3.13, p=0.002, titles=3, obs=132, n_long=69, n_short=63
+- Surprise (Binary) Part 1: Long=0.00, Short=0.00, diff=0.00, n_pairs=82
+- Surprise (Binary) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, titles=3, obs=165, n_long=83, n_short=82
+- Surprise (Mean) Part 1: Long=0.00, Short=0.00, diff=0.00, p=0.066, n_pairs=55
+- Surprise (Mean) Part 2 Overall: Long=0.00, Short=0.00, diff=0.00, coef=0.000, z=2.86, p=0.004, titles=3, obs=128, n_long=66, n_short=62
+
+## FAC_EMOTION
+
+- EmotionComposite (AUC_SUM) Part 1: Long=12.88, Short=6.08, diff=6.80, p=0.003, n_pairs=64
+- EmotionComposite (AUC_SUM) Part 2 Overall: Long=14.87, Short=6.40, diff=8.46, coef=8.258, z=3.24, p=0.001, titles=3, obs=143, n_long=73, n_short=70
+
+## GSR
+
+- PeakDetected (Binary) Part 1: Long=0.74, Short=0.72, diff=0.02, p=0.596, n_pairs=81
+- PeakDetected (Binary) Part 2 Overall: Long=0.74, Short=0.72, diff=0.03, coef=0.025, z=0.36, p=0.719, titles=3, obs=163, n_long=82, n_short=81
+- Peaks (Count) Part 1: Long=2224.51, Short=1812.18, diff=412.33, p=0.129, n_pairs=51
+- Peaks (Count) Part 2 Overall: Long=2285.30, Short=1657.95, diff=627.35, coef=582.001, z=2.32, p=0.020, titles=3, obs=118, n_long=61, n_short=57
+- Peaks (PerMinute) Part 1: Long=694.00, Short=587.86, diff=106.14, p=0.044, n_pairs=52
+- Peaks (PerMinute) Part 2 Overall: Long=678.78, Short=536.90, diff=141.87, coef=146.132, z=2.09, p=0.037, titles=3, obs=119, n_long=61, n_short=58
+- Distraction (AUC) Part 2 – Abbott Elementary: Long=15.88, Short=15.88, diff=-0.00, p=1.000, n_long=21, n_short=24
+- Distraction (AUC) Part 2 – Mad Max: Long=6.54, Short=33.31, diff=-26.77, p=0.002, n_long=17, n_short=19
+- Distraction (AUC) Part 2 – The Town: Long=18.61, Short=36.19, diff=-17.58, p=0.059, n_long=15, n_short=18
+- Distraction (Mean) Part 2 – Abbott Elementary: Long=0.16, Short=0.11, diff=0.05, p=0.266, n_long=21, n_short=22
+- Distraction (Mean) Part 2 – Mad Max: Long=0.06, Short=0.15, diff=-0.09, p=0.029, n_long=19, n_short=19
+- Distraction (Mean) Part 2 – The Town: Long=0.12, Short=0.14, diff=-0.02, p=0.601, n_long=18, n_short=18
+- Drowsy (AUC) Part 2 – Abbott Elementary: Long=2.96, Short=3.57, diff=-0.61, p=0.652, n_long=21, n_short=23
+- Drowsy (AUC) Part 2 – Mad Max: Long=6.48, Short=3.26, diff=3.22, p=0.134, n_long=17, n_short=17
+- Drowsy (AUC) Part 2 – The Town: Long=5.28, Short=5.07, diff=0.21, p=0.923, n_long=19, n_short=14
+- Drowsy (Mean) Part 2 – Abbott Elementary: Long=0.02, Short=0.03, diff=-0.01, p=0.580, n_long=20, n_short=22
+- Drowsy (Mean) Part 2 – Mad Max: Long=0.03, Short=0.01, diff=0.01, p=0.135, n_long=17, n_short=17
+- Drowsy (Mean) Part 2 – The Town: Long=0.02, Short=0.03, diff=-0.01, p=0.498, n_long=20, n_short=16
+- FrontalAlphaAsymmetry (AUC) Part 2 – Abbott Elementary: Long=5.44, Short=-4.40, diff=9.84, p=0.101, n_long=22, n_short=23
+- FrontalAlphaAsymmetry (AUC) Part 2 – Mad Max: Long=7.63, Short=-11.23, diff=18.87, p=0.142, n_long=19, n_short=16
+- FrontalAlphaAsymmetry (AUC) Part 2 – The Town: Long=-10.64, Short=16.69, diff=-27.32, p=0.071, n_long=17, n_short=18
+- FrontalAlphaAsymmetry (Mean) Part 2 – Abbott Elementary: Long=0.05, Short=-0.04, diff=0.09, p=0.133, n_long=22, n_short=23
+- FrontalAlphaAsymmetry (Mean) Part 2 – Mad Max: Long=0.01, Short=-0.05, diff=0.06, p=0.399, n_long=20, n_short=18
+- FrontalAlphaAsymmetry (Mean) Part 2 – The Town: Long=-0.08, Short=0.04, diff=-0.12, p=0.076, n_long=19, n_short=19
+- HighEngagement (AUC) Part 2 – Abbott Elementary: Long=43.99, Short=44.14, diff=-0.15, p=0.977, n_long=21, n_short=24
+- HighEngagement (AUC) Part 2 – Mad Max: Long=106.52, Short=107.24, diff=-0.72, p=0.961, n_long=20, n_short=19
+- HighEngagement (AUC) Part 2 – The Town: Long=116.55, Short=104.80, diff=11.75, p=0.425, n_long=20, n_short=18
+- HighEngagement (Mean) Part 2 – Abbott Elementary: Long=0.45, Short=0.45, diff=-0.00, p=0.940, n_long=21, n_short=24
+- HighEngagement (Mean) Part 2 – Mad Max: Long=0.48, Short=0.48, diff=0.00, p=0.985, n_long=18, n_short=19
+- HighEngagement (Mean) Part 2 – The Town: Long=0.45, Short=0.41, diff=0.04, p=0.517, n_long=20, n_short=18
+- LowEngagement (AUC) Part 2 – Abbott Elementary: Long=35.18, Short=31.67, diff=3.51, p=0.397, n_long=21, n_short=24
+- LowEngagement (AUC) Part 2 – Mad Max: Long=78.09, Short=77.51, diff=0.59, p=0.963, n_long=20, n_short=19
+- LowEngagement (AUC) Part 2 – The Town: Long=93.34, Short=98.12, diff=-4.78, p=0.695, n_long=20, n_short=18
+- LowEngagement (Mean) Part 2 – Abbott Elementary: Long=0.38, Short=0.31, diff=0.07, p=0.038, n_long=20, n_short=21
+- LowEngagement (Mean) Part 2 – Mad Max: Long=0.30, Short=0.35, diff=-0.04, p=0.319, n_long=16, n_short=17
+- LowEngagement (Mean) Part 2 – The Town: Long=0.36, Short=0.38, diff=-0.02, p=0.616, n_long=20, n_short=18
+- Workload (AUC) Part 2 – Abbott Elementary: Long=53.50, Short=47.42, diff=6.08, p=0.039, n_long=21, n_short=24
+- Workload (AUC) Part 2 – Mad Max: Long=120.87, Short=126.39, diff=-5.52, p=0.429, n_long=20, n_short=19
+- Workload (AUC) Part 2 – The Town: Long=137.73, Short=137.65, diff=0.08, p=0.992, n_long=20, n_short=18
+- Workload (Mean) Part 2 – Abbott Elementary: Long=0.55, Short=0.51, diff=0.03, p=0.203, n_long=21, n_short=23
+- Workload (Mean) Part 2 – Mad Max: Long=0.54, Short=0.56, diff=-0.02, p=0.543, n_long=20, n_short=19
+- Workload (Mean) Part 2 – The Town: Long=0.53, Short=0.54, diff=-0.01, p=0.805, n_long=20, n_short=18
+- Blink (Count) Part 2 – Abbott Elementary: Long=203.55, Short=196.27, diff=7.28, p=0.827, n_long=22, n_short=30
+- Blink (Count) Part 2 – Mad Max: Long=272.25, Short=322.90, diff=-50.65, p=0.431, n_long=20, n_short=21
+- Blink (Count) Part 2 – The Town: Long=303.50, Short=297.64, diff=5.86, p=0.924, n_long=20, n_short=14
+- Blink (Rate) Part 2 – Abbott Elementary: Long=123.37, Short=109.56, diff=13.80, p=0.439, n_long=22, n_short=29
+- Blink (Rate) Part 2 – Mad Max: Long=80.00, Short=85.55, diff=-5.55, p=0.761, n_long=21, n_short=21
+- Blink (Rate) Part 2 – The Town: Long=95.14, Short=101.35, diff=-6.21, p=0.796, n_long=23, n_short=18
+- Fixation (Count) Part 2 – Abbott Elementary: Long=233.97, Short=255.17, diff=-21.20, p=0.035, n_long=30, n_short=30
+- Fixation (Count) Part 2 – Mad Max: Long=506.04, Short=500.27, diff=5.77, p=0.788, n_long=24, n_short=26
+- Fixation (Count) Part 2 – The Town: Long=607.31, Short=588.46, diff=18.85, p=0.410, n_long=29, n_short=26
+- Fixation (PerMinute) Part 2 – Abbott Elementary: Long=144.98, Short=152.45, diff=-7.47, p=0.129, n_long=29, n_short=28
+- Fixation (PerMinute) Part 2 – Mad Max: Long=134.95, Short=132.54, diff=2.41, p=0.673, n_long=24, n_short=26
+- Fixation (PerMinute) Part 2 – The Town: Long=141.12, Short=134.15, diff=6.97, p=0.160, n_long=28, n_short=26
+- FixationDispersion (Mean) Part 2 – Abbott Elementary: Long=0.47, Short=0.44, diff=0.03, p=0.137, n_long=30, n_short=30
+- FixationDispersion (Mean) Part 2 – Mad Max: Long=0.44, Short=0.51, diff=-0.06, p=0.010, n_long=24, n_short=24
+- FixationDispersion (Mean) Part 2 – The Town: Long=0.52, Short=0.50, diff=0.02, p=0.265, n_long=27, n_short=24
+- FixationDuration (Mean) Part 2 – Abbott Elementary: Long=528.94, Short=525.08, diff=3.86, p=0.906, n_long=30, n_short=30
+- FixationDuration (Mean) Part 2 – Mad Max: Long=593.25, Short=632.93, diff=-39.67, p=0.400, n_long=23, n_short=21
+- FixationDuration (Mean) Part 2 – The Town: Long=582.05, Short=610.31, diff=-28.26, p=0.414, n_long=27, n_short=26
+- AdaptiveEngagement (AUC) Part 2 – Abbott Elementary: Long=40.88, Short=26.13, diff=14.75, p=0.082, n_long=30, n_short=30
+- AdaptiveEngagement (AUC) Part 2 – Mad Max: Long=28.22, Short=15.88, diff=12.34, p=0.195, n_long=23, n_short=24
+- AdaptiveEngagement (AUC) Part 2 – The Town: Long=26.00, Short=17.76, diff=8.25, p=0.410, n_long=25, n_short=17
+- AdaptiveEngagement (Mean) Part 2 – Abbott Elementary: Long=0.41, Short=0.21, diff=0.20, p=0.015, n_long=30, n_short=28
+- AdaptiveEngagement (Mean) Part 2 – Mad Max: Long=0.16, Short=0.12, diff=0.05, p=0.469, n_long=24, n_short=26
+- AdaptiveEngagement (Mean) Part 2 – The Town: Long=0.20, Short=0.23, diff=-0.03, p=0.689, n_long=29, n_short=25
+- Anger (AUC) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, n_long=25, n_short=28
+- Anger (AUC) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, n_long=19, n_short=22
+- Anger (AUC) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, n_long=22, n_short=22
+- Anger (Binary) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, n_long=30, n_short=30
+- Anger (Binary) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, n_long=24, n_short=26
+- Anger (Binary) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, n_long=29, n_short=26
+- Anger (Mean) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, n_long=25, n_short=28
+- Anger (Mean) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, n_long=19, n_short=22
+- Anger (Mean) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, n_long=22, n_short=22
+- Confusion (AUC) Part 2 – Abbott Elementary: Long=0.02, Short=0.00, diff=0.02, p=0.038, n_long=26, n_short=23
+- Confusion (AUC) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, p=0.715, n_long=19, n_short=21
+- Confusion (AUC) Part 2 – The Town: Long=0.01, Short=0.00, diff=0.01, p=0.277, n_long=22, n_short=18
+- Confusion (Binary) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, n_long=30, n_short=30
+- Confusion (Binary) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, n_long=24, n_short=26
+- Confusion (Binary) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, n_long=29, n_short=26
+- Confusion (Mean) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, p=0.057, n_long=25, n_short=23
+- Confusion (Mean) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, p=0.715, n_long=19, n_short=21
+- Confusion (Mean) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, p=0.148, n_long=23, n_short=18
+- Contempt (AUC) Part 2 – Abbott Elementary: Long=0.49, Short=0.16, diff=0.34, p=0.023, n_long=27, n_short=30
+- Contempt (AUC) Part 2 – Mad Max: Long=0.58, Short=0.17, diff=0.41, p=0.068, n_long=22, n_short=19
+- Contempt (AUC) Part 2 – The Town: Long=0.40, Short=0.32, diff=0.07, p=0.681, n_long=26, n_short=19
+- Contempt (Binary) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, n_long=30, n_short=30
+- Contempt (Binary) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, n_long=24, n_short=26
+- Contempt (Binary) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, n_long=29, n_short=26
+- Contempt (Mean) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, p=0.001, n_long=27, n_short=27
+- Contempt (Mean) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, p=0.020, n_long=24, n_short=19
+- Contempt (Mean) Part 2 – The Town: Long=0.00, Short=0.00, diff=-0.00, p=0.969, n_long=26, n_short=20
+- Disgust (AUC) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, n_long=24, n_short=28
+- Disgust (AUC) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, n_long=19, n_short=22
+- Disgust (AUC) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, n_long=24, n_short=20
+- Disgust (Binary) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, n_long=30, n_short=30
+- Disgust (Binary) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, n_long=24, n_short=26
+- Disgust (Binary) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, n_long=29, n_short=26
+- Disgust (Mean) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, n_long=24, n_short=28
+- Disgust (Mean) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, n_long=19, n_short=22
+- Disgust (Mean) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, n_long=24, n_short=20
+- Engagement (AUC) Part 2 – Abbott Elementary: Long=42.00, Short=27.84, diff=14.15, p=0.108, n_long=30, n_short=30
+- Engagement (AUC) Part 2 – Mad Max: Long=24.53, Short=16.45, diff=8.09, p=0.317, n_long=22, n_short=24
+- Engagement (AUC) Part 2 – The Town: Long=28.09, Short=30.07, diff=-1.98, p=0.875, n_long=25, n_short=19
+- Engagement (Binary) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, n_long=30, n_short=30
+- Engagement (Binary) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, n_long=24, n_short=26
+- Engagement (Binary) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, n_long=29, n_short=26
+- Engagement (Mean) Part 2 – Abbott Elementary: Long=0.42, Short=0.26, diff=0.17, p=0.057, n_long=30, n_short=29
+- Engagement (Mean) Part 2 – Mad Max: Long=0.17, Short=0.12, diff=0.05, p=0.404, n_long=24, n_short=26
+- Engagement (Mean) Part 2 – The Town: Long=0.21, Short=0.24, diff=-0.03, p=0.692, n_long=29, n_short=25
+- Fear (AUC) Part 2 – Abbott Elementary: Long=0.01, Short=0.00, diff=0.01, p=0.329, n_long=22, n_short=24
+- Fear (AUC) Part 2 – Mad Max: Long=0.03, Short=0.00, diff=0.03, p=0.025, n_long=17, n_short=22
+- Fear (AUC) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, p=0.327, n_long=26, n_short=17
+- Fear (Binary) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, n_long=30, n_short=30
+- Fear (Binary) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, n_long=24, n_short=26
+- Fear (Binary) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, n_long=29, n_short=26
+- Fear (Mean) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, n_long=21, n_short=24
+- Fear (Mean) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, p=0.028, n_long=17, n_short=22
+- Fear (Mean) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, p=0.327, n_long=26, n_short=17
+- Joy (AUC) Part 2 – Abbott Elementary: Long=8.53, Short=0.92, diff=7.61, p<0.001, n_long=22, n_short=21
+- Joy (AUC) Part 2 – Mad Max: Long=0.47, Short=1.00, diff=-0.53, p=0.205, n_long=23, n_short=25
+- Joy (AUC) Part 2 – The Town: Long=1.69, Short=1.41, diff=0.28, p=0.801, n_long=27, n_short=24
+- Joy (Binary) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, n_long=30, n_short=30
+- Joy (Binary) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, n_long=24, n_short=26
+- Joy (Binary) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, n_long=29, n_short=26
+- Joy (Mean) Part 2 – Abbott Elementary: Long=0.07, Short=0.01, diff=0.06, p<0.001, n_long=20, n_short=20
+- Joy (Mean) Part 2 – Mad Max: Long=0.01, Short=0.00, diff=0.01, p=0.501, n_long=24, n_short=25
+- Joy (Mean) Part 2 – The Town: Long=0.02, Short=0.01, diff=0.01, p=0.191, n_long=29, n_short=24
+- NegativeAdaptiveValence (AUC) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, n_long=28, n_short=29
+- NegativeAdaptiveValence (AUC) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, n_long=23, n_short=23
+- NegativeAdaptiveValence (AUC) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, n_long=25, n_short=24
+- NegativeAdaptiveValence (Mean) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, n_long=28, n_short=29
+- NegativeAdaptiveValence (Mean) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, n_long=23, n_short=23
+- NegativeAdaptiveValence (Mean) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, n_long=25, n_short=24
+- Neutral (AUC) Part 2 – Abbott Elementary: Long=62.24, Short=75.30, diff=-13.06, p=0.111, n_long=30, n_short=30
+- Neutral (AUC) Part 2 – Mad Max: Long=197.76, Short=209.83, diff=-12.07, p=0.313, n_long=24, n_short=26
+- Neutral (AUC) Part 2 – The Town: Long=227.08, Short=206.88, diff=20.20, p=0.277, n_long=29, n_short=26
+- Neutral (Binary) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, n_long=30, n_short=30
+- Neutral (Binary) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, n_long=24, n_short=26
+- Neutral (Binary) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, n_long=29, n_short=26
+- Neutral (Mean) Part 2 – Abbott Elementary: Long=0.73, Short=0.92, diff=-0.19, p<0.001, n_long=25, n_short=24
+- Neutral (Mean) Part 2 – Mad Max: Long=0.91, Short=0.95, diff=-0.04, p=0.263, n_long=23, n_short=25
+- Neutral (Mean) Part 2 – The Town: Long=0.90, Short=0.89, diff=0.01, p=0.851, n_long=28, n_short=22
+- NeutralAdaptiveValence (AUC) Part 2 – Abbott Elementary: Long=74.56, Short=82.54, diff=-7.98, p=0.245, n_long=30, n_short=30
+- NeutralAdaptiveValence (AUC) Part 2 – Mad Max: Long=221.89, Short=224.02, diff=-2.14, p=0.461, n_long=24, n_short=26
+- NeutralAdaptiveValence (AUC) Part 2 – The Town: Long=257.83, Short=253.74, diff=4.10, p=0.469, n_long=29, n_short=26
+- NeutralAdaptiveValence (Mean) Part 2 – Abbott Elementary: Long=0.91, Short=0.99, diff=-0.08, p<0.001, n_long=20, n_short=20
+- NeutralAdaptiveValence (Mean) Part 2 – Mad Max: Long=1.00, Short=0.99, diff=0.01, p=0.016, n_long=23, n_short=25
+- NeutralAdaptiveValence (Mean) Part 2 – The Town: Long=0.98, Short=0.99, diff=-0.01, p=0.164, n_long=29, n_short=23
+- PositiveAdaptiveValence (AUC) Part 2 – Abbott Elementary: Long=8.03, Short=0.70, diff=7.33, p=0.001, n_long=21, n_short=20
+- PositiveAdaptiveValence (AUC) Part 2 – Mad Max: Long=0.28, Short=1.25, diff=-0.97, p=0.015, n_long=23, n_short=25
+- PositiveAdaptiveValence (AUC) Part 2 – The Town: Long=2.32, Short=1.40, diff=0.92, p=0.456, n_long=28, n_short=24
+- PositiveAdaptiveValence (Mean) Part 2 – Abbott Elementary: Long=0.05, Short=0.01, diff=0.04, p=0.013, n_long=17, n_short=20
+- PositiveAdaptiveValence (Mean) Part 2 – Mad Max: Long=0.00, Short=0.01, diff=-0.00, p=0.015, n_long=23, n_short=25
+- PositiveAdaptiveValence (Mean) Part 2 – The Town: Long=0.01, Short=0.01, diff=0.01, p=0.217, n_long=29, n_short=24
+- Sadness (AUC) Part 2 – Abbott Elementary: Long=0.34, Short=0.08, diff=0.26, p=0.071, n_long=25, n_short=27
+- Sadness (AUC) Part 2 – Mad Max: Long=0.07, Short=0.33, diff=-0.26, p=0.088, n_long=21, n_short=23
+- Sadness (AUC) Part 2 – The Town: Long=0.32, Short=0.15, diff=0.16, p=0.359, n_long=22, n_short=18
+- Sadness (Binary) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, n_long=30, n_short=30
+- Sadness (Binary) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, n_long=24, n_short=26
+- Sadness (Binary) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, n_long=29, n_short=26
+- Sadness (Mean) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, p=0.041, n_long=24, n_short=26
+- Sadness (Mean) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=-0.00, p=0.087, n_long=21, n_short=23
+- Sadness (Mean) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, p=0.359, n_long=22, n_short=18
+- Sentimentality (AUC) Part 2 – Abbott Elementary: Long=1.00, Short=0.21, diff=0.79, p=0.008, n_long=22, n_short=25
+- Sentimentality (AUC) Part 2 – Mad Max: Long=0.23, Short=0.32, diff=-0.09, p=0.511, n_long=23, n_short=24
+- Sentimentality (AUC) Part 2 – The Town: Long=0.35, Short=0.13, diff=0.22, p=0.123, n_long=26, n_short=23
+- Sentimentality (Binary) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, n_long=30, n_short=30
+- Sentimentality (Binary) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, n_long=24, n_short=26
+- Sentimentality (Binary) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, n_long=29, n_short=26
+- Sentimentality (Mean) Part 2 – Abbott Elementary: Long=0.01, Short=0.00, diff=0.00, p=0.016, n_long=18, n_short=22
+- Sentimentality (Mean) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, p=0.930, n_long=24, n_short=25
+- Sentimentality (Mean) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, p=0.084, n_long=27, n_short=23
+- Surprise (AUC) Part 2 – Abbott Elementary: Long=0.14, Short=0.01, diff=0.14, p=0.031, n_long=24, n_short=24
+- Surprise (AUC) Part 2 – Mad Max: Long=0.07, Short=0.00, diff=0.07, p=0.044, n_long=18, n_short=21
+- Surprise (AUC) Part 2 – The Town: Long=0.07, Short=0.01, diff=0.06, p=0.183, n_long=27, n_short=18
+- Surprise (Binary) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, n_long=30, n_short=30
+- Surprise (Binary) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, n_long=24, n_short=26
+- Surprise (Binary) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, n_long=29, n_short=26
+- Surprise (Mean) Part 2 – Abbott Elementary: Long=0.00, Short=0.00, diff=0.00, p=0.096, n_long=21, n_short=23
+- Surprise (Mean) Part 2 – Mad Max: Long=0.00, Short=0.00, diff=0.00, p=0.044, n_long=18, n_short=21
+- Surprise (Mean) Part 2 – The Town: Long=0.00, Short=0.00, diff=0.00, p=0.182, n_long=27, n_short=18
+- EmotionComposite (AUC_SUM) Part 2 – Abbott Elementary: Long=25.04, Short=7.58, diff=17.46, p=0.001, n_long=26, n_short=25
+- EmotionComposite (AUC_SUM) Part 2 – Mad Max: Long=6.59, Short=4.66, diff=1.93, p=0.504, n_long=21, n_short=25
+- EmotionComposite (AUC_SUM) Part 2 – The Town: Long=11.38, Short=7.10, diff=4.28, p=0.355, n_long=26, n_short=20
+- PeakDetected (Binary) Part 2 – Abbott Elementary: Long=0.60, Short=0.67, diff=-0.07, p=0.599, n_long=30, n_short=30
+- PeakDetected (Binary) Part 2 – Mad Max: Long=0.78, Short=0.73, diff=0.05, p=0.680, n_long=23, n_short=26
+- PeakDetected (Binary) Part 2 – The Town: Long=0.86, Short=0.76, diff=0.10, p=0.353, n_long=29, n_short=25
+- Peaks (Count) Part 2 – Abbott Elementary: Long=1039.00, Short=891.65, diff=147.35, p=0.434, n_long=18, n_short=20
+- Peaks (Count) Part 2 – Mad Max: Long=3582.11, Short=1882.37, diff=1699.74, p<0.001, n_long=18, n_short=19
+- Peaks (Count) Part 2 – The Town: Long=2248.92, Short=2272.50, diff=-23.58, p=0.967, n_long=25, n_short=18
+- Peaks (PerMinute) Part 2 – Abbott Elementary: Long=629.73, Short=543.00, diff=86.73, p=0.448, n_long=18, n_short=20
+- Peaks (PerMinute) Part 2 – Mad Max: Long=955.25, Short=498.71, diff=456.54, p<0.001, n_long=18, n_short=19
+- Peaks (PerMinute) Part 2 – The Town: Long=515.03, Short=568.67, diff=-53.64, p=0.692, n_long=25, n_short=19
